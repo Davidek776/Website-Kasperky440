@@ -2,7 +2,8 @@
   <body class="">
     <!-- THE HOUSE - SIMON-->
 
-    <div >
+  
+  <div>
       <div class=" flex justify-center">
         <img
           src="../assets/images/icons/ScrollButton.svg"
@@ -32,6 +33,7 @@
           src="../assets/images/shared-spaces/kitchen1.png"
           alt="kitchen"
           class="placePreviewKitchen"
+          onclick="FullView(this.src)"
         />
         <img
           src="../assets/images/shared-spaces/dining-area1.png"
@@ -86,6 +88,7 @@
         />
       </div>
     </div>
+    <div class="fullImageView"></div>
   </body>
 </template>
 
@@ -94,6 +97,12 @@ export default {
   setup() {
     return {};
   },
+
+  methods: {
+    FullView(ImgLink){
+      alert(ImgLink);
+    }
+  }
 };
 
 
