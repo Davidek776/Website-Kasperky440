@@ -7,10 +7,10 @@ $textSize2: 5vh;
     margin-bottom: $marginValueForText;
 }
 
-@mixin placePreviewPreset($width) {
+@mixin placePreviewPreset($maxSize) {
     position: absolute;
-    width: $width;
-    height: $width;
+    width: $maxSize;
+    height: $maxSize;
     border-radius: 50%;
     &:hover{
         cursor: pointer;
@@ -36,49 +36,49 @@ $textSize2: 5vh;
     font-size: $textSize1;
 }
 .placePreviewKitchen{
-    @include placePreviewPreset(7vh);
-    top: 25vh;
-    right: 92vh;
+    @include placePreviewPreset(7vw);
+    top: 40%;
+    left: 16%;
 }
 
 .placePreviewDiningArea{
-    @include placePreviewPreset(10vh);
-    top: 38vh;
-    right: 76vh;
+    @include placePreviewPreset(10vw);
+    top: 67%;
+    left: 29%;
 }
 
 .placePreviewRoom1{
-    @include placePreviewPreset(7vh);
-    top: 36vh;
-    right: 20vh;
+    @include placePreviewPreset(7vw);
+    top: 64%;
+    left: 76.5%;
 }
 
 .placePreviewBathroom1{
-    @include placePreviewPreset(4vh);
-    top: 18vh;
-    right: 22vh;
+    @include placePreviewPreset(4vw);
+    top: 31%;
+    left: 78%;
 }
 
 .placePreviewRoom3{
-    @include placePreviewPreset(6vh);
-    top: 22vh;
-    right: 88vh;
+    @include placePreviewPreset(6vw);
+    top: 37%;
+    left: 20.5%;
 }
 
 .placePreviewRoom4{
-    @include placePreviewPreset(8vh);
-    top: 40vh;
-    right: 84vh;
+    @include placePreviewPreset(8vw);
+    top: 70%;
+    left: 22.5%;
 }
 
 .placePreviewBathroom34{
-    @include placePreviewPreset(5vh);
-    top: 8vh;
-    right: 65vh;
+    @include placePreviewPreset(5vw);
+    top: 12%;
+    left: 40%;
 }
 
 .placePreviewToilet34{
-    @include placePreviewPreset(3vh);
-    top: 20vh;
-    right: 73vh;
+    @include placePreviewPreset(3vw);
+    top: 33%;
+    left: 36%;
 }

@@ -1,14 +1,15 @@
 <template>
-  <body class="bg-red-500">
+  <body class="">
     <!-- THE HOUSE - SIMON-->
 
-    <div>
-      <div class="bg-red-500">
-        <!-- <img
-          src="..assets/images/icons/ScrollButton.svg"
+    <div >
+      <div class=" flex justify-center">
+        <img
+          src="../assets/images/icons/ScrollButton.svg"
           alt="Scroll Button"
-          class="my-8"
-        /> -->
+          class=" mt-24"
+          />
+        
       </div>
 
       <div class="mainHeading flex justify-center">
@@ -27,16 +28,16 @@
         />
 
         <!--Area Images-->
-        <!-- <img
-          src="..assets/images/Shared spaces/kitchen1.JPG"
+        <img 
+          src="../assets/images/shared-spaces/kitchen1.png"
           alt="kitchen"
           class="placePreviewKitchen"
         />
         <img
-          src="..assets/images/Shared spaces/dining-area1.JPG"
+          src="../assets/images/shared-spaces/dining-area1.png"
           alt="dining area"
           class="placePreviewDiningArea"
-        /> -->
+        />
       </div>
 
       <div class="flex justify-center floorHeader">
@@ -45,7 +46,7 @@
       <div class="floorImage flex justify-center">
         <!--Floor Plan Image-->
         <img
-          src="../assets/images/FloorPlans/floor_1.png"
+          src="../assets/images/FloorPlans/Floor_2.png"
           alt="Floor 2"
           class="w-4/5 h-auto"
         />
@@ -74,14 +75,18 @@
           class="placePreviewRoom4"
         />
         <img
-          src="../assets/images/rooms/room3_4_toilet.jpg"
+          src="../assets/images/rooms/room3_4_bathroom.jpg"
           alt="bathroom 3-4"
           class="placePreviewBathroom34"
+        />
+        <img
+          src="../assets/images/rooms/room3_4_toilet.jpg"
+          alt="toilet 3-4"
+          class="placePreviewToilet34"
         />
       </div>
     </div>
   </body>
-  <img src="../assets/floorPlanImg/floor_1.png" alt="" />
 </template>
 
 <script>
@@ -90,6 +95,8 @@ export default {
     return {};
   },
 };
+
+
 </script>
 
 <style scoped>
