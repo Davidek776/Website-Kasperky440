@@ -1,0 +1,60 @@
+.title
+    padding: 2em 0
+
+.about-us
+    padding-bottom: 12em
+    position: relative
+        // max-width: 500px
+.row
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 4em
+
+.line-svg
+    position: absolute
+    width: 100%
+    height: 92%
+    top: 10rem
+
+.image-text 
+    position: relative
+    width: 80%
+    margin: 3em auto
+    &::before
+        bottom: -.5em
+        left: -.5em
+    &::after
+        top: 0
+        right: -.5em
+
+    &::before,
+    &::after
+        font-size: 4rem
+        position: absolute
+        color: #DBCF9B
+        content: '"'
+
+.animate
+    // transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.175)
+    transition: transform 1s
+    opacity: 0
+
+.animate-l
+    transform: translateX(-300px)
+
+.animate-r
+    transform: translateX(300px)
+
+.animate-element 
+    opacity: 1
+    transform: translateX(0)
+
+@media ( min-width: 758px )
+    .about-us 
+        & .row
+            justify-content: space-between
+
+    .image-text
+        // width: 45%
+    
