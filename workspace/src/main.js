@@ -8,9 +8,14 @@ const elements = document.querySelectorAll('.animate')
 document.addEventListener('scroll', () => {
 
     elements.forEach(element => {
-        if(window.scrollY + window.innerHeight > element.offsetTop + (window.innerHeight * 0.3)) {
-            element.classList.add('animate-element')
+
+        if(! element.classList.contains('animate-element')) {
+
+            if(window.scrollY > element.offsetTop) {
+                element.classList.add('animate-element')
+            }
         }
+
     })
     
 })
