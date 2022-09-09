@@ -43,7 +43,6 @@ export default {
         const subArr = []
         for (let j = 0; j < reviewsData.length; j++) {
           if( (j + 1) % (divide) === i) {
-            console.log(j)
             subArr.push(reviewsData[j])
           }
         }
