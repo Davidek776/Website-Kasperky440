@@ -9,27 +9,27 @@
         <span class="font-bold">US</span>
     </h1>
     <div class="row lg:mt-12 lg:mb-16 lg:flex-row-reverse">
-        <p class="animate animate-r uppercase text-lg image-text lg:w-4/12">Nabízíme ubytování v 3 lůžkovém pokoji, 2 lůžkovém pokoji a apratmánu se 2 pokoji. Celková kapacita 10 lůžek s možností přistýlky. Pokoje jsou vybaveny samostatnými koupelnami a WC.</p>
+        <p class="animate animate-r uppercase sm:text-justify md:text-left md:text-lg image-text lg:w-4/12">Nabízíme ubytování v 3 lůžkovém pokoji, 2 lůžkovém pokoji a apratmánu se 2 pokoji. Celková kapacita 10 lůžek s možností přistýlky. Pokoje jsou vybaveny samostatnými koupelnami a WC.</p>
         <img class="animate animate-l lg:w-1/2" src="../assets/aboutUs/img/20190118_085040.jpg" alt="image">
     </div>
     <div class="row lg:mt-12 lg:flex-row">
-        <p class="animate animate-l uppercase text-lg image-text lg:w-5/12">V objektu je společenská místnost s prostornou, plně vybavenou kuchyní, kterou mohou hosté využívat. Kuchyň je společná pro pokoje i aprtmán.  Přímo v objektu je lyžárna pro uložení lyží a přístavba pro uschování jízdních kol.</p>
+        <p class="animate animate-l uppercase sm:text-justify md:text-left md:text-lg image-text lg:w-5/12">V objektu je společenská místnost s prostornou, plně vybavenou kuchyní, kterou mohou hosté využívat. Kuchyň je společná pro pokoje i aprtmán.  Přímo v objektu je lyžárna pro uložení lyží a přístavba pro uschování jízdních kol.</p>
         <img class="animate animate-r lg:w-4/12 img-lg" src="../assets/aboutUs/img/bike_house.jpeg" alt="image">
     </div>
     <div class="row lg:-mt-10 lg:flex-row">
-        <p class="animate animate-l uppercase text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16">Ubytování na kraji Kašperských Hor na klidném místě mezi rodinnými domky. Jižní svah s výhledem na sjezdovku a okolní kopce. Sjezdovka je vzdálená 250 m.</p>
+        <p class="animate animate-l uppercase sm:text-justify md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16">Ubytování na kraji Kašperských Hor na klidném místě mezi rodinnými domky. Jižní svah s výhledem na sjezdovku a okolní kopce. Sjezdovka je vzdálená 250 m.</p>
         <img class="animate animate-r lg:w-1/2 lg:max-w-xs img-lg" src="../assets/aboutUs/img/IMG_3826.jpg" alt="image">
     </div>
     <div class="row lg:mt-20 lg:flex-row-reverse">
-        <p class="animate animate-r uppercase text-lg image-text lg:w-5/12">V zimním období využití blízkosti sjezdovky včetně lyžařské školy. Ideální pro rodiny s menšími dětmi, které se chtějí naučit lyžovat. Možnost využití večerního lyžování. Běžecké tratě za příznivých podmínek přímo v Kašperských Horách a na blízkém vrchu Ždánov, jinak běžecké tratě na Horské Kvildě nebo na Zadově obojí vzdálené 17 km s desítkami kilometrů upravených běžeckých tratí.</p>
+        <p class="animate animate-r uppercase sm:text-justify md:text-left md:text-lg image-text lg:w-5/12">V zimním období využití blízkosti sjezdovky včetně lyžařské školy. Ideální pro rodiny s menšími dětmi, které se chtějí naučit lyžovat. Možnost využití večerního lyžování. Běžecké tratě za příznivých podmínek přímo v Kašperských Horách a na blízkém vrchu Ždánov, jinak běžecké tratě na Horské Kvildě nebo na Zadově obojí vzdálené 17 km s desítkami kilometrů upravených běžeckých tratí.</p>
         <img class="animate animate-l lg:w-1/2 lg:h-96" src="../assets/aboutUs/img/20200120_pohled_z_terasy.jpg" alt="image">
     </div>
     <div class="row lg:mt-12 lg:flex-row">
-        <p class="animate animate-l uppercase text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16">V letním období ideální místo na výlety po Šumavských kopcích. Překrásné výhledy přímo na okraji Kašperských Hor. Nejvýše položený hrad v Čechách Kašperk. Výhodný bod pro cykloturistiku. Naučné stezky po stopách těžby zlata. Možnost koupání v řece Otavě nebo na koupališti v Sušici (13 km).</p>
+        <p class="animate animate-l uppercase sm:text-justify md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16">V letním období ideální místo na výlety po Šumavských kopcích. Překrásné výhledy přímo na okraji Kašperských Hor. Nejvýše položený hrad v Čechách Kašperk. Výhodný bod pro cykloturistiku. Naučné stezky po stopách těžby zlata. Možnost koupání v řece Otavě nebo na koupališti v Sušici (13 km).</p>
         <img class="animate animate-r lg:w-96" src="../assets/aboutUs/img/IMG_3819.jpg" alt="image">
     </div>
     <div class="row lg:flex-row-reverse">
-        <p class="animate animate-r uppercase text-lg image-text lg:w-5/12">V případě příznivého stavu vodní hladiny, sjíždění řeky Otavy na lodích, možnost zapůjčení lodí v Sušici. Celé léto se v Kašperských Horách a na hradě Kašperk koná mnoho kulturních akcí, divadelních představení, letní kino. Akce Národního parku Šumava včetně ukázky rýžování zlata.</p>
+        <p class="animate animate-r uppercase sm:text-justify md:text-left md:text-lg image-text lg:w-5/12">V případě příznivého stavu vodní hladiny, sjíždění řeky Otavy na lodích, možnost zapůjčení lodí v Sušici. Celé léto se v Kašperských Horách a na hradě Kašperk koná mnoho kulturních akcí, divadelních představení, letní kino. Akce Národního parku Šumava včetně ukázky rýžování zlata.</p>
         <img class="animate animate-l lg:w-1/2" src="../assets/aboutUs/img/20181116_113501.jpg" alt="image">
     </div>
 </section>
