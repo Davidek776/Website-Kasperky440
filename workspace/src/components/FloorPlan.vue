@@ -6,7 +6,7 @@
   <div>
       <div class=" flex justify-center">
         <img
-          src="../assets/images/icons/ScrollButton.svg"
+          src='../assets/images/icons/ScrollButton.svg'
           alt="Scroll Button"
           class=" mt-24"
           />
@@ -30,10 +30,10 @@
 
         <!--Area Images-->
         <img 
-          src="../assets/images/shared-spaces/kitchen1.png"
+          src = '../assets/images/shared-spaces/kitchen1.png'
           alt="kitchen"
           class="placePreviewKitchen"
-          onclick="FullView(this.src)"
+          @click="FullView()"
         />
         <img
           src="../assets/images/shared-spaces/dining-area1.png"
@@ -88,19 +88,41 @@
         />
       </div>
     </div>
-    <div class="fullImageView"></div>
+    <div class="fullImageView flex justify-center">
+      <ImgCarousel>
+        <ImgSlide>
+          <div class="div">
+            <p>Hello</p>
+          </div>
+        </ImgSlide>
+      </ImgCarousel>
+    </div>
   </body>
 </template>
 
 <script>
+import ImgCarousel from "../components/Carousel.vue";
+import ImgSlide from "../components/Slide.vue";
+
 export default {
-  setup() {
-    return {};
+  name: 'FloorPlan',
+  components: {
+    ImgCarousel,
+    ImgSlide
+  },
+
+  data() {
+    return {
+      images: [
+      '../assets/images/shared-spaces/kitchen1.png',
+      ]
+    };
   },
 
   methods: {
-    FullView(ImgLink){
-      alert(ImgLink);
+    FullView(){
+      alert(window.scrollY)
+      document.getElementById("fullImage").src = this.images[0];
     }
   }
 };
