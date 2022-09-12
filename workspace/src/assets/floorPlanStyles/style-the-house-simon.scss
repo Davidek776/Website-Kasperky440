@@ -1,0 +1,94 @@
+$marginValueForText: 15vh;
+$textSize1: 10vh;
+$textSize2: 5vh;
+
+@mixin margins {
+    margin-top: $marginValueForText;
+    margin-bottom: $marginValueForText;
+}
+
+@mixin placePreviewPreset($maxSize) {
+    position: absolute;
+    width: $maxSize;
+    height: $maxSize;
+    border-radius: 50%;
+    &:hover{
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+}
+.floorHeader{
+    @include margins();
+    font-size: $textSize2;
+}
+
+.scrollButton{
+    @include margins();
+}
+
+.floorImage{
+    @include margins();
+    position: relative;
+}
+
+.mainHeading{
+    @include margins();
+    font-size: $textSize1;
+}
+.placePreviewKitchen{
+    @include placePreviewPreset(7vw);
+    top: 40%;
+    left: 16%;
+}
+
+.placePreviewDiningArea{
+    @include placePreviewPreset(10vw);
+    top: 67%;
+    left: 29%;
+}
+
+.placePreviewRoom1{
+    @include placePreviewPreset(7vw);
+    top: 64%;
+    left: 76.5%;
+}
+
+.placePreviewBathroom1{
+    @include placePreviewPreset(4vw);
+    top: 31%;
+    left: 78%;
+}
+
+.placePreviewRoom3{
+    @include placePreviewPreset(6vw);
+    top: 37%;
+    left: 20.5%;
+}
+
+.placePreviewRoom4{
+    @include placePreviewPreset(8vw);
+    top: 70%;
+    left: 22.5%;
+}
+
+.placePreviewBathroom34{
+    @include placePreviewPreset(5vw);
+    top: 12%;
+    left: 40%;
+}
+
+.placePreviewToilet34{
+    @include placePreviewPreset(3vw);
+    top: 33%;
+    left: 36%;
+}
+
+.fullImageView{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+}

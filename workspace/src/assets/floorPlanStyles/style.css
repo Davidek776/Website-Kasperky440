@@ -1,0 +1,150 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.floorHeader {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  font-size: 5vh;
+}
+
+.scrollButton {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.floorImage {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  position: relative;
+}
+
+.mainHeading {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  font-size: 10vh;
+}
+
+.placePreviewKitchen {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  top: 40%;
+  left: 16%;
+}
+.placePreviewKitchen:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewDiningArea {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  top: 67%;
+  left: 29%;
+}
+.placePreviewDiningArea:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewRoom1 {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  top: 64%;
+  left: 76.5%;
+}
+.placePreviewRoom1:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewBathroom1 {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  top: 31%;
+  left: 78%;
+}
+.placePreviewBathroom1:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewRoom3 {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  top: 37%;
+  left: 20.5%;
+}
+.placePreviewRoom3:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewRoom4 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  top: 70%;
+  left: 22.5%;
+}
+.placePreviewRoom4:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewBathroom34 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  top: 12%;
+  left: 40%;
+}
+.placePreviewBathroom34:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewToilet34 {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  top: 33%;
+  left: 36%;
+}
+.placePreviewToilet34:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.fullImageView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  font-family: Helvetica, Sans-Serif;
+  color: #1E293B;
+}/*# sourceMappingURL=style.css.map */

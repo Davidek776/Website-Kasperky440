@@ -1,0 +1,163 @@
+[
+  {
+    "id": 0,
+    "name": "Svatoslava",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Krásné a čisté ubytování v klidné části v Kašperských hor. Majitel velice příjemný.",
+    "rating": 10
+  },
+  {
+    "id": 1,
+    "name": "Lucie",
+    "image": "default_user",
+    "title": "Krásná dovolená v příjemném prostředí, komunikace s majitelem výborná.",
+    "description": "Krásné prostředí, výhled do okolí, útulný velký pokoj, krásná koupelna, dobrá komunikace s majitelem.",
+    "rating": 10
+
+  },
+  {
+    "id": 2,
+    "name": "Hana",
+    "image": "default_user",
+    "title": "Velká spokojenost",
+    "description": "Vše bylo na jedničku .Ubytování, prostředí, perfektně vybavená kuchyň,krásnýpokoj,velká spokojenost se vším.Jezdili jsme na kole,krásná příroda,pěkné k opce,nádhera.",
+    "rating": 10
+  },
+  {
+    "id": 3,
+    "name": "Helena",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Poloha ubytování v přírodě a přesto blízko centra Kašperských Hor, parkování u objektu, absolutní čistota a moderní vybavení jak pokoje, ale zejména sdílené kuchyně s jídelnou. Jeli jsme na jistotu, neboť se jednalo o opakovaný pobyt.",
+    "rating": 10
+  },
+  {
+    "id": 4,
+    "name": "Alena",
+    "image": "default_user",
+    "title": "Velká spokojenost s ubytováním i vybavením",
+    "description": " Výborně vybavená kuchyně, hezké prostředí",
+    "rating": 10
+  },
+  {
+    "id": 5,
+    "name": "Vlastimil",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Vybavení, čistota, sprcha a WC na pokojích.",
+    "rating": 10
+  },
+  {
+    "id": 6,
+    "name": "Tomáš",
+    "image": "default_user",
+    "title": "Krásná lokalita, klid, pěkný výhled, nové vybavení. Rádi si ubytování zopakujeme.",
+    "description": "Velice milý majitel, kterého jsme vlastně ani nemuseli díky bezvadnému systému předávání klíčů potkat. Každopádně setkání bylo milé.",
+    "rating": 10
+  },
+  {
+    "id": 7,
+    "name": "Svobodová",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "místo, ubytování",
+    "rating": 10
+  },
+  {
+    "id": 8,
+    "name": "Petra",
+    "image": "default_user",
+    "title": "Určitě doporučuji.",
+    "description": "Krásné, čisté ubytování.",
+    "rating": 10
+  },
+  {
+    "id": 9,
+    "name": "Klára",
+    "image": "default_user",
+    "title": "Naprosto klidné a pohodlné ubytování, ideální pro rodiny s dětmi.",
+    "description": "Musím pochválit majitele, všechno bylo perfektní, nic nám nechybělo a dovolenou jsme si užili naprosto skvěle a rádi se vrátíme. Ubytování odpovídá fotografiím a v domě je vše perfektní. Byli jsme moc spokojeni a děkujeme.",
+    "rating": 10
+  },
+  {
+    "id": 10,
+    "name": "Petra",
+    "image": "default_user",
+    "title": "Krásné čisté ubytování za super cenu!",
+    "description": "Krásné čisté ubytování v klidné lokalitě s nádhernými výhledy na blízkou sjezdovku. Velmi milý pan majitel, který nám se vším ochotně poradil a doporučil nejlepší tipy na výlety. Klíče jsme si vyzvedli i odevzdali prostřednictvím trezoru na heslo, takže jsme nebyli vázáni na konkrétní čas příjezdu a odjezdu.",
+    "rating": 10
+  },
+  {
+    "id": 11,
+    "name": "Markéta",
+    "image": "Markéta",
+    "title": "skvělé",
+    "description": " krásný dům, výborné vybavení - kuchyň byla top \uD83D\uDC4D, pokoj taky, vybavení i pro miminka, lokalita, možnost výletů a aktivit",
+    "rating": 10
+  },
+  {
+    "id": 12,
+    "name": "Jan",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Šumava a bydlení \uD83D\uDC4D, naprosto v pohodě.čistota a veget, doporučuji všem známým",
+    "rating": 10
+  },
+  {
+    "id": 13,
+    "name": "Michaela",
+    "image": "Michaela",
+    "title": "Naprosto výjimečné",
+    "description": "Úžasné ubytování, kde vubec nic nechybí. V klidné části a zároveň 5 minut chůze od centra. Byli jsme nadšeni.",
+    "rating": 10
+  },
+  {
+    "id": 14,
+    "name": "Jana",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Výlet na Srní naprosto úžasný vidět vlky takhle zblízka prostě krása",
+    "rating": 10
+  },
+  {
+    "id": 15,
+    "name": "Aneta",
+    "image": "Aneta",
+    "title": "Naprosto výjimečné",
+    "description": "Krásná lokalita s výhledem na protější kopec na okraji Kašperských hor, což zajišťovalo klidné prostředí .Krásné fotky pověšené na zdi :-)",
+    "rating": 10
+  },
+  {
+    "id": 16,
+    "name": "Michaela",
+    "image": "Michaela2",
+    "title": "Naprosto výjimečné",
+    "description": "Pobyt na Šumavě jsme si i přes velmi proměnlivé počasí moc užili a velkou měrou k tomu přispělo velmi příjemné a pohodlné ubytování, kde jsem si po náročných cyklo nebo pěších túrách odpočinuli a dobře se vyspali. Vyhovovala nám i kuchyň s jídelnou, kde jsme si připravovali snídaně a večeře.",
+    "rating": 10
+  },
+  {
+    "id": 17,
+    "name": "Eliška",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Lokalita, levné a hezke ubytování.",
+    "rating": 10
+  },
+  {
+    "id": 18,
+    "name": "Josef",
+    "image": "default_user",
+    "title": "Naprosto výjimečné",
+    "description": "Krásný penzion, na hezkém klidném místě, kousek od centra, vše čisté, uklizené.",
+    "rating": 10
+  },
+  {
+    "id": 19,
+    "name": "Vlasta",
+    "image": "default_user",
+    "title": "krásné, doporučuji, velká spokojenost",
+    "description": "Vynikajíci ubytování, perfektní vybavení, krásný nový objekt. krásné prostředí, klidné, blízko středu města a soukromé parkoviště hned u baráku taky vynikající. perfektně vybavená kuchyň. Ve městě spousta možností na jídlo. Prostě naprostá spokojenost. určitě se chci ještě vrátit a všem doporučuji.",
+    "rating": 10
+  }
+]
