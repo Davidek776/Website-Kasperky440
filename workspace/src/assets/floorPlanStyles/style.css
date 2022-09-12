@@ -132,10 +132,89 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #fullImage {
   padding: 7%;
+}
+
+.imgCarousel {
+  position: relative;
+  max-height: 80vh;
+  max-width: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-info img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.navigate {
+  padding: 0 16px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-page {
+  display: flex;
+  flex: 1;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.toggle-page i {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #1E293B;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination span {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.pagination .active {
+  background-color: #1E293B;
 }
 
 body {

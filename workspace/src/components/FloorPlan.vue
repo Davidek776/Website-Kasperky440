@@ -89,10 +89,10 @@
       </div>
     </div>
     <div class="fullImageView flex justify-center">
-      <ImgCarousel>
-        <ImgSlide>
-          <div class="div">
-            <p>Hello</p>
+      <ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">
+        <ImgSlide v-for="(slide, index) in carouselSlides" :key="index">
+          <div v-show="currentSlide === index + 1" class="slide-info">
+            <img :src="require('../assets/images/shared-spaces/' + slide + '.png')" alt="" />
           </div>
         </ImgSlide>
       </ImgCarousel>
@@ -109,6 +109,12 @@ export default {
   components: {
     ImgCarousel,
     ImgSlide
+  },
+
+  setup(){
+    const carouselSlides = ["kitchen1", "kitchen2"];
+
+    return {carouselSlides};
   },
 
   data() {
