@@ -33,7 +33,7 @@
           src = '../assets/images/shared-spaces/kitchen1.png'
           alt="kitchen"
           class="placePreviewKitchen"
-          @click="FullView()"
+          @click="fullView()"
         />
         <img
           src="../assets/images/shared-spaces/dining-area1.png"
@@ -88,7 +88,7 @@
         />
       </div>
     </div>
-    <div class="fullImageView flex justify-center">
+    <div name="fullImageViewGallery" class="fullImageView flex justify-center">
       <ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">
         <ImgSlide v-for="(slide, index) in carouselSlides" :key="index">
           <div v-show="currentSlide === index + 1" class="slide-info">
@@ -113,8 +113,17 @@ export default {
 
   setup(){
     const carouselSlides = ["kitchen1", "kitchen2"];
+    const fullImageViewGallery = document.getElementsByClassName('fullImageView');
 
-    return {carouselSlides};
+    //display fullImageView gallery
+    const fullView = () => {
+      alert(scrollY);
+      fullImageViewGallery[0].style.top = window.scrollY;
+      console.log(fullImageViewGallery[0].style);
+    };
+
+
+    return {carouselSlides, fullView};
   },
 
   data() {
@@ -125,12 +134,13 @@ export default {
     };
   },
 
-  methods: {
-    FullView(){
+  /*methods: {
+    FullView(scrollY){
       alert(window.scrollY)
       document.getElementById("fullImage").src = this.images[0];
     }
   }
+  */
 };
 
 
