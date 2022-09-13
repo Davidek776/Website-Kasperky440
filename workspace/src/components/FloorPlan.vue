@@ -2,6 +2,11 @@
   <body class="">
     <!-- THE HOUSE - SIMON-->
 
+    <ul>
+      <li v-for="d in data" :key="d.id">
+         {{d.name}}
+       </li>
+    </ul>
   
   <div>
       <div class=" flex justify-center">
@@ -39,6 +44,7 @@
           src="../assets/images/shared-spaces/dining-area1.png"
           alt="dining area"
           class="placePreviewDiningArea"
+          @click="putImagesInCarousel()"
         />
       </div>
 
@@ -88,59 +94,108 @@
         />
       </div>
     </div>
-    <div name="fullImageViewGallery" class="fullImageView flex justify-center">
+    <!--
+    <div name="fullImageViewGallery" class="fullImageView flex justify-center hidden">
       <ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">
-        <ImgSlide v-for="(slide, index) in carouselSlides" :key="index">
+        <ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
           <div v-show="currentSlide === index + 1" class="slide-info">
-            <img :src="require('../assets/images/shared-spaces/' + slide + '.png')" alt="" />
+            <img :src="require('../assets/images/' + slide + '.png')" alt="" />
           </div>
         </ImgSlide>
       </ImgCarousel>
     </div>
+    -->
+    <div class="fullImageView flex justify-center hidden">
+
+    </div>
+    
   </body>
 </template>
 
 <script>
-import ImgCarousel from "../components/Carousel.vue";
-import ImgSlide from "../components/Slide.vue";
+//import ImgCarousel from "../components/Carousel.vue";
+//import ImgSlide from "../components/Slide.vue";
+import carouselData from "../data/carouselData.json";
 
 export default {
   name: 'FloorPlan',
   components: {
-    ImgCarousel,
-    ImgSlide
+    //ImgCarousel,
+    //ImgSlide
   },
 
   setup(){
-    const carouselSlides = ["kitchen1", "kitchen2"];
-    const fullImageViewGallery = document.getElementsByClassName('fullImageView');
-
-    //display fullImageView gallery
-    const fullView = () => {
-      alert(scrollY);
-      fullImageViewGallery[0].style.top = window.scrollY;
-      console.log(fullImageViewGallery[0].style);
-    };
-
-
-    return {carouselSlides, fullView};
+   
   },
 
   data() {
     return {
-      images: [
-      '../assets/images/shared-spaces/kitchen1.png',
-      ]
+      data: carouselData,
+      requireImg: "",
+      imgSrc: "",
     };
   },
 
-  /*methods: {
-    FullView(scrollY){
-      alert(window.scrollY)
-      document.getElementById("fullImage").src = this.images[0];
-    }
+  methods: {
+  fullView(){
+    const fullImageViewGallery = document.getElementsByClassName('fullImageView');
+
+    fullImageViewGallery[0].style.display = "flex";
+    document.body.style.overflow = "hidden";
+    fullImageViewGallery[0].style.top = window.scrollY + "px";
+  },
+
+  //load images to carousel -- import from json file?
+  loadImagesToCarousel(){
+    const carouselSlides = [];
+
+    
+    //this.data.forEach((d, index) => {
+    //alert(d.id, index);
+   // })
+
+   this.data.forEach(d => {
+        Object.entries(d).forEach(([key, value]) => {
+            
+
+            if(key == 'images'){
+              value.forEach(imgUrl => {
+                carouselSlides.push(imgUrl);
+              });
+            }
+        });
+        console.log('-------------------');
+    });
+
+    return carouselSlides;
+  },
+
+  putImagesInCarousel(){
+
+    //this.loadImagesToCarousel().forEach(element => {
+   // });
+
+    //v-for="(slide, index) in loadImagesToCarousel()" :key="index"
+   // this.loadImagesToCarousel().forEach(slide => {
+     //   Object.entries(slide).forEach(([value]) => {
+       //     
+         // alert();
+       // });
+       // console.log('-------------------');
+   // });
+
+   for (let index = 0; index < this.loadImagesToCarousel().length; index++) {
+        let carouselDiv = document.getElementsByClassName('fullImageView');
+
+        this.imgSrc = this.loadImagesToCarousel[index];
+
+        alert(this.imgScr);
+
+        carouselDiv.innerHTML += '<img src="{imgSrc}" alt="bathroom 3-4" class="placePreviewBathroom34" />'
+   }
   }
-  */
+}
+
 };
 
 

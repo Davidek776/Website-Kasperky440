@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-    /*
+    
     .imgSlide-enter-active,
 .imgSlide-leave-active{
     transition: opacity 0.7s ease-in-out;
@@ -29,5 +29,5 @@ export default {
 .imgSlide-leave-from {
     opacity: 1;
 }
-*/
+
 </style>
