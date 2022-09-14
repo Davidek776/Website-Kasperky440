@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav
-      class="navigation p-5 2xl:pr-16 bg-transparent md:flex md:items-center md:justify-between ease-in duration-300"
+      class="navigation p-6 2xl:pr-16 bg-transparent md:flex md:items-center md:justify-between ease-in duration-300"
     >
       <div class="relative flex justify-between items-center">
         <span class="text-2xl font-[Helvetica] cursor-pointer">
