@@ -126,6 +126,7 @@
 }
 
 .fullImageView {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -215,4 +216,19 @@
 
 .pagination .active {
   background-color: #1E293B;
+}
+
+.exitButton {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.exitButton i {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
 }/*# sourceMappingURL=style-the-house-simon.css.map */

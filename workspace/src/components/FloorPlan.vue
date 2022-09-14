@@ -38,13 +38,13 @@
           src = '../assets/images/shared-spaces/kitchen1.png'
           alt="kitchen"
           class="placePreviewKitchen"
-          @click="fullView()"
+          @click="fullView(0)"
         />
         <img
           src="../assets/images/shared-spaces/dining-area1.png"
           alt="dining area"
           class="placePreviewDiningArea"
-          @click="putImagesInCarousel()"
+          @click="fullView(1)"
         />
       </div>
 
@@ -94,8 +94,8 @@
         />
       </div>
     </div>
-    <!--
-    <div name="fullImageViewGallery" class="fullImageView flex justify-center hidden">
+    
+    <div name="fullImageViewGallery" class="fullImageView hidden">
       <ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">
         <ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
           <div v-show="currentSlide === index + 1" class="slide-info">
@@ -103,25 +103,29 @@
           </div>
         </ImgSlide>
       </ImgCarousel>
+       <!--Exit Button-->
+      <div class="exitButton">
+        <span @click="exitImgGallery()">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
     </div>
-    -->
-    <div class="fullImageView flex justify-center hidden">
-
-    </div>
-    
   </body>
 </template>
 
 <script>
-//import ImgCarousel from "../components/Carousel.vue";
-//import ImgSlide from "../components/Slide.vue";
+import ImgCarousel from "../components/Carousel.vue";
+import ImgSlide from "../components/Slide.vue";
 import carouselData from "../data/carouselData.json";
+
+let imgPreviewIndex;
+const fullImageViewGallery = document.getElementsByClassName('fullImageView');
 
 export default {
   name: 'FloorPlan',
   components: {
-    //ImgCarousel,
-    //ImgSlide
+    ImgCarousel,
+    ImgSlide
   },
 
   setup(){
@@ -137,8 +141,10 @@ export default {
   },
 
   methods: {
-  fullView(){
-    const fullImageViewGallery = document.getElementsByClassName('fullImageView');
+  fullView(imgIndex){
+    this.refreshImgPreviewIndex(imgIndex);
+
+    //const fullImageViewGallery = document.getElementsByClassName('fullImageView');
 
     fullImageViewGallery[0].style.display = "flex";
     document.body.style.overflow = "hidden";
@@ -149,20 +155,28 @@ export default {
   loadImagesToCarousel(){
     const carouselSlides = [];
 
+    console.log(imgPreviewIndex);
     
     //this.data.forEach((d, index) => {
     //alert(d.id, index);
    // })
 
    this.data.forEach(d => {
-        Object.entries(d).forEach(([key, value]) => {
-            
+        Object.entries(d).forEach(([key]) => {
 
-            if(key == 'images'){
-              value.forEach(imgUrl => {
+          
+                 
+          if(key == 'id' && d.id == imgPreviewIndex){
+            let subArr = [];
+            d.images.forEach(imgUrl => {
+              subArr.push(imgUrl);
+            });                     
+            
+              subArr.forEach(imgUrl => {
+                if(!carouselSlides.includes(imgUrl))
                 carouselSlides.push(imgUrl);
-              });
-            }
+              }); 
+          }       
         });
         console.log('-------------------');
     });
@@ -170,7 +184,19 @@ export default {
     return carouselSlides;
   },
 
+  refreshImgPreviewIndex(index){
+    imgPreviewIndex = index;
+  },
+
+  exitImgGallery(){
+    
+    fullImageViewGallery[0].style.display = "none";
+    document.body.style.overflow = "visible";
+  }
+
+  /*
   putImagesInCarousel(){
+    this.loadImagesToCarousel();
 
     //this.loadImagesToCarousel().forEach(element => {
    // });
@@ -185,15 +211,27 @@ export default {
    // });
 
    for (let index = 0; index < this.loadImagesToCarousel().length; index++) {
-        let carouselDiv = document.getElementsByClassName('fullImageView');
+        let carouselDiv = document.getElementById('carouselDiv');
+        let imgValues = this.loadImagesToCarousel();        
 
-        this.imgSrc = this.loadImagesToCarousel[index];
+        this.imgSrc = imgValues[index];  
+        
+        alert(carouselDiv);
 
-        alert(this.imgScr);
-
-        carouselDiv.innerHTML += '<img src="{imgSrc}" alt="bathroom 3-4" class="placePreviewBathroom34" />'
+        carouselDiv.innerHTML =  
+        '<div name="fullImageViewGallery" class="fullImageView flex justify-center">' +
+         '<ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">' +
+            '<ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">' +
+              '<div v-show="currentSlide === index + 1" class="slide-info">' +
+                '<img :src="require("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg")" alt="" />' +
+              '</div>' +
+            '</ImgSlide>' +
+          '</ImgCarousel>' +
+        '</div>;'
    }
+   
   }
+  */
 }
 
 };
