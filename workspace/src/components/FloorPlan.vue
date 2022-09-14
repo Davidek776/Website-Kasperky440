@@ -61,34 +61,34 @@
 
         <!--Area Images-->
         <img
-          src="../assets/images/rooms/room1.jpg"
+          src="../assets/images/rooms/room1.png"
           alt="room 1"
           class="placePreviewRoom1"
         />
         <img
-          src="../assets/images/rooms/room1_bathroom.jpg"
+          src="../assets/images/rooms/room1_bathroom.png"
           alt="bathroom 1"
           class="placePreviewBathroom1"
         />
 
         <img
-          src="../assets/images/rooms/room3.jpg"
+          src="../assets/images/rooms/room3.png"
           alt="room 3"
           class="placePreviewRoom3"
         />
 
         <img
-          src="../assets/images/rooms/room4.jpg"
+          src="../assets/images/rooms/room4.png"
           alt="room 4"
           class="placePreviewRoom4"
         />
         <img
-          src="../assets/images/rooms/room3_4_bathroom.jpg"
+          src="../assets/images/rooms/room3_4_bathroom.png"
           alt="bathroom 3-4"
           class="placePreviewBathroom34"
         />
         <img
-          src="../assets/images/rooms/room3_4_toilet.jpg"
+          src="../assets/images/rooms/room3_4_toilet.png"
           alt="toilet 3-4"
           class="placePreviewToilet34"
         />
