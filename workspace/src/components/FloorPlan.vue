@@ -1,6 +1,6 @@
 <template>
-<<<<<<< HEAD
   <!-- THE HOUSE - SIMON-->
+
   <div>
     <div class="bg-red-500">
       <!-- <img
@@ -9,46 +9,35 @@
           class="my-8"
         /> -->
     </div>
-=======
-  <body class="">
+
     <!-- THE HOUSE - SIMON-->
 
-  
-  <div>
-      <div class=" flex justify-center">
+    <div>
+      <div class="flex justify-center">
         <img
           src="../assets/images/icons/ScrollButton.svg"
           alt="Scroll Button"
-          class=" mt-24"
-          />
-        
+          class="mt-24"
+        />
       </div>
->>>>>>> da380c695229b959363771797e9ec2eb4d8126f8
 
-    <div class="mainHeading flex justify-center">
-      <h1><b>THE</b> HOUSE</h1>
-    </div>
+      <div class="mainHeading flex justify-center">
+        <h1><b>THE</b> HOUSE</h1>
+      </div>
 
-    <div class="flex justify-center floorHeader">
-      <h2><b>FLOOR 1</b></h2>
-    </div>
-    <div class="floorImage flex justify-center">
-      <!--Floor Plan Image-->
-      <img
-        src="../assets/images/FloorPlans/floor_1.png"
-        alt="Floor 1"
-        class="w-4/5 h-auto"
-      />
+      <div class="flex justify-center floorHeader">
+        <h2><b>FLOOR 1</b></h2>
+      </div>
+      <div class="floorImage flex justify-center">
+        <!--Floor Plan Image-->
+        <img
+          src="../assets/images/FloorPlans/floor_1.png"
+          alt="Floor 1"
+          class="w-4/5 h-auto"
+        />
 
-<<<<<<< HEAD
-      <!--Area Images-->
-      <!-- <img
-          src="..assets/images/Shared spaces/kitchen1.JPG"
-=======
-        <!--Area Images-->
-        <img 
+        <img
           src="../assets/images/shared-spaces/kitchen1.png"
->>>>>>> da380c695229b959363771797e9ec2eb4d8126f8
           alt="kitchen"
           class="placePreviewKitchen"
           onclick="FullView(this.src)"
@@ -57,21 +46,21 @@
           src="../assets/images/shared-spaces/dining-area1.png"
           alt="dining area"
           class="placePreviewDiningArea"
-<<<<<<< HEAD
-        /> -->
-    </div>
+        />
+        -->
+      </div>
 
-    <div class="flex justify-center floorHeader">
-      <h2><b>FLOOR 2</b></h2>
-    </div>
-    <div class="floorImage flex justify-center">
-      <!--Floor Plan Image-->
-      <img
-        src="../assets/images/FloorPlans/floor_1.png"
-        alt="Floor 2"
-        class="w-4/5 h-auto"
-      />
-=======
+      <div class="flex justify-center floorHeader">
+        <h2><b>FLOOR 2</b></h2>
+      </div>
+      <div class="floorImage flex justify-center">
+        <!--Floor Plan Image-->
+        <img
+          src="../assets/images/FloorPlans/floor_1.png"
+          alt="Floor 2"
+          class="w-4/5 h-auto"
+        />
+
         />
       </div>
 
@@ -85,61 +74,57 @@
           alt="Floor 2"
           class="w-4/5 h-auto"
         />
->>>>>>> da380c695229b959363771797e9ec2eb4d8126f8
 
-      <!--Area Images-->
-      <img
-        src="../assets/images/rooms/room1.jpg"
-        alt="room 1"
-        class="placePreviewRoom1"
-      />
-      <img
-        src="../assets/images/rooms/room1_bathroom.jpg"
-        alt="bathroom 1"
-        class="placePreviewBathroom1"
-      />
+        <!--Area Images-->
+        <img
+          src="../assets/images/rooms/room1.jpg"
+          alt="room 1"
+          class="placePreviewRoom1"
+        />
+        <img
+          src="../assets/images/rooms/room1_bathroom.jpg"
+          alt="bathroom 1"
+          class="placePreviewBathroom1"
+        />
 
-      <img
-        src="../assets/images/rooms/room3.jpg"
-        alt="room 3"
-        class="placePreviewRoom3"
-      />
+        <img
+          src="../assets/images/rooms/room3.jpg"
+          alt="room 3"
+          class="placePreviewRoom3"
+        />
 
-<<<<<<< HEAD
-      <img
-        src="../assets/images/rooms/room4.jpg"
-        alt="room 4"
-        class="placePreviewRoom4"
-      />
-      <img
-        src="../assets/images/rooms/room3_4_toilet.jpg"
-        alt="bathroom 3-4"
-        class="placePreviewBathroom34"
-      />
-    </div>
-  </div>
-  <img src="../assets/floorPlanImg/floor_1.png" alt="" />
-=======
         <img
           src="../assets/images/rooms/room4.jpg"
           alt="room 4"
           class="placePreviewRoom4"
         />
         <img
-          src="../assets/images/rooms/room3_4_bathroom.jpg"
+          src="../assets/images/rooms/room3_4_toilet.jpg"
           alt="bathroom 3-4"
           class="placePreviewBathroom34"
         />
-        <img
-          src="../assets/images/rooms/room3_4_toilet.jpg"
-          alt="toilet 3-4"
-          class="placePreviewToilet34"
-        />
       </div>
     </div>
-    <div class="fullImageView"></div>
-  </body>
->>>>>>> da380c695229b959363771797e9ec2eb4d8126f8
+    <img src="../assets/floorPlanImg/floor_1.png" alt="" />
+
+    <img
+      src="../assets/images/rooms/room4.jpg"
+      alt="room 4"
+      class="placePreviewRoom4"
+    />
+    <img
+      src="../assets/images/rooms/room3_4_bathroom.jpg"
+      alt="bathroom 3-4"
+      class="placePreviewBathroom34"
+    />
+    <img
+      src="../assets/images/rooms/room3_4_toilet.jpg"
+      alt="toilet 3-4"
+      class="placePreviewToilet34"
+    />
+  </div>
+
+  <div class="fullImageView"></div>
 </template>
 
 <script>
@@ -149,16 +134,14 @@ export default {
   },
 
   methods: {
-    FullView(ImgLink){
+    FullView(ImgLink) {
       alert(ImgLink);
-    }
-  }
+    },
+  },
 };
-
-
 </script>
 
 <style scoped>
 @import "../assets/floorPlanStyles/style.css";
-@import "../assets/floorPlanStyles/output.css";
+/* @import "../assets/floorPlanStyles/output.css"; */
 </style>

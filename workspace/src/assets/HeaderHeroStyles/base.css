@@ -71,6 +71,7 @@ header {
   font-size: 5em;
   padding-left: 0;
   padding: 0;
+  z-index: 500;
 }
 .quote span {
   padding: 0;
@@ -411,6 +412,9 @@ main {
   }
   .pre-content {
     height: 104vw;
+  }
+
+  .drop-down li {
   }
   /* .drop-down {
     width: 100%;

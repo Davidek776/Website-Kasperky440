@@ -8,39 +8,49 @@
           Kašperky 440
         </span>
 
-        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <span
+          class="text-3xl cursor-pointer mx-2 md:hidden block"
+          v-on:click="Menu(this)"
+        >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
           <img
             src="../assets/images/icons/bars-solid.svg"
             name="menu"
             width="50"
-            @click="Menu(this)"
             alt=""
           />
         </span>
       </div>
 
       <ul
-        class="drop-down md:flex md:items-center md:static absolute bg-white bg-opacity-70 md:bg-transparent sm:w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+        class="drop-down md:flex md:items-center md:static absolute bg-white bg-opacity-70 md:bg-transparent w-full sm:w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 sm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+        id="dropId"
       >
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500">Domů</a>
+        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
+          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+            >Domů</a
+          >
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+        <!-- hover:color-stone-50 transition-all ease-in duration-300 -->
+        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
+          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
             >Ubytování</a
           >
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500">O Nás</a>
+        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
+          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+            >O Nás</a
+          >
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
+          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
             >Recenze</a
           >
         </li>
-        <li class="mx-4 mr-0 my-6 md:my-0 mb-8">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+        <li
+          class="mx-4 mr-0 my-6 md:my-0 mb-8 transition-all ease-in duration-300"
+        >
+          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
             >Kontakt</a
           >
         </li>
@@ -52,15 +62,15 @@
           Rezervovat
         </button>
 
-        <ul class="speach md:flex flex-col">
-          <button>
+        <ul class="speach flex flex-row md:flex-col">
+          <button class="duration-300">
             <img
               src="../assets/images/icons/czech-republic.png"
               alt=""
               class="w-8"
             />
           </button>
-          <button>
+          <button class="duration-300">
             <img
               src="../assets/images/icons/united-kingdom.png"
               alt=""
@@ -82,8 +92,8 @@
   </header>
 
   <div class="pre-content">
-    <div class="left">
-      <p>
+    <div class="left ease-in duration-300">
+      <p class="ease-in duration-300">
         Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a bezplatné
         Wi-Fi.
       </p>
@@ -119,6 +129,17 @@ export default {
   setup() {
     return {};
   },
+  data() {
+    return {
+      state: "shown",
+    };
+  },
+  created() {
+    window.addEventListener("resize", this.myEventHandler);
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.myEventHandler);
+  },
   methods: {
     Menu(e) {
       let list = document.querySelector("ul");
@@ -130,20 +151,52 @@ export default {
           list.classList.add("top-[100px]"),
           list.classList.add("opacity-100"),
           nav.classList.remove("bg-transparent"),
-          nav.classList.add("bg-white"))
+          nav.classList.add("bg-white"),
+          this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
           list.classList.remove("top-[100px]"),
           list.classList.remove("opacity-100"),
           nav.classList.add("bg-transparent"),
-          nav.classList.remove("bg-white"));
+          nav.classList.remove("bg-white"),
+          this.controlTxt());
+
+      console.log(nav.classList);
+    },
+    myEventHandler(e) {
+      let list = document.querySelector("ul");
+      let nav = document.querySelector("nav");
+      if (e.target.innerWidth > 950) {
+        list.classList.remove("top-[100px]");
+        list.classList.remove("opacity-100");
+        nav.classList.add("bg-transparent");
+        nav.classList.remove("bg-white");
+      }
+    },
+    controlTxt() {
+      let nav = document.querySelector("nav");
+      let textToRemove = document.querySelector(".pre-content .left>p");
+      if (window.innerWidth < 620) {
+        console.log(textToRemove.classList);
+        if (nav.classList.contains("bg-white")) {
+          textToRemove.classList.add("opacity-0");
+          console.log("show");
+          this.state = "shown";
+        } else {
+          // textToRemove.classList.add("opacity-100");
+          textToRemove.classList.remove("opacity-0");
+          this.state = "hidden";
+          console.log("hide");
+        }
+      }
     },
   },
 };
 </script>
 
-<style>
+<style scoped>
 @import "../assets/HeaderHeroStyles/base.css";
+@import "../assets/HeaderHeroStyles/dropDownStyle.css";
 .navigation {
   /* z-index: 800; */
 }
