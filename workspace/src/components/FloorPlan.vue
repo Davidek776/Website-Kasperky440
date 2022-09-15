@@ -154,8 +154,6 @@ export default {
   //load images to carousel -- import from json file?
   loadImagesToCarousel(){
     const carouselSlides = [];
-
-    console.log(imgPreviewIndex);
     
     //this.data.forEach((d, index) => {
     //alert(d.id, index);

@@ -5,10 +5,10 @@
     <!--Navigation-->
     <div v-if="navEnabled" class="navigate">
         <div class="toggle-page left">
-            <i @click="prevSlide" class="fa-solid fa-chevron-left"></i>
+            <i @click="prevSlide()" class="fa-solid fa-chevron-left"></i>
         </div>
         <div class="toggle-page right">
-            <i @click="nextSlide" class="fa-solid fa-chevron-right"></i>
+            <i @click="nextSlide()" class="fa-solid fa-chevron-right"></i>
         </div>
     </div>
 
@@ -27,6 +27,9 @@
 <script>
 import {ref, onMounted} from "vue";
 
+const currentSlide = ref(1);
+const getSlideCount = ref(null);
+
 export default {
     name: 'ImgCarousel',
 
@@ -38,8 +41,7 @@ export default {
 ],
 
     setup(props){
-        const currentSlide = ref(1);
-        const getSlideCount = ref(null);
+        
         const autoPlayEnabled = ref(
             props.startAutoPlay === undefined ? true : props.startAutoPlay
         );
@@ -53,53 +55,63 @@ export default {
             props.navigation === undefined ? true : props.navigation
         );
 
-        // next slide
-        const nextSlide = () => {
+
+        if(autoPlayEnabled.value){
+            this.autoPlay();
+        }
+        
+
+        onMounted(()=>{
+            getSlideCount.value = document.querySelectorAll(".slide-info").length;
+            console.log("Pocet slidu v Carousel: " + getSlideCount.value);
+        })
+
+        return {
+            currentSlide,  
+            getSlideCount, 
+            paginationEnabled,
+            navEnabled,
+            timeoutDuration
+        };
+    },
+
+    methods: {
+
+        nextSlide(){
+            console.log("Slide cislo: " + currentSlide.value + ", Pocet slidu: " + getSlideCount.value);
             if (currentSlide.value === getSlideCount.value){
-                currentSlide.value = 1;
+                //currentSlide.value = getSlideCount.value;
+                currentSlide.value = getSlideCount.value;
                 return;
             }
             currentSlide.value += 1;
-        };
 
-        // previous slide
-        const prevSlide = () => {
+            console.log("Jsem na slidu: " + currentSlide.value);
+
+            return currentSlide;
+        },
+
+        prevSlide(){
             if(currentSlide.value ===1){
                 currentSlide.value = 1;
                 return;
             }
             currentSlide.value -= 1;
-        };
 
-        //go to slide
-        const goToSlide = (index) => {
+            return currentSlide;
+        },
+
+        goToSlide(index){
             currentSlide.value = index + 1;
-        };
 
-        //autoplay
-        const autoPlay = () => {
+            return currentSlide.value;
+        },
+
+        autoPlay(){
             setInterval(() => {
-                nextSlide()
-            }, timeoutDuration.value)
-        }
-
-        if(autoPlayEnabled.value){
-            autoPlay();
-        }
-
-        onMounted(()=>{
-            getSlideCount.value = document.querySelectorAll(".slide-info").length;
-        })
-
-        return {
-            currentSlide, 
-            nextSlide, 
-            prevSlide, 
-            getSlideCount, 
-            goToSlide,
-            paginationEnabled,
-            navEnabled,
-        };
+                this.nextSlide();
+            }, this.timeoutDuration.value)
+        },
     },
 }
 </script>
