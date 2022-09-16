@@ -10,10 +10,12 @@
   "dependencies": {
     "autoprefixer": "^10",
     "core-js": "^3.8.3",
+    "gsap": "^3.11.1",
     "postcss": "^8",
+    "scrollmagic": "^2.0.8",
     "tailwindcss": "^3",
     "vue": "^3.2.13",
-    "vue-scroll": "^2.1.13"
+    "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

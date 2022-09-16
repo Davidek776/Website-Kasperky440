@@ -17,32 +17,12 @@ export default {
     FloorPlan,
     AboutUs
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  unmounted () {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
   data() {
     return {
-      elements: document.querySelectorAll('.animate')
     }
   },
   methods: {
-    handleScroll () {
-    //   console.log(this.elements);
-    //     this.elements.forEach(element => {
-
-    //     if(! element.classList.contains('animate-element')) {
-    //       console.log(element + ' ' +  element.offsetTop);
-
-    //         if(window.scrollY + window.innerHeight > element.offsetTop + (window.innerHeight * 0.2)) {
-    //             element.classList.add('animate-element')
-    //         }
-    //     }
-
-    // })
-    },
+    
   }   
 };
 </script>
