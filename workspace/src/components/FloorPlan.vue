@@ -64,39 +64,45 @@
           src="../assets/images/rooms/room1.png"
           alt="room 1"
           class="placePreviewRoom1"
+          @click="fullView(2)"
         />
         <img
-          src="../assets/images/rooms/room1_bathroom.png"
+          src="../assets/images/rooms/bathroom1.png"
           alt="bathroom 1"
           class="placePreviewBathroom1"
+          @click="fullView(3)"
         />
 
         <img
           src="../assets/images/rooms/room3.png"
           alt="room 3"
           class="placePreviewRoom3"
+          @click="fullView(4)"
         />
 
         <img
           src="../assets/images/rooms/room4.png"
           alt="room 4"
           class="placePreviewRoom4"
+          @click="fullView(5)"
         />
         <img
-          src="../assets/images/rooms/room3_4_bathroom.png"
+          src="../assets/images/rooms/bathroom34.png"
           alt="bathroom 3-4"
           class="placePreviewBathroom34"
+          @click="fullView(6)"
         />
         <img
-          src="../assets/images/rooms/room3_4_toilet.png"
+          src="../assets/images/rooms/toilet34.png"
           alt="toilet 3-4"
           class="placePreviewToilet34"
+          @click="fullView(7)"
         />
       </div>
     </div>
-    
+     
     <div name="fullImageViewGallery" class="fullImageView hidden">
-      <ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">
+      <ImgCarousel :startAutoPlay="false" :slideCount="slideCount" :currentSlideResetValue="currentSlideResetValue" class="imgCarousel" v-slot="{currentSlide}">
         <ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
           <div v-show="currentSlide === index + 1" class="slide-info">
             <img :src="require('../assets/images/' + slide + '.png')" alt="" />
@@ -105,7 +111,7 @@
       </ImgCarousel>
        <!--Exit Button-->
       <div class="exitButton">
-        <span @click="exitImgGallery()">
+        <span @click="exitImgGallery(), updatecurrentSlideResetValue()">
             <i class="fa-solid fa-xmark"></i>
         </span>
       </div>
@@ -130,19 +136,21 @@ export default {
 
   setup(){
    
-  },
+  }, 
 
   data() {
     return {
       data: carouselData,
-      requireImg: "",
-      imgSrc: "",
+      slideCount: 0,
+      currentSlideResetValue: 1
     };
   },
 
   methods: {
   fullView(imgIndex){
     this.refreshImgPreviewIndex(imgIndex);
+    this.loadImagesToCarousel();
+    this.currentSlideResetValue = 0;
 
     //const fullImageViewGallery = document.getElementsByClassName('fullImageView');
 
@@ -179,6 +187,7 @@ export default {
         console.log('-------------------');
     });
 
+    this.slideCount = carouselSlides.length;
     return carouselSlides;
   },
 
@@ -190,6 +199,16 @@ export default {
     
     fullImageViewGallery[0].style.display = "none";
     document.body.style.overflow = "visible";
+  },
+
+  getSlideCount(){
+    return this.slideCount;
+  },
+
+  updatecurrentSlideResetValue(){
+     this.currentSlideResetValue = 1;
+    //currentSlideResetValue = 1;
+    return this.currentSlideResetValue;
   }
 
   /*

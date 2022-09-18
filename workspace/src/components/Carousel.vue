@@ -2,6 +2,7 @@
   <div class="imgCarousel">
     <slot :currentSlide="currentSlide" /> 
 
+
     <!--Navigation-->
     <div v-if="navEnabled" class="navigate">
         <div class="toggle-page left">
@@ -16,7 +17,7 @@
     <div v-if="paginationEnabled" class="pagination">
         <span 
         @click="goToSlide(index)"
-        v-for="(slide, index) in getSlideCount" 
+        v-for="(slide, index) in slideCount" 
         :key="index" 
         :class="{active : index + 1 === currentSlide}">
         </span>
@@ -24,11 +25,11 @@
   </div>
 </template>
 
-<script>
+<script defer>
 import {ref, onMounted} from "vue";
 
-const currentSlide = ref(1);
-const getSlideCount = ref(null);
+
+
 
 export default {
     name: 'ImgCarousel',
@@ -37,8 +38,16 @@ export default {
         "startAutoPlay", 
         "timeout",
         "navigation",
-        "pagination"
+        "pagination",
+        "slideCount",
+        "currentSlideResetValue"
 ],
+
+data() {
+    return {
+      currentSlide: this.currentSlideResetValue
+    };
+  },
 
     setup(props){
         
@@ -54,57 +63,54 @@ export default {
         const navEnabled = ref(
             props.navigation === undefined ? true : props.navigation
         );
+        
+        
 
 
         if(autoPlayEnabled.value){
             this.autoPlay();
         }
         
-
         onMounted(()=>{
-            getSlideCount.value = document.querySelectorAll(".slide-info").length;
-            console.log("Pocet slidu v Carousel: " + getSlideCount.value);
         })
 
-        return {
-            currentSlide,  
-            getSlideCount, 
+        return { 
             paginationEnabled,
             navEnabled,
-            timeoutDuration
+            timeoutDuration,
         };
     },
 
     methods: {
 
         nextSlide(){
-            console.log("Slide cislo: " + currentSlide.value + ", Pocet slidu: " + getSlideCount.value);
-            if (currentSlide.value === getSlideCount.value){
-                //currentSlide.value = getSlideCount.value;
-                currentSlide.value = getSlideCount.value;
+            if (this.currentSlide === this.slideCount){
+                this.currentSlide = this.slideCount;
                 return;
             }
-            currentSlide.value += 1;
+            this.currentSlide += 1;
 
-            console.log("Jsem na slidu: " + currentSlide.value);
+            console.log("Jsem na slidu: " + this.currentSlide);
 
-            return currentSlide;
+            return this.currentSlide;
         },
 
         prevSlide(){
-            if(currentSlide.value ===1){
-                currentSlide.value = 1;
+            if(this.currentSlide ===1){
+                this.currentSlide = 1;
                 return;
             }
-            currentSlide.value -= 1;
+            this.currentSlide -= 1;
 
-            return currentSlide;
+            console.log("Jsem na slidu: " + this.currentSlide);
+
+            return this.currentSlide;
         },
 
         goToSlide(index){
-            currentSlide.value = index + 1;
+            this.currentSlide = index + 1;
 
-            return currentSlide.value;
+            return this.currentSlide;
         },
 
         autoPlay(){
