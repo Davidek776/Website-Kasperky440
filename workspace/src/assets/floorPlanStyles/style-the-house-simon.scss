@@ -29,6 +29,8 @@ $textSize2: 5vh;
 .floorImage{
     @include margins();
     position: relative;
+    max-width: 100%;
+    max-height: 100%
 }
 
 .mainHeading{
@@ -47,6 +49,18 @@ $textSize2: 5vh;
     left: 29%;
 }
 
+.placePreviewFrontHall{
+    @include placePreviewPreset(5vw);
+    top: 10.5%;
+    left: 40%
+}
+
+.placePreviewStairs{
+    @include placePreviewPreset(3.5vw);
+    top: 6%;
+    left: 55.5%;
+}
+
 .placePreviewRoom1{
     @include placePreviewPreset(7vw);
     top: 64%;
@@ -57,6 +71,18 @@ $textSize2: 5vh;
     @include placePreviewPreset(4vw);
     top: 31%;
     left: 78%;
+}
+
+.placePreviewRoom2{
+    @include placePreviewPreset(8vw);
+    top: 69%;
+    left: 48.5%;
+}
+
+.placePreviewBathroom2{
+    @include placePreviewPreset(5vw);
+    top: 72%;
+    left: 65.5%;
 }
 
 .placePreviewRoom3{
@@ -105,7 +131,7 @@ $textSize2: 5vh;
 .imgCarousel{
     position: relative;
     max-height: 80vh;
-    max-width: 80vh;
+    max-width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,9 +145,8 @@ $textSize2: 5vh;
 }
 
 .slide-info img{
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;   
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 .navigate{

@@ -13,6 +13,8 @@
   margin-top: 15vh;
   margin-bottom: 15vh;
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .mainHeading {
@@ -47,6 +49,32 @@
   filter: brightness(70%);
 }
 
+.placePreviewFrontHall {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  top: 10.5%;
+  left: 40%;
+}
+.placePreviewFrontHall:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewStairs {
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  top: 6%;
+  left: 55.5%;
+}
+.placePreviewStairs:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
 .placePreviewRoom1 {
   position: absolute;
   width: 7vw;
@@ -69,6 +97,32 @@
   left: 78%;
 }
 .placePreviewBathroom1:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewRoom2 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  top: 69%;
+  left: 48.5%;
+}
+.placePreviewRoom2:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.placePreviewBathroom2 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  top: 72%;
+  left: 65.5%;
+}
+.placePreviewBathroom2:hover {
   cursor: pointer;
   filter: brightness(70%);
 }
@@ -136,6 +190,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 
 #fullImage {
@@ -145,7 +200,7 @@
 .imgCarousel {
   position: relative;
   max-height: 80vh;
-  max-width: 80vh;
+  max-width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,9 +214,8 @@
 }
 
 .slide-info img {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .navigate {

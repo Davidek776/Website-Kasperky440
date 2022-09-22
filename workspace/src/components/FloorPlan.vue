@@ -46,6 +46,18 @@
           class="placePreviewDiningArea"
           @click="fullView(1)"
         />
+        <img
+          src="../assets/images/shared-spaces/front-hall.png"
+          alt="front hall"
+          class="placePreviewFrontHall"
+          @click="fullView(8)"
+        />
+        <img
+          src="../assets/images/shared-spaces/stairs1.png"
+          alt="stairs"
+          class="placePreviewStairs"
+          @click="fullView(9)"
+        />
       </div>
 
       <div class="flex justify-center floorHeader">
@@ -71,6 +83,20 @@
           alt="bathroom 1"
           class="placePreviewBathroom1"
           @click="fullView(3)"
+        />
+
+        <img
+          src="../assets/images/rooms/room2_1.png"
+          alt="room 2"
+          class="placePreviewRoom2"
+          @click="fullView(10)"
+        />
+
+        <img
+          src="../assets/images/rooms/bathroom2_2.png"
+          alt="bathroom 2"
+          class="placePreviewBathroom2"
+          @click="fullView(11)"
         />
 
         <img
@@ -150,7 +176,7 @@ export default {
   fullView(imgIndex){
     this.refreshImgPreviewIndex(imgIndex);
     this.loadImagesToCarousel();
-    this.currentSlideResetValue = 0;
+    this.currentSlideResetValue = 1;
 
     //const fullImageViewGallery = document.getElementsByClassName('fullImageView');
 
@@ -206,7 +232,7 @@ export default {
   },
 
   updatecurrentSlideResetValue(){
-     this.currentSlideResetValue = 1;
+     this.currentSlideResetValue = 0;
     //currentSlideResetValue = 1;
     return this.currentSlideResetValue;
   }

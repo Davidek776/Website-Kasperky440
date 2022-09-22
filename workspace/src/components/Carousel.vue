@@ -1,6 +1,6 @@
 <template>
   <div class="imgCarousel">
-    <slot :currentSlide="currentSlide" /> 
+    <slot :currentSlide="currentSlide"/> 
 
 
     <!--Navigation-->
@@ -47,6 +47,12 @@ data() {
     return {
       currentSlide: this.currentSlideResetValue
     };
+  },
+
+  watch:{
+    currentSlideResetValue(newValue){
+        this.currentSlide = newValue;
+    }
   },
 
     setup(props){
