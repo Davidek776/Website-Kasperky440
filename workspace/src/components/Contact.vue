@@ -27,7 +27,7 @@
 
 
     <div class="w-full flex justify-center">
-      <a href="#" class="uppercase text-white text-lg px-12 py-4 bg-[#1E293B] rounded-lg mx-auto relative">
+      <a href="#" class="uppercase text-white text-lg px-12 py-4 bg-slate-800 rounded-lg mx-auto relative hover:bg-slate-700 transition-all">
         Book now
         <img class="absolute -z-10 left-52 bottom-4 opacity-0 sm:opacity-100" src="../assets/images/Contact/Arrow.png" alt="Arrow"/>
       </a>
