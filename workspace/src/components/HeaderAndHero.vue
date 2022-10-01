@@ -2,11 +2,12 @@
   <header>
     <nav
       class="navigation p-6 2xl:pr-16 bg-transparent md:flex md:items-center md:justify-between ease-in duration-300"
+      id="logo-arent"
     >
       <div class="relative flex justify-between items-center">
-        <span class="text-2xl font-[Helvetica] cursor-pointer">
+        <h1 class="text-2xl font-[Helvetica] cursor-pointer" id="logo">
           Kašperky 440
-        </span>
+        </h1>
 
         <span
           class="text-3xl cursor-pointer mx-2 md:hidden block"
