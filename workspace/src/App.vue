@@ -16,6 +16,7 @@ import Contact from "@/components/Contact";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 import HeaderAndHero from "@/components/HeaderAndHero.vue";
+
 // import HeaderAndHero from "@/components/HeaderAndHero.vue";
 
 export default {

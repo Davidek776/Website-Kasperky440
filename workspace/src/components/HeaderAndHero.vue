@@ -1,4 +1,6 @@
 <template>
+  <!-- <PureCss></PureCss> -->
+
   <header>
     <nav
       class="navigation p-6 2xl:pr-16 bg-transparent md:flex md:items-center md:justify-between ease-in duration-300"
@@ -93,17 +95,17 @@
   </header>
 
   <div class="pre-content">
-    <div class="left ease-in duration-300">
-      <p class="ease-in duration-300">
-        Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a bezplatné
-        Wi-Fi.
-      </p>
+    <div class="description">
+      <div class="left ease-in duration-300">
+        <p class="ease-in duration-300">
+          Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a
+          bezplatné Wi-Fi.
+        </p>
+      </div>
+      <div class="right">
+        <p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
+      </div>
     </div>
-    <div class="right">
-      <p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
-    </div>
-  </div>
-  <div class="content">
     <div class="features">
       <div class="first">
         <img src="../assets/images/icons/parking2.svg" alt="" />
@@ -119,13 +121,17 @@
       </div>
     </div>
   </div>
+  <!-- <div class="content">
+    
+  </div> -->
 
-  <div class="next"></div>
+  <!-- <div class="next"></div> -->
 
   <!-- </main> -->
 </template>
 
 <script>
+// import PureCss from "@/components/PureCss.vue";
 export default {
   setup() {
     return {};
@@ -140,6 +146,9 @@ export default {
   },
   unmounted() {
     window.removeEventListener("resize", this.myEventHandler);
+  },
+  components: {
+    // PureCss,
   },
   methods: {
     Menu(e) {

@@ -246,7 +246,7 @@
   width: 40px;
   height: 40px;
   background-color: #fff;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .pagination {
@@ -269,7 +269,7 @@
 }
 
 .pagination .active {
-  background-color: #1E293B;
+  background-color: #1e293b;
 }
 
 .exitButton {
@@ -287,7 +287,14 @@
   cursor: pointer;
 }
 
+.wrap {
+  /* z-index: 1000000000;
+  position: relative;
+  top: -150em;
+  background: #fff; */
+}
+
 body {
   font-family: Helvetica, Sans-Serif;
-  color: #1E293B;
-}/*# sourceMappingURL=style.css.map */
+  color: #1e293b;
+} /*# sourceMappingURL=style.css.map */

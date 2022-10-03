@@ -79,13 +79,16 @@ header {
   font-family: "Helvetica", "Arial", sans-serif;
   color: #475569;
 }
-
+.description {
+  display: flex;
+}
 .pre-content {
   background: linear-gradient(180deg, #f3efea 0%, #a6372d 100%);
   height: 80vw;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   z-index: -1;
+  margin-bottom: 15em;
 }
 .pre-content p {
   font-size: 3em;
@@ -100,21 +103,29 @@ header {
 }
 
 .content {
-  background: url("../images/icons/RedWaveNew1.png") no-repeat top center;
+  /* background: url("../images/icons/ToCsspng.png") no-repeat top center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover; */
   z-index: 200;
   width: 100%;
-  height: 100vw;
+  /* height: 100%;
   position: relative;
-  top: -45vw;
+  top: -45vw; */
 }
 
 .features {
+  background: url("../images/icons/ToCsspng.png") no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 60vw;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  position: relative;
-  top: 27vw;
+
+  /* position: relative;
+  top: 27vw; */
+  /* position: relative;
+  top: -45vw; */
 }
 .features img {
   width: 12em;
@@ -125,6 +136,7 @@ header {
   align-items: center;
   height: 17em;
   justify-content: space-between;
+  padding-top: 5em;
 }
 .features p {
   color: #fff;
@@ -325,26 +337,33 @@ main {
   .pre-content {
     height: 90vw;
     display: block;
+    margin-bottom: 100em;
+
     /* padding-left: 5%; */
   }
   #leftId {
     margin-right: 0;
   }
-  .pre-content .left {
+  /* .description {
+    display: flex;
+    flex-direction: column;
+  } */
+  .description .left {
     width: 90%;
     margin: 0 auto;
     padding: 0;
 
     padding-top: 16vw;
+    padding-left: 2%;
   }
-  .pre-content .right {
+  .description .right {
     width: 90%;
     padding-right: 0;
     margin-right: 0;
     margin: 0 auto;
   }
 
-  .pre-content p {
+  .description p {
     width: fit-content;
     /* margin: auto;
     padding: auto; */
@@ -354,14 +373,19 @@ main {
     font-size: 130%;
     display: flex;
     flex-direction: column;
+    height: 150vw;
+    justify-content: center;
 
-    position: relative;
-    top: 25em;
+    background: url("../images/icons/NEWREDMobile.png") no-repeat top center;
     /* padding-bottom: 30vw; */
   }
 
   .features div {
-    margin-bottom: 13vw;
+    margin-bottom: 10em;
+  }
+
+  .first {
+    margin-top: 15em;
   }
 
   .content {
@@ -380,6 +404,12 @@ main {
 }
 
 @media (max-width: 600px) {
+  .first {
+    margin-top: 20em;
+  }
+  .features {
+    /* height: 150vw; */
+  }
 }
 
 @media (max-width: 550px) {
@@ -390,12 +420,21 @@ main {
   .features {
     top: 20em;
   }
-  .pre-content .right {
+  .description {
+    flex-direction: column;
+  }
+  /* .description .right {
     width: 90%;
     padding-right: 0;
     margin-right: 0;
     margin: 0 auto;
     margin-bottom: 5vw;
+  } */
+
+  .description .left {
+    padding-left: 0;
+    padding-bottom: 5em;
+    padding-top: 15em;
   }
   .content {
     margin-top: 5em;
@@ -403,7 +442,7 @@ main {
 }
 
 @media (max-width: 500px) {
-  .pre-content .left {
+  .description.left {
     padding-top: 15em;
     padding-bottom: 3em;
   }
@@ -411,7 +450,7 @@ main {
     margin-top: 3em;
   }
   .pre-content {
-    height: 104vw;
+    height: 130vw;
   }
 
   .drop-down li {
@@ -419,6 +458,13 @@ main {
   /* .drop-down {
     width: 100%;
   } */
+  .features {
+    background: url("../images/icons/NEWREDSuperSmallpng.png") no-repeat top
+      center;
+    background-size: 105%;
+    margin-bottom: 20em;
+    height: 170vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -431,17 +477,16 @@ main {
   .next {
     bottom: 215em;
   }
-  .pre-content {
-    height: 104vw;
+  .features {
+    height: 185vw;
   }
 }
 
 @media (max-width: 400px) {
-  .pre-content {
-    /* margin-top: 10em; */
+  .features {
+    height: 200vw;
   }
-  .pre-content {
-    height: 120vw;
-    /* margin-bottom: 1em; the WAY */
+  .first {
+    margin-top: 7em;
   }
 }
