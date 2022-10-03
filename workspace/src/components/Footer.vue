@@ -8,7 +8,7 @@
           <h2>VIA SPOL S.r.o, Inc. All rights reserved</h2>
         </div>
         <div class="w-96 space-y-4">
-          <h1 class="text-2xl font-bold">SUPPORT</h1>
+          <h1 class="text-2xl font-bold">PODPORA</h1>
           <h2>kasperky440@gmail.com</h2>
         </div>
         <div class="w-96 space-y-4">

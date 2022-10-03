@@ -8,15 +8,11 @@
 		</div>
 
 		<div class="mainHeading flex justify-center">
-			<h1><b>THE</b> HOUSE</h1>
-		</div>
-
-		<div class="mainHeading flex justify-center">
-			<h1><b>THE</b> HOUSE</h1>
+			<h1><b>UBYTOVÁNÍ</b></h1>
 		</div>
 
 		<div class="flex justify-center floorHeader">
-			<h2><b>FLOOR 1</b></h2>
+			<h2><b>1. PATRO</b></h2>
 		</div>
 		<div class="floorImage flex justify-center">
 			<!--Floor Plan Image-->
@@ -50,7 +46,7 @@
 		</div>
 
 		<div class="flex justify-center floorHeader">
-			<h2><b>FLOOR 2</b></h2>
+			<h2><b>2. PATRO</b></h2>
 		</div>
 		<div class="floorImage flex justify-center">
 			<!--Floor Plan Image-->

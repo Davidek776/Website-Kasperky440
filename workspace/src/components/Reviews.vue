@@ -2,7 +2,7 @@
   <div class="w-full py-20 bg-[#D9D9D9] space-y-10 relative overflow-hidden"
        :class="showAllComments ? 'h-fit' : 'h-[52rem]'"
   >
-    <h1 class="text-slate-900 text-center md:text-4xl text-2xl"><span class="font-bold">PEOPLES </span> <span class="font-light">REVIEWS</span>
+    <h1 class="text-slate-900 text-center md:text-4xl text-2xl"><span class="font-bold">VAŠE </span> <span class="font-light">RECENZE</span>
     </h1>
 
     <div class="flex md:flex-row flex-col w-full mx-auto gap-5 md:gap-10 px-5 justify-center">

@@ -107,15 +107,15 @@
     <div class="features">
       <div class="first">
         <img src="../assets/images/icons/parking2.svg" alt="" />
-        <p>FREE PARKING</p>
+        <p>PARKOVÁNÍ ZDARMA</p>
       </div>
       <div class="second">
         <img src="../assets/images/icons/Family2.svg" alt="" />
-        <p>FAMILY ROOMS</p>
+        <p>RODINNÉ POKOJE</p>
       </div>
       <div class="third">
         <img src="../assets/images/icons/Wifi.svg" alt="" />
-        <p>FREE WIFI</p>
+        <p>WIFI ZDARMA</p>
       </div>
     </div>
   </div>

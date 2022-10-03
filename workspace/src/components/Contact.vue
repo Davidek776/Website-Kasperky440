@@ -1,7 +1,7 @@
 <template>
   <section class="px-2 py-10 xl:py-20 xl:px-20 space-y-64">
     <div class="space-y-24" >
-      <h1 class="text-4xl text-center">Get in touch</h1>
+      <h1 class="text-4xl text-center">KONTAKT</h1>
 
       <div class="flex items-center justify-between max-w-7xl mx-auto flex-col space-y-12 xl:space-y-0 xl:flex-row xl:space-x-12">
         <img class="rounded-lg max-w-xl w-full" src="../assets/images/Contact/map.png" alt="Map" />
@@ -12,11 +12,11 @@
               <td class="font-bold">Kasperky440@gmail.com</td>
             </tr>
             <tr>
-              <td class="uppercase pr-4 py-5">Phone:</td>
+              <td class="uppercase pr-4 py-5">Telefon:</td>
               <td class="font-bold">+420 777 021 657</td>
             </tr>
             <tr>
-              <td class="uppercase pr-4 py-5">Address:</td>
+              <td class="uppercase pr-4 py-5">Adresa:</td>
               <td class="font-bold">Kašperky 440, Kašperské Hory 341 92, Czechia</td>
             </tr>
           </table>
@@ -27,8 +27,8 @@
 
 
     <div class="w-full flex justify-center">
-      <a href="https://www.booking.com/hotel/cz/kasperky-440.cs.html" target="_blank" class="uppercase text-white text-lg px-12 py-4 bg-slate-800 rounded-lg mx-auto relative hover:bg-slate-700 transition-all">
-        Book now
+      <a href="https://www.booking.com/hotel/cz/kasperky-440.cs.html" target="_blank" class="uppercase text-white text-lg px-8 py-4 bg-slate-800 rounded-lg mx-auto relative hover:bg-slate-700 transition-all">
+        REZERVOVAT
         <img class="absolute -z-10 left-52 bottom-4 opacity-0 sm:opacity-100" src="../assets/images/Contact/Arrow.png" alt="Arrow"/>
       </a>
     </div>
