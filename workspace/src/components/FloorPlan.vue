@@ -3,7 +3,15 @@
     <!-- THE HOUSE - SIMON-->
   
   <div>
-    
+      <div class=" flex justify-center">
+        <img
+          src='../assets/images/icons/ScrollButton.svg'
+          alt="Scroll Button"
+          class=" mt-24"
+          />
+        
+      </div>
+
       <div class="mainHeading flex justify-center">
         <h1><b>THE</b> HOUSE</h1>
       </div>
