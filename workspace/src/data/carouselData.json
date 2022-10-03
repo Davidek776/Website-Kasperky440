@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "images": ["shared-spaces/kitchen1", "shared-spaces/kitchen2", "shared-spaces/kitchen3", "shared-spaces/kitchen4", "shared-spaces/kitchen5", "shared-spaces/kitchen6"]
+    },
+    {
+        "id": 1,
+        "images": ["shared-spaces/dining-area1", "shared-spaces/dining-area2", "shared-spaces/dining-area3", "shared-spaces/dining-area4", "shared-spaces/dining-area5", "shared-spaces/dining-area6"]
+    },
+    {
+        "id": 2,
+        "images": ["rooms/room1"]
+    },
+    {
+        "id": 3,
+        "images": ["rooms/bathroom1"]
+    },
+    {
+        "id": 4,
+        "images": ["rooms/room3"]
+    },
+    {
+        "id": 5,
+        "images": ["rooms/room4"]
+    },
+    {
+        "id": 6,
+        "images": ["rooms/bathroom34"]
+    },
+    {
+        "id": 7,
+        "images": ["rooms/toilet34"]
+    },
+    {
+        "id": 8,
+        "images": ["shared-spaces/front-hall", "shared-spaces/front-hall1", "shared-spaces/front-hall2"]
+    },
+    {
+        "id": 9,
+        "images": ["shared-spaces/stairs1", "shared-spaces/stairs2"]
+    },
+    {
+        "id": 10,
+        "images": ["rooms/room2_1", "rooms/room2_2"]
+    },
+    {
+        "id": 11,
+        "images": ["rooms/bathroom2_2", "rooms/bathroom2_1"]
+    }
+]
