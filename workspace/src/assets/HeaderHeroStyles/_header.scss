@@ -1,0 +1,372 @@
+// @import "_colors.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+// * {
+//   font-family: "Helvetica", "Arial", sans-serif;
+// }
+
+// .navbar {
+//   display: flex;
+//   // justify-content: space-between;
+//   align-items: baseline;
+//   font-size: 1.5em;
+//   padding-top: 2em;
+//   margin-left: 3%;
+//   margin-right: 3%;
+// }
+
+// .menu {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: flex-end;
+//   width: 100%;
+//   li {
+//     margin: 0 2%;
+//     text-align: center;
+//     white-space: nowrap;
+//     color: $header-secondary-text;
+//   }
+// }
+
+// .brandName {
+//   font-weight: 400;
+//   white-space: nowrap;
+//   // color: $dark-blue;
+// }
+// #reserveBtn1 {
+//   color: #e5f3ff;
+//   padding: 1em 3em;
+//   background: #1e293b;
+//   box-shadow: 0px 4px 8px rgba(30, 41, 59, 0.5);
+//   border-radius: 25px;
+// }
+
+// .languages img {
+//   width: 1em;
+// }
+
+// .languages {
+//   // margin-right: 1%;
+
+//   margin: auto 0;
+//   // display: flex;
+//   // align-items: center;
+// }
+
+// header {
+//   background: url("../images/Hero/finish_sky_finish_total.png") no-repeat;
+
+//   background-size: 100%;
+
+//   height: 46.5vw;
+// }
+
+// .hero_content {
+//   display: flex;
+//   // justify-content: flex-end;
+//   margin-top: 11em;
+//   z-index: -1;
+// }
+
+// .motto {
+//   display: flex;
+
+//   // margin-right: 5%;
+//   width: 30%;
+//   position: relative;
+//   left: 65%;
+//   // h1 {
+//   //   padding: 0 0.5em;
+//   // }
+// }
+
+// .quote {
+//   // line-height: 1.5em;
+
+//   font-family: "Nunito", sans-serif;
+//   color: $primary-color-1;
+//   font-size: 5em;
+//   padding-left: 0;
+//   padding: 0;
+//   span {
+//     padding: 0;
+//     font-size: 0.8em;
+//     font-family: "Helvetica", "Arial", sans-serif;
+//     color: $header-secondary-text;
+//   }
+// }
+// .pre-content {
+//   background: linear-gradient(180deg, #f3efea 0%, #a6372d 100%);
+//   height: 80vw;
+//   display: flex;
+//   justify-content: space-between;
+//   z-index: -1;
+
+//   p {
+//     font-size: 3em;
+//     // width: 25em;
+//   }
+
+//   .left {
+//     padding-left: 5%;
+//     padding-top: 22vw;
+//   }
+
+//   .right {
+//     padding-right: 5%;
+//     padding-top: 8vw;
+//   }
+// }
+
+// .content {
+//   background: url("../images/icons/RedWaveNew1.png") no-repeat top center;
+//   background-repeat: no-repeat;
+//   // background-size: 100% calc(100% - 2000px);
+//   background-size: 100%;
+//   z-index: 200;
+//   width: 100%;
+
+//   height: 140vw;
+//   // height: auto;
+//   position: relative;
+//   top: -45vw;
+//   // right: 5px;
+// }
+
+// .features {
+//   display: flex;
+//   justify-content: space-around;
+//   // margin-top: 1500px;
+//   position: relative;
+//   top: 40em;
+//   // z-index: 3;
+//   img {
+//     width: 12em;
+//   }
+//   div {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     height: 17em;
+//     justify-content: space-between;
+//   }
+//   p {
+//     color: #fff;
+//     text-align: center;
+//     margin-top: 1em;
+//     font-size: 2em;
+//   }
+// }
+// .next {
+//   height: 700px;
+
+//   position: relative;
+//   bottom: 130vw;
+//   z-index: 300;
+//   background: url("../images/icons/ScrollButton.svg") no-repeat center center;
+//   background-color: #fff;
+// }
+
+// main {
+//   height: 2500px;
+// }
+
+// .drop-down {
+//   position: absolute;
+//   top: 200px;
+// }
+
+// //media queries
+
+// @media (max-width: 2170px) {
+//   body {
+//     font-size: 90%;
+//   }
+// }
+
+// @media (max-width: 2000px) {
+//   .pre-content {
+
+//   }
+// }
+
+// @media (max-width: 1956px) {
+//   .hero_content {
+//     display: flex;
+//     // justify-content: flex-end;
+//     margin-top: 8em;
+//   }
+
+//   .motto {
+//     display: flex;
+
+//     // margin-right: 5%;
+//     width: 35%;
+//     position: relative;
+//     left: 65%;
+//   }
+// }
+
+// @media (max-width: 1800px) {
+//   .hero_content {
+//     display: flex;
+//     // justify-content: flex-end;
+//     margin-top: 8em;
+//   }
+
+//   .motto {
+//     display: flex;
+
+//     // margin-right: 5%;
+//     width: 35%;
+//     position: relative;
+//     left: 65%;
+//     padding-right: 2em;
+//   }
+// }
+
+// @media (max-width: 1760px) {
+//   body {
+//     font-size: 80%;
+//   }
+// }
+
+// @media (max-width: 1600px) {
+//   body {
+//     font-size: 80%;
+//   }
+
+//   .motto {
+//     left: 65%;
+//   }
+
+//   .quote {
+//     font-size: 4.5em;
+//   }
+// }
+
+// @media (max-width: 1450px) {
+//   .hero_content {
+//     margin-top: 8em;
+//   }
+// }
+
+// @media (max-width: 1415px) {
+//   .hero_content {
+//     margin-top: 3em;
+//     line-height: 5.5em;
+//   }
+
+//   .motto {
+//     left: 67%;
+//     width: 33%;
+//   }
+// }
+
+// @media (max-width: 1300px) {
+//   body {
+//     font-size: 70%;
+//   }
+//   .drop-down {
+//     li {
+//       margin: 0 1.5em;
+//     }
+//     li:last-child {
+//       margin-right: 0;
+//     }
+//     button {
+//       margin: 0 1em;
+//     }
+//   }
+
+//   .motto {
+//     left: 67%;
+//     width: 33%;
+//   }
+
+//   .pre-content {
+//     height: 75vw;
+//     flex-direction: column;
+
+//     .left {
+//       padding: 0;
+
+//     }
+
+//     .right {
+//      position: relative;
+//      bottom: 20em;
+
+//   }
+// }
+
+// @media (max-width: 1170px) {
+//   .navbar {
+//     padding-top: 1em;
+//   }
+//   #reserveBtn1 {
+//     padding: 0.7em 2em;
+//   }
+
+//   .motto {
+//     position: relative;
+//     bottom: 2em;
+//   }
+// }
+
+// @media (max-width: 1100px) {
+//   .drop-down {
+//     li {
+//       margin: 0 1em;
+//     }
+//     li:last-child {
+//       margin-right: 0;
+//     }
+//     button {
+//       margin: 0 1em;
+//     }
+//   }
+//   .motto {
+//     bottom: 4em;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   body {
+//     font-size: 60%;
+//   }
+//   .drop-down {
+//     li {
+//       margin: 0 0.5em;
+//     }
+//     li:last-child {
+//       margin-right: 0;
+//     }
+//     button {
+//       margin: 0 1em;
+//     }
+//   }
+// }
+
+// @media (max-width: 950px) {
+//   #reserveBtn {
+//     margin-top: 1em;
+//     margin-left: 0;
+//     margin-bottom: 1em;
+//   }
+
+//   .speach {
+//     margin-left: 0;
+//   }
+// }
+
+// @media (max-width: 900px) {
+//   .motto {
+//     bottom: 6em;
+//   }
+// }
+// @media (max-width: 800px) {
+//   .motto {
+//     display: none;
+//   }
+// }
