@@ -20,7 +20,7 @@
 			<span class="font-bold">US</span>
 		</h1>
 		<div class="row lg:mt-12 lg:mb-16 lg:flex-row-reverse">
-			<p class="animate animate-r uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:max-w-screen-md">
+			<p class="animate animate-r uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:max-w-screen-xs">
 				Nabízíme ubytování v 3 lůžkovém pokoji, 2 lůžkovém pokoji a apratmánu se 2 pokoji. Celková kapacita 10 lůžek
 				s možností přistýlky. Pokoje jsou vybaveny samostatnými koupelnami a WC.
 			</p>
@@ -50,8 +50,8 @@
 				alt="image"
 			/>
 		</div>
-		<div class="row lg:mt-20 lg:flex-row-reverse">
-			<p class="animate animate-r uppercase md:text-left md:text-lg image-text lg:w-5/12 lg:max-w-screen-sm lg:">
+		<div class="row lg:mt-20 lg:flex-row-reverse justify-end">
+			<p class="animate animate-r uppercase md:text-left md:text-lg image-text ms lg:w-5/12 lg:max-w-screen-sm">
 				V zimním období využití blízkosti sjezdovky včetně lyžařské školy. Ideální pro rodiny s menšími dětmi, které
 				se chtějí naučit lyžovat. Možnost využití večerního lyžování. Běžecké tratě za příznivých podmínek přímo v
 				Kašperských Horách a na blízkém vrchu Ždánov, jinak běžecké tratě na Horské Kvildě nebo na Zadově obojí
