@@ -1,23 +1,9 @@
 <template>
   <body class="">
     <!-- THE HOUSE - SIMON-->
-
-    <ul>
-      <li v-for="d in data" :key="d.id">
-         {{d.name}}
-       </li>
-    </ul>
   
   <div>
-      <div class=" flex justify-center">
-        <img
-          src='../assets/images/icons/ScrollButton.svg'
-          alt="Scroll Button"
-          class=" mt-24"
-          />
-        
-      </div>
-
+    
       <div class="mainHeading flex justify-center">
         <h1><b>THE</b> HOUSE</h1>
       </div>
