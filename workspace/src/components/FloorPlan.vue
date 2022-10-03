@@ -1,229 +1,197 @@
 <template>
-  <body class="">
-    <!-- THE HOUSE - SIMON-->
-  
-  <div>
-    
-      <div class="mainHeading flex justify-center">
-        <h1><b>THE</b> HOUSE</h1>
-      </div>
+	<!-- THE HOUSE - SIMON-->
 
-      <div class="flex justify-center floorHeader">
-        <h2><b>FLOOR 1</b></h2>
-      </div>
-      <div class="floorImage flex justify-center">
-        <!--Floor Plan Image-->
-        <img
-          src="../assets/images/FloorPlans/floor_1.png"
-          alt="Floor 1"
-          class="w-4/5 h-auto"
-        />
+	<div>
+		<div class="mainHeading flex justify-center">
+			<h1><b>THE</b> HOUSE</h1>
+		</div>
 
-        <!--Area Images-->
-        <img 
-          src = '../assets/images/shared-spaces/kitchen1.png'
-          alt="kitchen"
-          class="placePreviewKitchen"
-          @click="fullView(0)"
-        />
-        <img
-          src="../assets/images/shared-spaces/dining-area1.png"
-          alt="dining area"
-          class="placePreviewDiningArea"
-          @click="fullView(1)"
-        />
-        <img
-          src="../assets/images/shared-spaces/front-hall.png"
-          alt="front hall"
-          class="placePreviewFrontHall"
-          @click="fullView(8)"
-        />
-        <img
-          src="../assets/images/shared-spaces/stairs1.png"
-          alt="stairs"
-          class="placePreviewStairs"
-          @click="fullView(9)"
-        />
-      </div>
+		<div class="flex justify-center floorHeader">
+			<h2><b>FLOOR 1</b></h2>
+		</div>
+		<div class="floorImage flex justify-center">
+			<!--Floor Plan Image-->
+			<img src="../assets/images/FloorPlans/floor_1.png" alt="Floor 1" class="w-4/5 h-auto" />
 
-      <div class="flex justify-center floorHeader">
-        <h2><b>FLOOR 2</b></h2>
-      </div>
-      <div class="floorImage flex justify-center">
-        <!--Floor Plan Image-->
-        <img
-          src="../assets/images/FloorPlans/Floor_2.png"
-          alt="Floor 2"
-          class="w-4/5 h-auto"
-        />
+			<!--Area Images-->
+			<img
+				src="../assets/images/shared-spaces/kitchen1.png"
+				alt="kitchen"
+				class="placePreviewKitchen"
+				@click="fullView(0)"
+			/>
+			<img
+				src="../assets/images/shared-spaces/dining-area1.png"
+				alt="dining area"
+				class="placePreviewDiningArea"
+				@click="fullView(1)"
+			/>
+			<img
+				src="../assets/images/shared-spaces/front-hall.png"
+				alt="front hall"
+				class="placePreviewFrontHall"
+				@click="fullView(8)"
+			/>
+			<img
+				src="../assets/images/shared-spaces/stairs1.png"
+				alt="stairs"
+				class="placePreviewStairs"
+				@click="fullView(9)"
+			/>
+		</div>
 
-        <!--Area Images-->
-        <img
-          src="../assets/images/rooms/room1.png"
-          alt="room 1"
-          class="placePreviewRoom1"
-          @click="fullView(2)"
-        />
-        <img
-          src="../assets/images/rooms/bathroom1.png"
-          alt="bathroom 1"
-          class="placePreviewBathroom1"
-          @click="fullView(3)"
-        />
+		<div class="flex justify-center floorHeader">
+			<h2><b>FLOOR 2</b></h2>
+		</div>
+		<div class="floorImage flex justify-center">
+			<!--Floor Plan Image-->
+			<img src="../assets/images/FloorPlans/Floor_2.png" alt="Floor 2" class="w-4/5 h-auto" />
 
-        <img
-          src="../assets/images/rooms/room2_1.png"
-          alt="room 2"
-          class="placePreviewRoom2"
-          @click="fullView(10)"
-        />
+			<!--Area Images-->
+			<img src="../assets/images/rooms/room1.png" alt="room 1" class="placePreviewRoom1" @click="fullView(2)" />
+			<img
+				src="../assets/images/rooms/bathroom1.png"
+				alt="bathroom 1"
+				class="placePreviewBathroom1"
+				@click="fullView(3)"
+			/>
 
-        <img
-          src="../assets/images/rooms/bathroom2_2.png"
-          alt="bathroom 2"
-          class="placePreviewBathroom2"
-          @click="fullView(11)"
-        />
+			<img src="../assets/images/rooms/room2_1.png" alt="room 2" class="placePreviewRoom2" @click="fullView(10)" />
 
-        <img
-          src="../assets/images/rooms/room3.png"
-          alt="room 3"
-          class="placePreviewRoom3"
-          @click="fullView(4)"
-        />
+			<img
+				src="../assets/images/rooms/bathroom2_2.png"
+				alt="bathroom 2"
+				class="placePreviewBathroom2"
+				@click="fullView(11)"
+			/>
 
-        <img
-          src="../assets/images/rooms/room4.png"
-          alt="room 4"
-          class="placePreviewRoom4"
-          @click="fullView(5)"
-        />
-        <img
-          src="../assets/images/rooms/bathroom34.png"
-          alt="bathroom 3-4"
-          class="placePreviewBathroom34"
-          @click="fullView(6)"
-        />
-        <img
-          src="../assets/images/rooms/toilet34.png"
-          alt="toilet 3-4"
-          class="placePreviewToilet34"
-          @click="fullView(7)"
-        />
-      </div>
-    </div>
-     
-    <div name="fullImageViewGallery" class="fullImageView hidden">
-      <ImgCarousel :startAutoPlay="false" :slideCount="slideCount" :currentSlideResetValue="currentSlideResetValue" class="imgCarousel" v-slot="{currentSlide}">
-        <ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
-          <div v-show="currentSlide === index + 1" class="slide-info">
-            <img :src="require('../assets/images/' + slide + '.png')" alt="" />
-          </div>
-        </ImgSlide>
-      </ImgCarousel>
-       <!--Exit Button-->
-      <div class="exitButton">
-        <span @click="exitImgGallery(), updatecurrentSlideResetValue()">
-            <i class="fa-solid fa-xmark"></i>
-        </span>
-      </div>
-    </div>
-  </body>
+			<img src="../assets/images/rooms/room3.png" alt="room 3" class="placePreviewRoom3" @click="fullView(4)" />
+
+			<img src="../assets/images/rooms/room4.png" alt="room 4" class="placePreviewRoom4" @click="fullView(5)" />
+			<img
+				src="../assets/images/rooms/bathroom34.png"
+				alt="bathroom 3-4"
+				class="placePreviewBathroom34"
+				@click="fullView(6)"
+			/>
+			<img
+				src="../assets/images/rooms/toilet34.png"
+				alt="toilet 3-4"
+				class="placePreviewToilet34"
+				@click="fullView(7)"
+			/>
+		</div>
+	</div>
+
+	<div name="fullImageViewGallery" class="fullImageView hidden">
+		<ImgCarousel
+			:startAutoPlay="false"
+			:slideCount="slideCount"
+			:currentSlideResetValue="currentSlideResetValue"
+			class="imgCarousel"
+			v-slot="{currentSlide}"
+		>
+			<ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
+				<div v-show="currentSlide === index + 1" class="slide-info">
+					<img :src="require('../assets/images/' + slide + '.png')" alt="" />
+				</div>
+			</ImgSlide>
+		</ImgCarousel>
+		<!--Exit Button-->
+		<div class="exitButton">
+			<span @click="exitImgGallery(), updatecurrentSlideResetValue()">
+				<i class="fa-solid fa-xmark"></i>
+			</span>
+		</div>
+	</div>
 </template>
 
 <script>
-import ImgCarousel from "../components/Carousel.vue";
-import ImgSlide from "../components/Slide.vue";
-import carouselData from "../data/carouselData.json";
+	import ImgCarousel from '../components/Carousel.vue'
+	import ImgSlide from '../components/Slide.vue'
+	import carouselData from '../data/carouselData.json'
 
-let imgPreviewIndex;
-const fullImageViewGallery = document.getElementsByClassName('fullImageView');
+	let imgPreviewIndex
+	const fullImageViewGallery = document.getElementsByClassName('fullImageView')
 
-export default {
-  name: 'FloorPlan',
-  components: {
-    ImgCarousel,
-    ImgSlide
-  },
+	export default {
+		name: 'FloorPlan',
+		components: {
+			ImgCarousel,
+			ImgSlide,
+		},
 
-  setup(){
-   
-  }, 
+		setup() {},
 
-  data() {
-    return {
-      data: carouselData,
-      slideCount: 0,
-      currentSlideResetValue: 1
-    };
-  },
+		data() {
+			return {
+				data: carouselData,
+				slideCount: 0,
+				currentSlideResetValue: 1,
+			}
+		},
 
-  methods: {
-  fullView(imgIndex){
-    this.refreshImgPreviewIndex(imgIndex);
-    this.loadImagesToCarousel();
-    this.currentSlideResetValue = 1;
+		methods: {
+			fullView(imgIndex) {
+				this.refreshImgPreviewIndex(imgIndex)
+				this.loadImagesToCarousel()
+				this.currentSlideResetValue = 1
 
-    //const fullImageViewGallery = document.getElementsByClassName('fullImageView');
+				//const fullImageViewGallery = document.getElementsByClassName('fullImageView');
 
-    fullImageViewGallery[0].style.display = "flex";
-    document.body.style.overflow = "hidden";
-    fullImageViewGallery[0].style.top = window.scrollY + "px";
-  },
+				fullImageViewGallery[0].style.display = 'flex'
+				document.body.style.overflow = 'hidden'
+				fullImageViewGallery[0].style.top = window.scrollY + 'px'
+			},
 
-  //load images to carousel -- import from json file?
-  loadImagesToCarousel(){
-    const carouselSlides = [];
-    
-    //this.data.forEach((d, index) => {
-    //alert(d.id, index);
-   // })
+			//load images to carousel -- import from json file?
+			loadImagesToCarousel() {
+				const carouselSlides = []
 
-   this.data.forEach(d => {
-        Object.entries(d).forEach(([key]) => {
+				//this.data.forEach((d, index) => {
+				//alert(d.id, index);
+				// })
 
-          
-                 
-          if(key == 'id' && d.id == imgPreviewIndex){
-            let subArr = [];
-            d.images.forEach(imgUrl => {
-              subArr.push(imgUrl);
-            });                     
-            
-              subArr.forEach(imgUrl => {
-                if(!carouselSlides.includes(imgUrl))
-                carouselSlides.push(imgUrl);
-              }); 
-          }       
-        });
-        console.log('-------------------');
-    });
+				this.data.forEach((d) => {
+					Object.entries(d).forEach(([key]) => {
+						if (key == 'id' && d.id == imgPreviewIndex) {
+							let subArr = []
+							d.images.forEach((imgUrl) => {
+								subArr.push(imgUrl)
+							})
 
-    this.slideCount = carouselSlides.length;
-    return carouselSlides;
-  },
+							subArr.forEach((imgUrl) => {
+								if (!carouselSlides.includes(imgUrl)) carouselSlides.push(imgUrl)
+							})
+						}
+					})
+					console.log('-------------------')
+				})
 
-  refreshImgPreviewIndex(index){
-    imgPreviewIndex = index;
-  },
+				this.slideCount = carouselSlides.length
+				return carouselSlides
+			},
 
-  exitImgGallery(){
-    
-    fullImageViewGallery[0].style.display = "none";
-    document.body.style.overflow = "visible";
-  },
+			refreshImgPreviewIndex(index) {
+				imgPreviewIndex = index
+			},
 
-  getSlideCount(){
-    return this.slideCount;
-  },
+			exitImgGallery() {
+				fullImageViewGallery[0].style.display = 'none'
+				document.body.style.overflow = 'visible'
+			},
 
-  updatecurrentSlideResetValue(){
-     this.currentSlideResetValue = 0;
-    //currentSlideResetValue = 1;
-    return this.currentSlideResetValue;
-  }
+			getSlideCount() {
+				return this.slideCount
+			},
 
-  /*
+			updatecurrentSlideResetValue() {
+				this.currentSlideResetValue = 0
+				//currentSlideResetValue = 1;
+				return this.currentSlideResetValue
+			},
+
+			/*
   putImagesInCarousel(){
     this.loadImagesToCarousel();
 
@@ -233,7 +201,7 @@ export default {
     //v-for="(slide, index) in loadImagesToCarousel()" :key="index"
    // this.loadImagesToCarousel().forEach(slide => {
      //   Object.entries(slide).forEach(([value]) => {
-       //     
+       //
          // alert();
        // });
        // console.log('-------------------');
@@ -241,13 +209,13 @@ export default {
 
    for (let index = 0; index < this.loadImagesToCarousel().length; index++) {
         let carouselDiv = document.getElementById('carouselDiv');
-        let imgValues = this.loadImagesToCarousel();        
+        let imgValues = this.loadImagesToCarousel();
 
-        this.imgSrc = imgValues[index];  
-        
+        this.imgSrc = imgValues[index];
+
         alert(carouselDiv);
 
-        carouselDiv.innerHTML =  
+        carouselDiv.innerHTML =
         '<div name="fullImageViewGallery" class="fullImageView flex justify-center">' +
          '<ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">' +
             '<ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">' +
@@ -258,17 +226,14 @@ export default {
           '</ImgCarousel>' +
         '</div>;'
    }
-   
+
   }
   */
-}
-
-};
-
-
+		},
+	}
 </script>
 
 <style scoped>
-@import "../assets/floorPlanStyles/style.css";
-@import "../assets/floorPlanStyles/output.css";
+	@import '../assets/floorPlanStyles/style.css';
+	@import '../assets/floorPlanStyles/output.css';
 </style>
