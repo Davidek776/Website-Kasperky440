@@ -1,86 +1,94 @@
 <template>
 	<!-- THE HOUSE - SIMON-->
+	<!-- THE HOUSE - SIMON-->
 
-	<div>
-		<div class="mainHeading flex justify-center">
-			<h1><b>THE</b> HOUSE</h1>
-		</div>
+	<div class="flex justify-center">
+		<img src="../assets/images/icons/ScrollButton.svg" alt="Scroll Button" class="mt-24" />
+	</div>
 
-		<div class="flex justify-center floorHeader">
-			<h2><b>FLOOR 1</b></h2>
-		</div>
-		<div class="floorImage flex justify-center">
-			<!--Floor Plan Image-->
-			<img src="../assets/images/FloorPlans/floor_1.png" alt="Floor 1" class="w-4/5 h-auto" />
+	<div class="mainHeading flex justify-center">
+		<h1><b>THE</b> HOUSE</h1>
+	</div>
 
-			<!--Area Images-->
-			<img
-				src="../assets/images/shared-spaces/kitchen1.png"
-				alt="kitchen"
-				class="placePreviewKitchen"
-				@click="fullView(0)"
-			/>
-			<img
-				src="../assets/images/shared-spaces/dining-area1.png"
-				alt="dining area"
-				class="placePreviewDiningArea"
-				@click="fullView(1)"
-			/>
-			<img
-				src="../assets/images/shared-spaces/front-hall.png"
-				alt="front hall"
-				class="placePreviewFrontHall"
-				@click="fullView(8)"
-			/>
-			<img
-				src="../assets/images/shared-spaces/stairs1.png"
-				alt="stairs"
-				class="placePreviewStairs"
-				@click="fullView(9)"
-			/>
-		</div>
+	<div class="mainHeading flex justify-center">
+		<h1><b>THE</b> HOUSE</h1>
+	</div>
 
-		<div class="flex justify-center floorHeader">
-			<h2><b>FLOOR 2</b></h2>
-		</div>
-		<div class="floorImage flex justify-center">
-			<!--Floor Plan Image-->
-			<img src="../assets/images/FloorPlans/Floor_2.png" alt="Floor 2" class="w-4/5 h-auto" />
+	<div class="flex justify-center floorHeader">
+		<h2><b>FLOOR 1</b></h2>
+	</div>
+	<div class="floorImage flex justify-center">
+		<!--Floor Plan Image-->
+		<img src="../assets/images/FloorPlans/floor_1.png" alt="Floor 1" class="w-4/5 h-auto" />
 
-			<!--Area Images-->
-			<img src="../assets/images/rooms/room1.png" alt="room 1" class="placePreviewRoom1" @click="fullView(2)" />
-			<img
-				src="../assets/images/rooms/bathroom1.png"
-				alt="bathroom 1"
-				class="placePreviewBathroom1"
-				@click="fullView(3)"
-			/>
+		<!--Area Images-->
+		<img
+			src="../assets/images/shared-spaces/kitchen1.png"
+			alt="kitchen"
+			class="placePreviewKitchen"
+			@click="fullView(0)"
+		/>
+		<img
+			src="../assets/images/shared-spaces/dining-area1.png"
+			alt="dining area"
+			class="placePreviewDiningArea"
+			@click="fullView(1)"
+		/>
+		<img
+			src="../assets/images/shared-spaces/front-hall.png"
+			alt="front hall"
+			class="placePreviewFrontHall"
+			@click="fullView(8)"
+		/>
+		<img
+			src="../assets/images/shared-spaces/stairs1.png"
+			alt="stairs"
+			class="placePreviewStairs"
+			@click="fullView(9)"
+		/>
+	</div>
 
-			<img src="../assets/images/rooms/room2_1.png" alt="room 2" class="placePreviewRoom2" @click="fullView(10)" />
+	<div class="flex justify-center floorHeader">
+		<h2><b>FLOOR 2</b></h2>
+	</div>
+	<div class="floorImage flex justify-center">
+		<!--Floor Plan Image-->
+		<img src="../assets/images/FloorPlans/Floor_2.png" alt="Floor 2" class="w-4/5 h-auto" />
 
-			<img
-				src="../assets/images/rooms/bathroom2_2.png"
-				alt="bathroom 2"
-				class="placePreviewBathroom2"
-				@click="fullView(11)"
-			/>
+		<!--Area Images-->
+		<img src="../assets/images/rooms/room1.png" alt="room 1" class="placePreviewRoom1" @click="fullView(2)" />
+		<img
+			src="../assets/images/rooms/bathroom1.png"
+			alt="bathroom 1"
+			class="placePreviewBathroom1"
+			@click="fullView(3)"
+		/>
 
-			<img src="../assets/images/rooms/room3.png" alt="room 3" class="placePreviewRoom3" @click="fullView(4)" />
+		<img src="../assets/images/rooms/room2_1.png" alt="room 2" class="placePreviewRoom2" @click="fullView(10)" />
 
-			<img src="../assets/images/rooms/room4.png" alt="room 4" class="placePreviewRoom4" @click="fullView(5)" />
-			<img
-				src="../assets/images/rooms/bathroom34.png"
-				alt="bathroom 3-4"
-				class="placePreviewBathroom34"
-				@click="fullView(6)"
-			/>
-			<img
-				src="../assets/images/rooms/toilet34.png"
-				alt="toilet 3-4"
-				class="placePreviewToilet34"
-				@click="fullView(7)"
-			/>
-		</div>
+		<img
+			src="../assets/images/rooms/bathroom2_2.png"
+			alt="bathroom 2"
+			class="placePreviewBathroom2"
+			@click="fullView(11)"
+		/>
+
+		<img src="../assets/images/rooms/room3.png" alt="room 3" class="placePreviewRoom3" @click="fullView(4)" />
+
+		<img src="../assets/images/rooms/room4.png" alt="room 4" class="placePreviewRoom4" @click="fullView(5)" />
+		<img
+			src="../assets/images/rooms/bathroom34.png"
+			alt="bathroom 3-4"
+			class="placePreviewBathroom34"
+			@click="fullView(6)"
+		/>
+		<img
+			src="../assets/images/rooms/toilet34.png"
+			alt="toilet 3-4"
+			class="placePreviewToilet34"
+			@click="fullView(7)"
+		/>
+		<div></div>
 	</div>
 
 	<div name="fullImageViewGallery" class="fullImageView hidden">
