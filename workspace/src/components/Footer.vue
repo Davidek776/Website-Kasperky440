@@ -13,8 +13,8 @@
         </div>
         <div class="w-96 space-y-4">
           <h1 class="text-2xl font-bold">Kašperky 440</h1>
-          <p>je soukromé, levné a jedno z nejlépe hodnocenných ubytování v kašperkých horách a na šumavě. Poskytuje
-            ubytovaní pro 1-10 osob s možností přistýlky. lokace se nachází v klidné části města a je Vhodná pro páry i
+          <p>je soukromé, levné a jedno z nejlépe hodnocenných ubytování v Kašperských Horách a na Šumavě. Poskytuje
+            ubytovaní pro 1-10 osob s možností přistýlky. Lokace se nachází v klidné části města a je vhodná pro páry i
             rodiny.</p>
         </div>
       </div>
