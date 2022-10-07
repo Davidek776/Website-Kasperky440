@@ -92,6 +92,8 @@
               class="w-8"
             />
           </button>
+          <!--Uncomment when we have english version-->
+          <!--
           <button class="duration-300">
             <img
               src="../assets/images/icons/united-kingdom.png"
@@ -99,6 +101,7 @@
               class="w-8"
             />
           </button>
+          -->
         </ul>
         <h2 class=""></h2>
       </ul>
