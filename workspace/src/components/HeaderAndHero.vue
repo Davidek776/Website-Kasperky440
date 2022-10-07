@@ -12,8 +12,9 @@
         </h1>
 
         <span
-          class="text-3xl cursor-pointer mx-2 mdd:hidden block"
-          v-on:click="Menu(this)"
+          class="text-3xl cursor-pointer mx-2 mdd:hidden block bar"
+          ref="bars"
+          @click="Menu(this)"
         >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
           <img
@@ -158,6 +159,7 @@ export default {
   data() {
     return {
       state: "shown",
+      clicks: 0,
     };
   },
   created() {
@@ -176,12 +178,20 @@ export default {
       let nav = document.querySelector("nav");
       list.classList.remove("top-[80px]");
       list.classList.remove("opacity-100");
+      // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
+      // this.eventFire(document.getElementsByClassName("bars"), "click");
+      if (this.clicks == 0) {
+        this.$refs["bars"].click();
+        this.clicks++;
+      }
+
       e.name === "menu"
         ? ((e.name = "close"),
           list.classList.add("top-[100px]"),
           list.classList.add("opacity-100"),
           nav.classList.remove("bg-transparent"),
           nav.classList.add("bg-white"),
+          console.log(list.classList),
           this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
