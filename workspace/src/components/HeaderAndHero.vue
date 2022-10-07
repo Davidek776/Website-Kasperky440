@@ -77,7 +77,11 @@
           class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl"
           id="reserveBtn"
         >
-          Rezervovat
+          <a
+            href="https://www.booking.com/hotel/cz/kasperky-440.cs.html"
+            target="_blank"
+            >Rezervovat</a
+          >
         </button>
 
         <ul class="speach flex flex-row mdd:flex-col">
