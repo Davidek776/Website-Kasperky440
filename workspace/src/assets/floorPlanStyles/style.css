@@ -1,26 +1,26 @@
 .floorHeader {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  font-size: 5vh;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
+  font-size: 5vw;
 }
 
 .scrollButton {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
 }
 
 .floorImage {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
   position: relative;
   max-width: 100%;
   max-height: 100%;
 }
 
 .mainHeading {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  font-size: 10vh;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
+  font-size: 10vw;
 }
 
 .placePreviewKitchen {
@@ -246,7 +246,7 @@
   width: 40px;
   height: 40px;
   background-color: #fff;
-  color: #1e293b;
+  color: #1E293B;
 }
 
 .pagination {
@@ -269,7 +269,7 @@
 }
 
 .pagination .active {
-  background-color: #1e293b;
+  background-color: #1E293B;
 }
 
 .exitButton {
@@ -287,14 +287,7 @@
   cursor: pointer;
 }
 
-.wrap {
-  /* z-index: 1000000000;
-  position: relative;
-  top: -150em;
-  background: #fff; */
-}
-
 body {
   font-family: Helvetica, Sans-Serif;
-  color: #1e293b;
-} /*# sourceMappingURL=style.css.map */
+  color: #1E293B;
+}/*# sourceMappingURL=style.css.map */
