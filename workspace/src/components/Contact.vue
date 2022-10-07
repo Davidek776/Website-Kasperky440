@@ -20,7 +20,7 @@
               <td class="font-bold">Kasperky440@gmail.com</td>
             </tr>
             <tr>
-              <td class="uppercase pr-4 py-5">Phone:</td>
+              <td class="uppercase pr-4 py-5">Telefon:</td>
               <td class="font-bold">+420 777 021 657</td>
             </tr>
             <tr>
