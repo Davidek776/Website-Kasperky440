@@ -1,7 +1,9 @@
 <template>
+  <!-- <PureCss></PureCss> -->
+
   <header>
     <nav
-      class="navigation p-6 2xl:pr-16 bg-transparent md:flex md:items-center md:justify-between ease-in duration-300"
+      class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
       id="logo-arent"
     >
       <div class="relative flex justify-between items-center">
@@ -10,8 +12,9 @@
         </h1>
 
         <span
-          class="text-3xl cursor-pointer mx-2 md:hidden block"
-          v-on:click="Menu(this)"
+          class="text-3xl cursor-pointer mx-2 mdd:hidden block bar"
+          ref="bars"
+          @click="Menu(this)"
         >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
           <img
@@ -24,46 +27,64 @@
       </div>
 
       <ul
-        class="drop-down md:flex md:items-center md:static absolute bg-white bg-opacity-70 md:bg-transparent w-full sm:w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 sm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+        class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full sm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 sm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
         id="dropId"
       >
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoHome()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Domů</a
           >
         </li>
         <!-- hover:color-stone-50 transition-all ease-in duration-300 -->
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoAccomodation()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Ubytování</a
           >
         </li>
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoAbout()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >O Nás</a
           >
         </li>
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoReview()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Recenze</a
           >
         </li>
         <li
-          class="mx-4 mr-0 my-6 md:my-0 mb-8 transition-all ease-in duration-300"
+          class="mx-4 mr-0 my-6 mdd:my-0 mb-8 transition-all ease-in duration-300"
         >
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+          <a
+            href="#"
+            @click="gotoContact()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Kontakt</a
           >
         </li>
-
-        <button
-          class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl"
-          id="reserveBtn"
+        <a
+          href="https://www.booking.com/hotel/cz/kasperky-440.cs.html"
+          target="_blank"
         >
-          Rezervovat
-        </button>
-
-        <ul class="speach flex flex-row md:flex-col">
+          <button
+            class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl"
+            id="reserveBtn"
+          >
+            Rezervovat
+          </button>
+        </a>
+        <ul class="speach flex flex-row mdd:flex-col">
           <button class="duration-300">
             <img
               src="../assets/images/icons/czech-republic.png"
@@ -93,17 +114,17 @@
   </header>
 
   <div class="pre-content">
-    <div class="left ease-in duration-300">
-      <p class="ease-in duration-300">
-        Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a bezplatné
-        Wi-Fi.
-      </p>
+    <div class="description">
+      <div class="left ease-in duration-300">
+        <p class="ease-in duration-300">
+          Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a
+          bezplatné Wi-Fi.
+        </p>
+      </div>
+      <div class="right">
+        <p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
+      </div>
     </div>
-    <div class="right">
-      <p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
-    </div>
-  </div>
-  <div class="content">
     <div class="features">
       <div class="first">
         <img src="../assets/images/icons/parking2.svg" alt="" />
@@ -119,13 +140,17 @@
       </div>
     </div>
   </div>
+  <!-- <div class="content">
+    
+  </div> -->
 
-  <div class="next"></div>
+  <!-- <div class="next"></div> -->
 
   <!-- </main> -->
 </template>
 
 <script>
+// import PureCss from "@/components/PureCss.vue";
 export default {
   setup() {
     return {};
@@ -133,6 +158,7 @@ export default {
   data() {
     return {
       state: "shown",
+      clicks: 0,
     };
   },
   created() {
@@ -141,18 +167,30 @@ export default {
   unmounted() {
     window.removeEventListener("resize", this.myEventHandler);
   },
+  components: {
+    // PureCss,
+  },
+
   methods: {
     Menu(e) {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       list.classList.remove("top-[80px]");
       list.classList.remove("opacity-100");
+      // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
+      // this.eventFire(document.getElementsByClassName("bars"), "click");
+      if (this.clicks == 0) {
+        this.$refs["bars"].click();
+        this.clicks++;
+      }
+
       e.name === "menu"
         ? ((e.name = "close"),
           list.classList.add("top-[100px]"),
           list.classList.add("opacity-100"),
           nav.classList.remove("bg-transparent"),
           nav.classList.add("bg-white"),
+          console.log(list.classList),
           this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
@@ -190,6 +228,22 @@ export default {
           console.log("hide");
         }
       }
+    },
+
+    gotoHome() {
+      this.$emit("home");
+    },
+    gotoAccomodation() {
+      this.$emit("accomodation");
+    },
+    gotoAbout() {
+      this.$emit("about");
+    },
+    gotoReview() {
+      this.$emit("review");
+    },
+    gotoContact() {
+      this.$emit("contact");
     },
   },
 };

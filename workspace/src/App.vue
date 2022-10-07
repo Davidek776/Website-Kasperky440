@@ -1,10 +1,17 @@
 <template>
-  <HeaderAndHero></HeaderAndHero>
-  <FloorPlan></FloorPlan>
-  <AboutUs />
-  <Reviews />
+  <HeaderAndHero
+    @home="this.goToHome()"
+    @accomodation="this.goToAccomodation()"
+    @about="this.goToAbout()"
+    @review="this.goToReview()"
+    @contact="this.goToContact()"
+  >
+  </HeaderAndHero>
+  <FloorPlan :accomodation="triggerAccomodation"></FloorPlan>
+  <AboutUs :about="triggerAbout" />
+  <Reviews :review="triggerReview" />
   <Stats />
-  <Contact />
+  <Contact :contact="triggerContact" />
   <Footer />
 </template>
 
@@ -30,9 +37,39 @@ export default {
     HeaderAndHero,
   },
   data() {
-    return {};
+    return {
+      triggerHome: 0,
+      triggerAccomodation: 0,
+      triggerAbout: 0,
+      triggerReview: 0,
+      triggerContact: 0,
+    };
   },
-  methods: {},
+  setup() {
+    return;
+  },
+  methods: {
+    goToHome() {
+      // alert("here" + this.trigger);
+      this.triggerHome += 1;
+    },
+    goToAccomodation() {
+      // alert("here" + this.trigger);
+      this.triggerAccomodation += 1;
+    },
+    goToAbout() {
+      // alert("here" + this.trigger);
+      this.triggerAbout += 1;
+    },
+    goToReview() {
+      // alert("here" + this.trigger);
+      this.triggerReview += 1;
+    },
+    goToContact() {
+      // alert("here" + this.trigger);
+      this.triggerContact += 1;
+    },
+  },
 };
 </script>
 
