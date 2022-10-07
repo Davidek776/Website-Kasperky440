@@ -9,19 +9,19 @@
     },
     {
         "id": 2,
-        "images": ["rooms/room1"]
+        "images": ["rooms/room1", "rooms/room1_2"]
     },
     {
         "id": 3,
-        "images": ["rooms/bathroom1"]
+        "images": ["rooms/bathroom1", "rooms/bathroom1_2"]
     },
     {
         "id": 4,
-        "images": ["rooms/room3"]
+        "images": ["rooms/room3", "rooms/room3_2"]
     },
     {
         "id": 5,
-        "images": ["rooms/room4"]
+        "images": ["rooms/room4", "rooms/room4_2"]
     },
     {
         "id": 6,
