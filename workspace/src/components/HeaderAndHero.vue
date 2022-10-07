@@ -107,7 +107,7 @@
     <div class="hero_content">
       <div class="motto">
         <h1 class="quote">
-          „<span> Pohodové Ubytování Pro Vaší Relaxaci </span>“
+          „<span> Pohodové Ubytování Pro Vaši Relaxaci </span>“
         </h1>
       </div>
     </div>

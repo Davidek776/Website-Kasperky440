@@ -2,7 +2,7 @@
   <section class="px-2 py-10 xl:py-20 xl:px-20 space-y-64">
     <div class="space-y-24">
       <h1 class="text-4xl text-center contact" ref="contactBegin">
-        Get in touch
+        KONTAKT
       </h1>
 
       <div
@@ -24,7 +24,7 @@
               <td class="font-bold">+420 777 021 657</td>
             </tr>
             <tr>
-              <td class="uppercase pr-4 py-5">Address:</td>
+              <td class="uppercase pr-4 py-5">Adresa:</td>
               <td class="font-bold">
                 Kašperky 440, Kašperské Hory 341 92, Czechia
               </td>
@@ -40,7 +40,7 @@
         target="_blank"
         class="uppercase text-white text-lg px-12 py-4 bg-slate-800 rounded-lg mx-auto relative hover:bg-slate-700 transition-all"
       >
-        Book now
+        REZERVOVAT
         <img
           class="absolute -z-10 left-52 bottom-4 opacity-0 sm:opacity-100"
           src="../assets/images/Contact/Arrow.png"
