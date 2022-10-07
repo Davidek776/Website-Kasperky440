@@ -1,10 +1,11 @@
 <template>
   <div
     class="w-full py-20 bg-[#D9D9D9] space-y-10 relative overflow-hidden"
+    ref="reviewBegin"
     :class="showAllComments ? 'h-fit' : 'h-[52rem]'"
   >
     <h1 class="text-slate-900 text-center md:text-4xl text-2xl">
-      <span class="font-bold">PEOPLES </span>
+      <span class="font-bold review">PEOPLES </span>
       <span class="font-light">REVIEWS</span>
     </h1>
 
@@ -51,6 +52,7 @@ export default {
       showAllComments: false,
     };
   },
+  props: ["review"],
   methods: {
     getData: function (divide) {
       const data = [];
@@ -64,6 +66,18 @@ export default {
         data.push(subArr);
       }
       return data;
+    },
+    scrollToElement() {
+      let rect = this.$refs["reviewBegin"].getBoundingClientRect();
+      window.scrollTo({
+        top: rect.top,
+        behavior: "smooth",
+      });
+    },
+  },
+  watch: {
+    review: function () {
+      this.scrollToElement();
     },
   },
 };

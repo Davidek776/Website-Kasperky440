@@ -3,7 +3,7 @@
 
   <header>
     <nav
-      class="navigation p-6 2xl:pr-16 bg-transparent md:flex md:items-center md:justify-between ease-in duration-300"
+      class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
       id="logo-arent"
     >
       <div class="relative flex justify-between items-center">
@@ -12,7 +12,7 @@
         </h1>
 
         <span
-          class="text-3xl cursor-pointer mx-2 md:hidden block"
+          class="text-3xl cursor-pointer mx-2 mdd:hidden block"
           v-on:click="Menu(this)"
         >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
@@ -26,34 +26,49 @@
       </div>
 
       <ul
-        class="drop-down md:flex md:items-center md:static absolute bg-white bg-opacity-70 md:bg-transparent w-full sm:w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 sm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+        class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full sm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 sm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
         id="dropId"
       >
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoHome()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Domů</a
           >
         </li>
         <!-- hover:color-stone-50 transition-all ease-in duration-300 -->
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoAccomodation()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Ubytování</a
           >
         </li>
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoAbout()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >O Nás</a
           >
         </li>
-        <li class="mx-4 my-6 md:my-0 transition-all ease-in duration-300">
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+        <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <a
+            href="#"
+            @click="gotoReview()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Recenze</a
           >
         </li>
         <li
-          class="mx-4 mr-0 my-6 md:my-0 mb-8 transition-all ease-in duration-300"
+          class="mx-4 mr-0 my-6 mdd:my-0 mb-8 transition-all ease-in duration-300"
         >
-          <a href="#" class="text-xl md:hover:text-cyan-500 duration-500"
+          <a
+            href="#"
+            @click="gotoContact()"
+            class="text-xl mdd:hover:text-cyan-500 duration-500"
             >Kontakt</a
           >
         </li>
@@ -65,7 +80,7 @@
           Rezervovat
         </button>
 
-        <ul class="speach flex flex-row md:flex-col">
+        <ul class="speach flex flex-row mdd:flex-col">
           <button class="duration-300">
             <img
               src="../assets/images/icons/czech-republic.png"
@@ -150,6 +165,7 @@ export default {
   components: {
     // PureCss,
   },
+
   methods: {
     Menu(e) {
       let list = document.querySelector("ul");
@@ -199,6 +215,22 @@ export default {
           console.log("hide");
         }
       }
+    },
+
+    gotoHome() {
+      this.$emit("home");
+    },
+    gotoAccomodation() {
+      this.$emit("accomodation");
+    },
+    gotoAbout() {
+      this.$emit("about");
+    },
+    gotoReview() {
+      this.$emit("review");
+    },
+    gotoContact() {
+      this.$emit("contact");
     },
   },
 };

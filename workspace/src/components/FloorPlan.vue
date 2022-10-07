@@ -10,7 +10,10 @@
       />
     </div>
 
-    <div class="mainHeading flex justify-center">
+    <div
+      class="mainHeading flex justify-center accomodation"
+      ref="accomodationBegin"
+    >
       <h1><b>THE</b> HOUSE</h1>
     </div>
 
@@ -159,6 +162,7 @@ export default {
   },
 
   setup() {},
+  props: ["accomodation"],
 
   data() {
     return {
@@ -227,6 +231,13 @@ export default {
       //currentSlideResetValue = 1;
       return this.currentSlideResetValue;
     },
+    scrollToElement() {
+      let rect = this.$refs["accomodationBegin"].getBoundingClientRect();
+      window.scrollTo({
+        top: rect.top,
+        behavior: "smooth",
+      });
+    },
 
     /*
   putImagesInCarousel(){
@@ -266,6 +277,11 @@ export default {
 
   }
   */
+  },
+  watch: {
+    accomodation: function () {
+      this.scrollToElement();
+    },
   },
 };
 </script>
