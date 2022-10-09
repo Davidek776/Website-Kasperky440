@@ -42,6 +42,10 @@
     padding: 0.4em 0;
     font-size: 2em;
   }
+
+  .motto {
+    display: none;
+  }
   .drop-down li:last-child {
     /* padding-bottom: 0; */
   }
@@ -67,6 +71,12 @@
 @media (max-width: 800px) {
   .drop-down {
     height: 40em;
+  }
+}
+
+@media (max-width: 700px) {
+  .kasLogo {
+    width: 2.6em;
   }
 }
 
@@ -97,7 +107,7 @@
     /* background-size: 50%; */
   /* display: none; 
   } */
-  #logo {
+  /* #logo {
     width: 40%;
     height: 4.3rem;
     background: url("../images/icons/logo2Transparent.png");
@@ -107,15 +117,10 @@
     background-position: top top;
     text-indent: -9999px;
     z-index: 5000000;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
-  #dropId {
-    width: 100%;
-    opacity: 100%;
-    background-color: rgb(255, 255, 255, 0.9);
-  }
   .drop-down li:hover,
   :focus {
     background: #e7e5e4;
@@ -123,13 +128,37 @@
 
   .drop-down {
     height: 49em;
+    position: absolute;
+    bottom: 500px;
   }
 
+  #dropId {
+    width: 100%;
+  }
   #reserveBtn {
     margin-top: 1.2em;
     margin-bottom: 0.4em;
   }
 
+  .hero_content {
+    display: none;
+    height: 0;
+    margin: 0;
+  }
+
   .speach {
+  }
+}
+
+@media (max-width: 400px) {
+  .kasLogo {
+    width: 2em;
+    position: relative;
+    right: 0.2em;
+    bottom: 0.6em;
+  }
+  #logo-parent {
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
   }
 }

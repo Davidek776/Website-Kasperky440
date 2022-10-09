@@ -4,11 +4,15 @@
   <header>
     <nav
       class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
-      id="logo-arent"
+      id="logo-parent"
     >
       <div class="relative flex justify-between items-center">
         <h1 class="text-2xl font-[Helvetica] cursor-pointer" id="logo">
-          Kašperky 440
+          <img
+            src="../assets/images/icons/logo2Transparent.png"
+            alt=""
+            class="kasLogo"
+          />
         </h1>
 
         <span
@@ -27,7 +31,7 @@
       </div>
 
       <ul
-        class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full sm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 sm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+        class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
         id="dropId"
       >
         <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
@@ -175,7 +179,8 @@ export default {
     Menu(e) {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
-      list.classList.remove("top-[80px]");
+      // let quote = document.querySelector(".quote");
+      list.classList.remove("top-[110px]");
       list.classList.remove("opacity-100");
       // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
       // this.eventFire(document.getElementsByClassName("bars"), "click");
@@ -186,7 +191,7 @@ export default {
 
       e.name === "menu"
         ? ((e.name = "close"),
-          list.classList.add("top-[100px]"),
+          list.classList.add("top-[110px]"),
           list.classList.add("opacity-100"),
           nav.classList.remove("bg-transparent"),
           nav.classList.add("bg-white"),
@@ -194,7 +199,7 @@ export default {
           this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
-          list.classList.remove("top-[100px]"),
+          list.classList.remove("top-[110px]"),
           list.classList.remove("opacity-100"),
           nav.classList.add("bg-transparent"),
           nav.classList.remove("bg-white"),
