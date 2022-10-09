@@ -96,6 +96,8 @@
               class="w-8"
             />
           </button>
+          <!--Uncomment when we have english version-->
+          <!--
           <button class="duration-300">
             <img
               src="../assets/images/icons/united-kingdom.png"
@@ -103,6 +105,7 @@
               class="w-8"
             />
           </button>
+          -->
         </ul>
         <h2 class=""></h2>
       </ul>
@@ -111,7 +114,7 @@
     <div class="hero_content">
       <div class="motto">
         <h1 class="quote">
-          „<span> Pohodové Ubytování Pro Vaší Relaxaci </span>“
+          „<span> Pohodové Ubytování Pro Vaši Relaxaci </span>“
         </h1>
       </div>
     </div>

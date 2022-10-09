@@ -5,8 +5,8 @@
     :class="showAllComments ? 'h-fit' : 'h-[52rem]'"
   >
     <h1 class="text-slate-900 text-center md:text-4xl text-2xl">
-      <span class="font-bold review">PEOPLES </span>
-      <span class="font-light">REVIEWS</span>
+      <span class="font-bold review">RECENZE </span>
+      <span class="font-light">OD VÁS</span>
     </h1>
 
     <div
@@ -33,7 +33,7 @@
         class="py-4 px-8 bg-slate-800 text-slate-100 rounded-lg hover:shadow hover:shadow-lg hover:shadow-slate-800/50 transition-all"
         v-on:click="showAllComments = true"
       >
-        Show all
+        ZOBRAZIT VÍCE
       </button>
     </div>
   </div>

@@ -16,8 +16,8 @@
     </svg>
 
     <h1 class="title text-slate-900 text-center md:text-4xl text-2xl">
-      <span class="font-light">ABOUT </span>
-      <span class="font-bold">US</span>
+      <span class="font-light">O </span>
+      <span class="font-bold">NÁS</span>
     </h1>
     <div class="row lg:mt-12 lg:mb-16 lg:flex-row-reverse">
       <p

@@ -14,7 +14,7 @@
       class="mainHeading flex justify-center accomodation"
       ref="accomodationBegin"
     >
-      <h1><b>THE</b> HOUSE</h1>
+      <h1><b>UBYTOVÁNÍ</b></h1>
     </div>
 
     <div class="flex justify-center floorHeader">
