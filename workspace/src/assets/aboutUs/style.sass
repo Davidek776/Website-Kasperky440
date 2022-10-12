@@ -1,81 +1,78 @@
 .title
-    padding: 2em 0
+	padding: 2em 0
 
 .about-us
-    position: relative
-    // background: url('./img/line.svg')
-    background-position: center
-    background-size: contain
-    padding-bottom: 12em
-        // max-width: 500px
+	position: relative
+	background-position: center
+	background-size: contain
+	padding-bottom: 12em
 
-    & img
-        object-fit: cover
+	& img
+		object-fit: cover
+		max-height: 400px
 
 .row
-    position: relative
-    display: flex
-    flex-direction: column
-    align-items: center
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
 
-    &.justify-end
-      justify-content: flex-end !important
+	&.justify-end
+		justify-content: flex-end !important
 
 .line-svg
-    position: absolute
-    width: 100%
-    height: 106%
-    transform: translateY(8rem)
-    display: none
-    z-index: -1
+	position: absolute
+	width: 100%
+	height: 106%
+	transform: translateY(8rem)
+	display: none
+	z-index: -1
 
 .image-text
-    // text-align: justify
-    position: relative
-    width: 70%
-    margin: 3em auto
-    &::before
-        bottom: -1em
-        left: -.5em
-    &::after
-        top: -.5em
-        right: -.5em
+	font-size: 15px
+	width: 70%
+	margin: 3em auto
+	&::before
+		bottom: -1em
+		left: -.5em
+	&::after
+		top: -.5em
+		right: -.5em
 
-    &::before,
-    &::after
-        font-size: 4rem
-        position: absolute
-        color: #DBCF9B
-        content: '"'
+	&::before,
+	&::after
+		font-size: 4rem
+		position: absolute
+		color: #DBCF9B
+		content: '"'
 
-    &.ms
-       margin: 3em
+	&.ms
+		margin: 3em
 
 .animate
-    opacity: 0
+	opacity: 0
 
 .animate-l
-    transform: translateX(-300px)
+	transform: translateX(-300px)
 
 .animate-r
-    transform: translateX(300px)
+	transform: translateX(300px)
 
 @media ( min-width: 758px )
-    .about-us
-        & .row
-            justify-content: space-between
-
-    .image-text
-        // width: 45%
+	.about-us
+		& .row
+			justify-content: space-between
 
 @media (min-width: 1024px)
-    .line-svg
-        display: block
+	.line-svg
+		display: block
 
-    .img-lg
-        height: 34rem
+	.img-lg
+		height: 34rem
+
+	.about-us img
+		max-height: unset
 
 @media (min-width: 1110px)
-    .line-svg
-        height: 94%
-
+	.line-svg
+		height: 94%

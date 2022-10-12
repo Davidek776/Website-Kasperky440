@@ -75,7 +75,7 @@
         kilometrů upravených běžeckých tratí.
       </p>
       <img
-        class="animate animate-l lg:max-w-screen-md lg:w-1/2 lg:h-96"
+        class="animate animate-l lg:max-w-sm lg:w-1/2 lg:h-96"
         src="../assets/aboutUs/img/20200120_pohled_z_terasy.jpg"
         alt="image"
       />
