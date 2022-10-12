@@ -42,7 +42,7 @@
       >
         REZERVOVAT
         <img
-          class="absolute -z-10 left-52 bottom-4 opacity-0 sm:opacity-100"
+          class="absolute -z-10 left-56 bottom-4 opacity-0 sm:opacity-100"
           src="../assets/images/Contact/Arrow.png"
           alt="Arrow"
         />

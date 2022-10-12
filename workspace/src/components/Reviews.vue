@@ -27,13 +27,12 @@
 
     <div
       class="w-full h-64 absolute z-10 bottom-0 bg-gradient-to-t from-[#D9D9D9] via-[#D9D9D9] to-transparent flex items-center justify-center"
-      :class="showAllComments ? 'hidden' : ''"
     >
       <button
-        class="py-4 px-8 bg-slate-800 text-slate-100 rounded-lg hover:shadow hover:shadow-lg hover:shadow-slate-800/50 transition-all"
-        v-on:click="showAllComments = true"
+        class="py-4 px-8 bg-slate-800 text-slate-100 rounded-lg hover:shadow hover:shadow-lg hover:shadow-slate-800/50 transition-all focus:opacity-100"
+        v-on:click="showAllComments = !showAllComments"
       >
-        ZOBRAZIT VÍCE
+        {{ showAllComments ? "ZOBRAZIT MÉNĚ" : "ZOBRAZIT VÍCE" }}
       </button>
     </div>
   </div>
