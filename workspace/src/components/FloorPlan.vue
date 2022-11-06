@@ -25,32 +25,33 @@
       <img
         src="../assets/images/FloorPlans/floor_1.png"
         alt="Floor 1"
-        class="w-4/5 h-auto"
+        class="w-4/5 h-auto max-w-max"
+        
       />
 
       <!--Area Images-->
       <img
         src="../assets/images/shared-spaces/kitchen1.png"
         alt="kitchen"
-        class="placePreviewKitchen"
+        class="placePreviewKitchen shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(0)"
       />
       <img
         src="../assets/images/shared-spaces/dining-area1.png"
         alt="dining area"
-        class="placePreviewDiningArea"
+        class="placePreviewDiningArea shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(1)"
       />
       <img
         src="../assets/images/shared-spaces/front-hall.png"
         alt="front hall"
-        class="placePreviewFrontHall"
+        class="placePreviewFrontHall shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(8)"
       />
       <img
         src="../assets/images/shared-spaces/stairs1.png"
         alt="stairs"
-        class="placePreviewStairs"
+        class="placePreviewStairs shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(9)"
       />
     </div>
@@ -63,60 +64,60 @@
       <img
         src="../assets/images/FloorPlans/Floor_2.png"
         alt="Floor 2"
-        class="w-4/5 h-auto"
+        class="w-4/5 h-auto max-w-max"
       />
 
       <!--Area Images-->
       <img
         src="../assets/images/rooms/room1.png"
         alt="room 1"
-        class="placePreviewRoom1"
+        class="placePreviewRoom1 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(2)"
       />
       <img
         src="../assets/images/rooms/bathroom1.png"
         alt="bathroom 1"
-        class="placePreviewBathroom1"
+        class="placePreviewBathroom1 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(3)"
       />
 
       <img
         src="../assets/images/rooms/room2_1.png"
         alt="room 2"
-        class="placePreviewRoom2"
+        class="placePreviewRoom2 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(10)"
       />
 
       <img
         src="../assets/images/rooms/bathroom2_2.png"
         alt="bathroom 2"
-        class="placePreviewBathroom2"
+        class="placePreviewBathroom2 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(11)"
       />
 
       <img
         src="../assets/images/rooms/room3.png"
         alt="room 3"
-        class="placePreviewRoom3"
+        class="placePreviewRoom3 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(4)"
       />
 
       <img
         src="../assets/images/rooms/room4.png"
         alt="room 4"
-        class="placePreviewRoom4"
+        class="placePreviewRoom4 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(5)"
       />
       <img
         src="../assets/images/rooms/bathroom34.png"
         alt="bathroom 3-4"
-        class="placePreviewBathroom34"
+        class="placePreviewBathroom34 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(6)"
       />
       <img
         src="../assets/images/rooms/toilet34.png"
         alt="toilet 3-4"
-        class="placePreviewToilet34"
+        class="placePreviewToilet34 shadow-md hover:shadow-lg md:animate-bounce"
         @click="fullView(7)"
       />
       <div></div>
