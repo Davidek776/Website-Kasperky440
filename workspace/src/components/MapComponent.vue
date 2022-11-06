@@ -2,7 +2,7 @@
   <GMapMap
       :center="center"
       :zoom="10"
-      style="width: 100%; height: 400px"
+      style="width: 100%; height: 400px; border-radius: 0.5em;"
 		:disableDefaultUI="true"
   >
 	<GMapMarker
