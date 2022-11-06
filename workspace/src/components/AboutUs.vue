@@ -6,10 +6,7 @@
 		<source media="(min-width: 1110px)" srcset="../assets/aboutUs/img/line.png" />
 		<img id="line" src="../assets/aboutUs/img/line-md.png" alt="Dotted line" />
 	</picture>
-	<!-- <img
-		id="line"
-		src="../assets/aboutUs/img/line.png"
-		alt="line"> -->
+
     <h1 class="title text-slate-900 text-center md:text-4xl text-2xl">
       <span class="font-light">O </span>
       <span class="font-bold">NÁS</span>
@@ -44,7 +41,7 @@
         alt="image"
       />
     </div>
-    <div class="row lg:-mt-10 lg:flex-row">
+    <div class="row lg:mt-10 lg:flex-row">
       <p
         class="animate animate-l uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16"
       >
