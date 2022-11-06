@@ -8,11 +8,12 @@
       <div
         class="flex items-center justify-between max-w-7xl mx-auto flex-col space-y-12 xl:space-y-0 xl:flex-row xl:space-x-12"
       >
-        <img
+        <!-- <img
           class="rounded-lg max-w-xl w-full"
           src="../assets/images/Contact/map.png"
           alt="Map"
-        />
+        /> -->
+			<MapComponent class="rounded-lg max-w-xl w-full"/>
         <div class="pl-4 py-16 max-w-xl w-full h-full bg-[#E3E3E3] rounded-lg">
           <table>
             <tr>
@@ -52,9 +53,12 @@
 </template>
 
 <script>
+import MapComponent from './MapComponent.vue';
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Contact",
+  components: {MapComponent},
   props: ["contact"],
   methods: {
     scrollToElement() {

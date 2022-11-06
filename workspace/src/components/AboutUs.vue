@@ -107,11 +107,12 @@
 
 <script>
 export default {
+	// import Map from "./Map"
   // eslint-disable-next-line vue/multi-word-component-names
 
   name: "AboutUs",
   data() {
-    return {};
+    return {}
   },
   setup() {
     return {};

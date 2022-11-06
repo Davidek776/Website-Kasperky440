@@ -1,13 +1,17 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/tailwind.css";
+
+import VueGoogleMaps from '@fawmi/vue-google-maps'
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
-// import VueScrollmagic from 'vue-scrollmagic'
 
-
-createApp(App).mount('#app')
-
+const app = createApp(App);
+app.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyAmwDchKVnv86KG03SDr-u2nAtJP6KtxwA',
+    },
+}).mount('#app')
 
 gsap.registerPlugin(ScrollTrigger)
 const elements = document.querySelectorAll('.animate')
