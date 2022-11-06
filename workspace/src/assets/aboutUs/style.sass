@@ -7,7 +7,8 @@
 	background-size: contain
 	padding-bottom: 12em
 
-	& img
+	& img:not(#line)
+
 		object-fit: cover
 		max-height: 400px
 
@@ -20,13 +21,15 @@
 	&.justify-end
 		justify-content: flex-end !important
 
-.line-svg
+#line
 	position: absolute
-	width: 100%
-	height: 106%
-	transform: translateY(8rem)
+	width: 105%
+	max-width: unset
+	transform: translateY(6rem)
 	display: none
 	z-index: -1
+	// object-fit: initial !important
+	height: 96%
 
 .image-text
 	font-size: 15px
@@ -64,7 +67,7 @@
 			justify-content: space-between
 
 @media (min-width: 1024px)
-	.line-svg
+	#line
 		display: block
 
 	.img-lg
@@ -74,5 +77,11 @@
 		max-height: unset
 
 @media (min-width: 1110px)
-	.line-svg
-		height: 94%
+	#line
+		transform: translateY(8rem)
+		height: 93%
+@media (min-width: 1900px)
+	#line
+		transform: translateY(6rem)
+		object-fit: contain
+		width: 120%
