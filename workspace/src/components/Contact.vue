@@ -13,7 +13,7 @@
           src="../assets/images/Contact/map.png"
           alt="Map"
         /> -->
-			<MapComponent class="git"/>
+			<MapComponent class="rounded-lg max-w-xl w-full"/>
         <div class="pl-4 py-16 max-w-xl w-full h-full bg-[#E3E3E3] rounded-lg">
           <table>
             <tr>
