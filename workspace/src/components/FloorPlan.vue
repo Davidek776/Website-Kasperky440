@@ -1,6 +1,5 @@
 <template>
   <!-- THE HOUSE - SIMON-->
-  <!-- THE HOUSE - SIMON-->
   <div class="wrap">
     <div class="flex justify-center">
       <img
@@ -11,14 +10,14 @@
     </div>
 
     <div
-      class="mainHeading flex justify-center accomodation"
+      class="flex justify-center"
       ref="accomodationBegin"
     >
-      <h1><b>UBYTOVÁNÍ</b></h1>
+      <span class="text-xl lg:text-xl"><b>UBYTOVÁNÍ</b></span>
     </div>
 
-    <div class="flex justify-center floorHeader">
-      <h2><b>1. PATRO</b></h2>
+    <div class="flex justify-center">
+      <span class="text-lg"><b>1. PATRO</b></span>
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
@@ -28,6 +27,9 @@
         class="w-4/5 h-auto max-w-max"
         
       />
+
+      <!--Pop Up-->
+      <PopUp/>
 
       <!--Area Images-->
       <img
@@ -56,8 +58,8 @@
       />
     </div>
 
-    <div class="flex justify-center floorHeader">
-      <h2><b>2. PATRO</b></h2>
+    <div class="flex justify-center">
+      <span class="text-lg"><b>2. PATRO</b></span>
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
@@ -151,6 +153,7 @@
 import ImgCarousel from "../components/Carousel.vue";
 import ImgSlide from "../components/Slide.vue";
 import carouselData from "../data/carouselData.json";
+import PopUp from "../components/PopUp.vue";
 
 let imgPreviewIndex;
 const fullImageViewGallery = document.getElementsByClassName("fullImageView");
@@ -160,6 +163,7 @@ export default {
   components: {
     ImgCarousel,
     ImgSlide,
+    PopUp,
   },
 
   setup() {},
