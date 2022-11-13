@@ -25,7 +25,7 @@
 
 <script>
 
-import statsData from "../data/stats_DB.json"
+import statsData from "@/data/stats_DB.json"
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names

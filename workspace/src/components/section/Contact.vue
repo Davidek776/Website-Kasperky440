@@ -10,7 +10,7 @@
       >
         <!-- <img
           class="rounded-lg max-w-xl w-full"
-          src="../assets/images/Contact/map.png"
+          src="@/assets/images/Contact/map.png"
           alt="Map"
         /> -->
 			<MapComponent class="rounded-lg max-w-xl w-full"/>
@@ -44,7 +44,7 @@
         REZERVOVAT
         <img
           class="absolute -z-10 left-56 bottom-4 opacity-0 sm:opacity-100"
-          src="../assets/images/Contact/Arrow.png"
+          src="@/assets/images/Contact/Arrow.png"
           alt="Arrow"
         />
       </a>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import MapComponent from './MapComponent.vue';
+import MapComponent from '@/components/MapComponent.vue';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names

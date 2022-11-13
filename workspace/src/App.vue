@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import FloorPlan from "./components/FloorPlan.vue";
-import Reviews from "@/components/Reviews";
-import AboutUs from "./components/AboutUs.vue";
-import Contact from "@/components/Contact";
-import Stats from "@/components/Stats";
-import Footer from "@/components/Footer";
-import HeaderAndHero from "@/components/HeaderAndHero.vue";
+import FloorPlan from "@/components/section/FloorPlan.vue";
+import Reviews from "@/components/section/Reviews";
+import AboutUs from "@/components/section/AboutUs.vue";
+import Contact from "@/components/section/Contact";
+import Stats from "@/components/section/Stats";
+import Footer from "@/components/section/Footer";
+import HeaderAndHero from "@/components/section/HeaderAndHero.vue";
 // import HeaderAndHero from "@/components/HeaderAndHero.vue";
 
 export default {

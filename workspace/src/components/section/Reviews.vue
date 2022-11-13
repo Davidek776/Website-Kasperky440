@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import reviewsData from "../data/db.json";
+import reviewsData from "@/data/db.json";
 import SingleReview from "@/components/SingleReview";
 
 export default {

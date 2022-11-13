@@ -7,10 +7,10 @@
             <i @click="() => hidePopUp" class="fa-solid fa-xmark text-xl text-white hover:text-2xl"></i>
           </span>
     </div>
-    
+
     <img
           class="absolute z-10 left-1/4 top-20 md:top-16 lg:top-28 bottom-4 opacity-0 sm:opacity-100 w-1/12"
-          src="../assets/images/Contact/Arrow.png"
+          src="@/assets/images/Contact/Arrow.png"
           alt="Arrow"
         />
     </div>
@@ -19,7 +19,7 @@
 <script>
 export default {
     setup () {
-        
+
 
         return {}
     },
