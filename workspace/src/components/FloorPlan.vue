@@ -3,7 +3,7 @@
   <div class="wrap">
 
     <div class=" m-auto flex justify-center text-4xl md:text-8xl lg:text-12xl  mb-20 lg:mb-40">
-      <font-awesome-icon icon="fa-solid fa-circle-down" class="animate-bounce" />
+      <font-awesome-icon icon="fa-solid fa-circle-down" class="animate-bounce cursor-pointer" @click="scrollToFloorPlan"/>
     </div>
     
 
@@ -11,7 +11,9 @@
       class="flex justify-center"
       ref="accomodationBegin"
     >
-      <span class="text-2xl lg:text-3xl"><b>UBYTOVÁNÍ</b></span>
+      <span class="text-2xl lg:text-3xl" 
+      ref="floorPlan"
+      ><b>UBYTOVÁNÍ</b></span>
     </div>
 
     <div class="flex justify-center">
@@ -241,45 +243,11 @@ export default {
         behavior: "smooth",
       });
     },
+    //scroll to element
+    scrollToFloorPlan() {
+      this.$refs["floorPlan"].scrollIntoView({ behavior: "smooth" })
+    },
 
-    /*
-  putImagesInCarousel(){
-    this.loadImagesToCarousel();
-
-    //this.loadImagesToCarousel().forEach(element => {
-   // });
-
-    //v-for="(slide, index) in loadImagesToCarousel()" :key="index"
-   // this.loadImagesToCarousel().forEach(slide => {
-     //   Object.entries(slide).forEach(([value]) => {
-       //
-         // alert();
-       // });
-       // console.log('-------------------');
-   // });
-
-   for (let index = 0; index < this.loadImagesToCarousel().length; index++) {
-        let carouselDiv = document.getElementById('carouselDiv');
-        let imgValues = this.loadImagesToCarousel();
-
-        this.imgSrc = imgValues[index];
-
-        alert(carouselDiv);
-
-        carouselDiv.innerHTML =
-        '<div name="fullImageViewGallery" class="fullImageView flex justify-center">' +
-         '<ImgCarousel :startAutoPlay="false" class="imgCarousel" v-slot="{currentSlide}">' +
-            '<ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">' +
-              '<div v-show="currentSlide === index + 1" class="slide-info">' +
-                '<img :src="require("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg")" alt="" />' +
-              '</div>' +
-            '</ImgSlide>' +
-          '</ImgCarousel>' +
-        '</div>;'
-   }
-
-  }
-  */
   },
   watch: {
     accomodation: function () {
