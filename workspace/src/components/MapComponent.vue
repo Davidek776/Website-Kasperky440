@@ -1,7 +1,7 @@
 <template>
   <GMapMap
       :center="center"
-      :zoom="10"
+      :zoom="13"
       style="width: 100%; height: 400px; border-radius: 0.5em;"
 		:disableDefaultUI="true"
   >
