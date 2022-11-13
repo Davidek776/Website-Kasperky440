@@ -1,19 +1,17 @@
 <template>
   <!-- THE HOUSE - SIMON-->
   <div class="wrap">
-    <div class="flex justify-center">
-      <img
-        src="../assets/images/icons/ScrollButton.svg"
-        alt="Scroll Button"
-        class="mt-24"
-      />
+
+    <div class=" m-auto flex justify-center text-4xl md:text-8xl lg:text-12xl  mb-20 lg:mb-40">
+      <font-awesome-icon icon="fa-solid fa-circle-down" class="animate-bounce" />
     </div>
+    
 
     <div
       class="flex justify-center"
       ref="accomodationBegin"
     >
-      <span class="text-xl lg:text-xl"><b>UBYTOVÁNÍ</b></span>
+      <span class="text-2xl lg:text-3xl"><b>UBYTOVÁNÍ</b></span>
     </div>
 
     <div class="flex justify-center">
@@ -29,13 +27,13 @@
       />
 
       <!--Pop Up-->
-      <PopUp/>
+      <PopUp popupHide="block"/>
 
       <!--Area Images-->
       <img
         src="../assets/images/shared-spaces/kitchen1.png"
         alt="kitchen"
-        class="placePreviewKitchen shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewKitchen shadow-md hover:shadow-lg md:animate-pulse hover:animate-none"
         @click="fullView(0)"
       />
       <img

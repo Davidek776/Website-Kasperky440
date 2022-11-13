@@ -7,6 +7,9 @@ module.exports = {
         mdd: { min: "951px" },
         smm: { max: "500px" },
       },
+      colors:{
+        'kasp-red': '#a6372d',
+      },
     },
   },
   plugins: [],
