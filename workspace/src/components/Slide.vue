@@ -1,5 +1,5 @@
 <template>
-  <div class="imgSlide">
+  <div class="imgSlide select-none">
     <transition name="imgSlide" :css="false">
         <slot />
     </transition>

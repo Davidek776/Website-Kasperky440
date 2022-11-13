@@ -1,5 +1,5 @@
 <template>
-  <div class="imgCarousel">
+  <div class="imgCarousel select-none">
     <slot :currentSlide="currentSlide"/> 
 
 
