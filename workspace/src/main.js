@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/tailwind.css";
+
+import VueGoogleMaps from '@fawmi/vue-google-maps'
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 // import VueScrollmagic from 'vue-scrollmagic'
@@ -17,8 +19,14 @@ import { faCircleDown } from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
 library.add(faCircleDown)
 
+const app = createApp(App);
+app.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyAmwDchKVnv86KG03SDr-u2nAtJP6KtxwA',
+    },
+})
 
-createApp(App)
+
 .component('font-awesome-icon', FontAwesomeIcon)
 .mount('#app')
 
