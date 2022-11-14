@@ -103,14 +103,14 @@
   /* #logo-parent {
     width: 3500px;
     height: 75px;
-    background: url("../images/icons/Group2.png");
+    background: url("@/images/icons/Group2.png");
     /* background-size: 50%; */
-  /* display: none; 
+  /* display: none;
   } */
   /* #logo {
     width: 40%;
     height: 4.3rem;
-    background: url("../images/icons/logo2Transparent.png");
+    background: url("@/images/icons/logo2Transparent.png");
     background-size: 30%;
     object-fit: fill;
     background-repeat: no-repeat;

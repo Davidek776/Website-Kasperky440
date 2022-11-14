@@ -2,9 +2,10 @@
   <section class="about-us" ref="aboutBegin">
 
 	<picture>
-		<source media="(min-width: 1024px and max-width: 1110px)" srcset="../assets/aboutUs/img/line-md.png" />
-		<source media="(min-width: 1110px)" srcset="../assets/aboutUs/img/line.png" />
-		<img loading="lazy" id="line" src="../assets/aboutUs/img/line-md.png" alt="Dotted line" />
+	
+		<source media="(min-width: 1024px and max-width: 1110px)" srcset="@/assets/aboutUs/img/line-md.png" />
+		<source media="(min-width: 1110px)" srcset="@/assets/aboutUs/img/line.png" />
+		<img loading="lazy" id="line" src="@/assets/aboutUs/img/line-md.png" alt="Dotted line" />
 	</picture>
 
     <h1 class="title text-slate-900 text-center md:text-4xl text-2xl">
@@ -21,7 +22,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-l lg:w-1/2 lg:max-w-screen-md"
-        src="../assets/aboutUs/img/20190118_085040.jpg"
+        src="@/assets/aboutUs/img/20190118_085040.jpg"
         alt="image"
       />
     </div>
@@ -37,7 +38,7 @@
       <!-- <p class="animate animate-l uppercase  md:text-left md:text-lg image-text lg:w-5/12"></p> -->
       <img loading="lazy"
         class="animate animate-r lg:w-4/12 img-lg"
-        src="../assets/aboutUs/img/bike_house.jpeg"
+        src="@/assets/aboutUs/img/bike_house.jpeg"
         alt="image"
       />
     </div>
@@ -51,7 +52,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-r lg:w-1/2 lg:max-w-xs img-lg"
-        src="../assets/aboutUs/img/IMG_3826.jpg"
+        src="@/assets/aboutUs/img/IMG_3826.jpg"
         alt="image"
       />
     </div>
@@ -67,8 +68,8 @@
         kilometrů upravených běžeckých tratí.
       </p>
       <img loading="lazy"
-        class="animate animate-l lg:max-w-sm lg:w-1/2 lg:h-96"
-        src="../assets/aboutUs/img/20200120_pohled_z_terasy.jpg"
+        class="animate animate-l lg:max-w-xl lg:w-1/2 lg:h-96"
+        src="@/assets/aboutUs/img/20200120_pohled_z_terasy.jpg"
         alt="image"
       />
     </div>
@@ -83,7 +84,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-r lg:w-96"
-        src="../assets/aboutUs/img/IMG_3819.jpg"
+        src="@/assets/aboutUs/img/IMG_3819.jpg"
         alt="image"
       />
     </div>
@@ -97,8 +98,8 @@
         kino. Akce Národního parku Šumava včetně ukázky rýžování zlata.
       </p>
       <img loading="lazy"
-        class="animate animate-l lg:w-1/2"
-        src="../assets/aboutUs/img/20181116_113501.jpg"
+        class="animate animate-l lg:w-1/2 tall"
+        src="@/assets/aboutUs/img/20181116_113501.jpg"
         alt="image"
       />
     </div>
@@ -139,5 +140,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/aboutUs/style.min.css";
+@import "@/assets/aboutUs/style.min.css";
 </style>

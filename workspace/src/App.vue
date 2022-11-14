@@ -16,26 +16,17 @@
 </template>
 
 <script>
-import FloorPlan from "@/components/FloorPlan.vue";
-import Reviews from "@/components/Reviews";
-import AboutUs from "./components/AboutUs.vue";
-import Contact from "@/components/Contact";
-import Stats from "@/components/Stats";
-import Footer from "@/components/Footer";
-import HeaderAndHero from "@/components/HeaderAndHero.vue";
-
+import FloorPlan from "@/components/section/FloorPlan.vue";
+import Reviews from "@/components/section/Reviews";
+import AboutUs from "@/components/section/AboutUs.vue";
+import Contact from "@/components/section/Contact";
+import Stats from "@/components/section/Stats";
+import Footer from "@/components/section/Footer";
+import HeaderAndHero from "@/components/section/HeaderAndHero.vue";
+// import HeaderAndHero from "@/components/HeaderAndHero.vue";
 
 export default {
   name: "App",
-//  components: {
-//  Contact : () => import(/* webpackPrefetch: true */"@/components/Contact"),
-//Stats: () => import(/* webpackPrefetch: true */"@/components/Stats"),
- //   Footer: () => import(/* webpackPrefetch: true */"@/components/Footer"),
- //   Reviews: () => import(/* webpackPrefetch: true */'@/components/Reviews'),
- //   FloorPlan: () => import(/* webpackPrefetch: true */"@/components/FloorPlan.vue"),
- //   AboutUs: () => import(/* webpackPrefetch: true */"./components/AboutUs.vue"),
- //   HeaderAndHero: () => import("@/components/HeaderAndHero.vue"),
- // },
   components:{
     HeaderAndHero,
     FloorPlan,

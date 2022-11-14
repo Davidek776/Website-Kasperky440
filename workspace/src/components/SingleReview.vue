@@ -11,7 +11,7 @@
         <div class="flex items-center space-x-2">
           <img loading="lazy"
             class="w-4"
-            src="../assets/images/icons/czech-republic.png"
+            src="@/assets/images/icons/czech-republic.png"
             alt="cz flag"
           />
           <p class="text-sm text-slate-500">Česka republika</p>
@@ -29,7 +29,7 @@ export default {
   props: ["reviewData"],
   methods: {
     getImgUrl: function (url) {
-      var images = require.context("../assets/images/icons/", false, /\.jpg$/);
+      var images = require.context("@/assets/images/icons/", false, /\.jpg$/);
       return images("./" + url + ".jpg");
     },
   },

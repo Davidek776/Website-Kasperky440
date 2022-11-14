@@ -11,7 +11,7 @@
     
     <img loading="lazy"
           class="absolute z-10 left-1/4 top-20 md:top-16 lg:top-28 bottom-4 opacity-0 sm:opacity-100 w-1/12"
-          src="../assets/images/Contact/Arrow.png"
+          src="@/assets/images/Contact/Arrow.png"
           alt="Arrow"
         />
     </div>
@@ -20,7 +20,7 @@
 <script>
 export default {
     setup () {
-        
+
 
         return {}
     },

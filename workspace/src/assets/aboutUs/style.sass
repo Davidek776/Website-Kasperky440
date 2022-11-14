@@ -1,4 +1,4 @@
-@import ../_variables
+@import @/_variables
 
 .title
 	padding: 2em 0
@@ -9,8 +9,7 @@
 	background-size: contain
 	padding-bottom: 12em
 
-	& img:not(#line)
-
+	& img:not(#line, .tall)
 		object-fit: cover
 		max-height: 400px
 
@@ -53,6 +52,10 @@
 
 	&.ms
 		margin: 3em
+
+.tall
+	object-fit: cover
+	max-height: 550px !important
 
 .animate
 	opacity: 0

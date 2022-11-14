@@ -9,7 +9,7 @@
       <div class="relative flex justify-between items-center">
         <h1 class="text-2xl font-[Helvetica] cursor-pointer" id="logo">
           <img loading="lazy"
-            src="../assets/images/icons/logo2Transparent.png"
+            src="@/assets/images/icons/logo2Transparent.png"
             alt=""
             class="kasLogo"
           />
@@ -22,7 +22,7 @@
         >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
           <img loading="lazy"
-            src="../assets/images/icons/bars-solid.svg"
+            src="@/assets/images/icons/bars-solid.svg"
             name="menu"
             width="50"
             alt=""
@@ -91,7 +91,7 @@
         <ul class="speach flex flex-row mdd:flex-col">
           <button class="duration-300">
             <img loading="lazy"
-              src="../assets/images/icons/czech-republic.png"
+              src="@/assets/images/icons/czech-republic.png"
               alt=""
               class="w-8"
             />
@@ -100,7 +100,7 @@
           <!--
           <button class="duration-300">
             <img
-              src="../assets/images/icons/united-kingdom.png"
+              src="@/assets/images/icons/united-kingdom.png"
               alt=""
               class="w-8"
             />
@@ -134,21 +134,21 @@
     </div>
     <div class="features">
       <div class="first">
-        <img loading="lazy" src="../assets/images/icons/parking2.svg" alt="" />
+        <img loading="lazy" src="@/assets/images/icons/parking2.svg" alt="" />
         <p>PARKOVÁNÍ ZDARMA</p>
       </div>
       <div class="second">
-        <img loading="lazy" src="../assets/images/icons/Family2.svg" alt="" />
+        <img loading="lazy" src="@/assets/images/icons/Family2.svg" alt="" />
         <p>RODINNÉ POKOJE</p>
       </div>
       <div class="third">
-        <img loading="lazy" src="../assets/images/icons/Wifi.svg" alt="" />
+        <img loading="lazy" src="@/assets/images/icons/Wifi.svg" alt="" />
         <p>WIFI ZDARMA</p>
       </div>
     </div>
   </div>
   <!-- <div class="content">
-    
+
   </div> -->
 
   <!-- <div class="next"></div> -->
@@ -258,8 +258,8 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/HeaderHeroStyles/base.css";
-@import "../assets/HeaderHeroStyles/dropDownStyle.css";
+@import "@/assets/HeaderHeroStyles/base.css";
+@import "@/assets/HeaderHeroStyles/dropDownStyle.css";
 .navigation {
   /* z-index: 800; */
 }

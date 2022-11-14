@@ -38,6 +38,6 @@ export default {
 
 <style scoped>
 .img {
-  background-image: url("../assets/images/Footer/wave.png");
+  background-image: url("@/assets/images/Footer/wave.png");
 }
 </style>
