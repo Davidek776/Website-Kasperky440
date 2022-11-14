@@ -8,7 +8,7 @@
     >
       <div class="relative flex justify-between items-center">
         <h1 class="text-2xl font-[Helvetica] cursor-pointer" id="logo">
-          <img
+          <img loading="lazy"
             src="../assets/images/icons/logo2Transparent.png"
             alt=""
             class="kasLogo"
@@ -21,7 +21,7 @@
           @click="Menu(this)"
         >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
-          <img
+          <img loading="lazy"
             src="../assets/images/icons/bars-solid.svg"
             name="menu"
             width="50"
@@ -90,7 +90,7 @@
         </a>
         <ul class="speach flex flex-row mdd:flex-col">
           <button class="duration-300">
-            <img
+            <img loading="lazy"
               src="../assets/images/icons/czech-republic.png"
               alt=""
               class="w-8"
@@ -134,15 +134,15 @@
     </div>
     <div class="features">
       <div class="first">
-        <img src="../assets/images/icons/parking2.svg" alt="" />
+        <img loading="lazy" src="../assets/images/icons/parking2.svg" alt="" />
         <p>PARKOVÁNÍ ZDARMA</p>
       </div>
       <div class="second">
-        <img src="../assets/images/icons/Family2.svg" alt="" />
+        <img loading="lazy" src="../assets/images/icons/Family2.svg" alt="" />
         <p>RODINNÉ POKOJE</p>
       </div>
       <div class="third">
-        <img src="../assets/images/icons/Wifi.svg" alt="" />
+        <img loading="lazy" src="../assets/images/icons/Wifi.svg" alt="" />
         <p>WIFI ZDARMA</p>
       </div>
     </div>

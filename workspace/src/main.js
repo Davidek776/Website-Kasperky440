@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import App from "./App.vue";
-import "./assets/tailwind.css";
+import App from "@/App.vue";
+import "@/assets/tailwind.css";
 
 import VueGoogleMaps from '@fawmi/vue-google-maps'
 import gsap from "gsap"
@@ -15,9 +15,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faCircleDown } from '@fortawesome/free-solid-svg-icons'
+import {faSquareXmark} from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faCircleDown)
+library.add(faSquareXmark)
+
 
 const app = createApp(App);
 app
