@@ -11,7 +11,7 @@
       class="flex justify-center"
       ref="accomodationBegin"
     >
-      <span class="text-2xl lg:text-3xl" 
+      <span class="text-2xl sm:text-lg" 
       ref="floorPlan"
       ><b>UBYTOVÁNÍ</b></span>
     </div>
