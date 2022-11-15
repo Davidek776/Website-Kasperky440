@@ -26,14 +26,14 @@
       </div>
 
       <ul
-        class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+        class="drop-down mdd:flex mdd:items-center mdd:relative mdd:-top-6 absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
         id="dropId"
       >
         <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
           <a
             href="#"
             @click="gotoHome()"
-            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
+            class="text-sm 3xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
             >Domů</a
           >
         </li>
@@ -42,7 +42,7 @@
           <a
             href="#"
             @click="gotoAccomodation()"
-            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
+            class="text-sm 3xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
             >Ubytování</a
           >
         </li>
@@ -50,7 +50,7 @@
           <a
             href="#"
             @click="gotoAbout()"
-            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500 "
+            class="text-sm 3xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500 "
             >O Nás</a
           >
         </li>
@@ -58,7 +58,7 @@
           <a
             href="#"
             @click="gotoReview()"
-            class=" text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
+            class=" text-sm 3xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
             >Recenze</a
           >
         </li>
@@ -68,7 +68,7 @@
           <a
             href="#"
             @click="gotoContact()"
-            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500 "
+            class="text-sm 3xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500 "
             >Kontakt</a
           >
         </li>
@@ -77,7 +77,7 @@
           target="_blank"
         >
           <button
-            class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm 2xl:text-3xl xl:text-md"
+            class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm 3xl:text-3xl xl:text-md"
             id="reserveBtn"
           >
             Rezervovat
@@ -88,7 +88,7 @@
             <img loading="lazy"
               src="@/assets/images/icons/czech-republic.png"
               alt=""
-              class="w-8 2xl:w-12"
+              class="w-6 xl:w-8 3xl:w-12"
             />
           </button>
           <!--Uncomment when we have english version-->
