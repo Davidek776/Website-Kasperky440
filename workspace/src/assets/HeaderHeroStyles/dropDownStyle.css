@@ -5,28 +5,25 @@
 
 @media (max-width: 950px) {
   .drop-down {
-    height: 36em;
-    padding: 0;
+    padding-bottom: .75em;
   }
   #dropId {
-    padding: 0;
-    width: 40%;
+	background: #fff;
+    padding-bottom: .5em;
   }
 
-  #reserveBtn {
-    margin: 0.5em auto;
-    padding: 0 auto;
-    text-align: center;
-    /*margin-left: 10em;
-    */
-    width: 100%;
-    border-radius: 0px 6px 6px 0px;
-    padding: 1em 0;
-    font: Helvetica;
-    text-transform: uppercase;
-    font-size: 2em;
-    margin-bottom: 0;
-  }
+	#reserveBtn {
+		font-size: 1.5rem;
+		margin: 0.5em 0;
+		text-align: center;
+		margin-left: 10%;
+		width: 80%;
+		border-radius: 6px;
+		padding: 1em 0;
+		font: Helvetica;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
   .speach {
     display: flex;
     flex-direction: row;
@@ -38,9 +35,8 @@
   .drop-down li {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 6 00;
-    padding: 0.4em 0;
-    font-size: 2em;
+    padding: 1em 0;
+    font-size: 1.5rem;
   }
 
   .motto {
@@ -69,9 +65,7 @@
 }
 
 @media (max-width: 800px) {
-  .drop-down {
-    height: 40em;
-  }
+
 }
 
 @media (max-width: 700px) {
@@ -81,18 +75,6 @@
 }
 
 @media (max-width: 650px) {
-  .drop-down {
-    height: 46.5em;
-  }
-
-  #dropId {
-    width: 50%;
-  }
-
-  .drop-down li {
-    padding: 0.5em 0;
-    margin: 0;
-  }
 
   #reserveBtn {
     margin-top: 0;
@@ -127,9 +109,8 @@
   }
 
   .drop-down {
-    height: 49em;
     position: absolute;
-    bottom: 500px;
+    /* bottom: 500px; */
   }
 
   #dropId {
