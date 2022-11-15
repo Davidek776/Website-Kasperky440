@@ -6,27 +6,22 @@
       class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
       id="logo-parent"
     >
-      <div class="relative flex justify-between items-center">
-        <h1 class="text-2xl font-[Helvetica] cursor-pointer" id="logo">
+      <div class="relative flex justify-between">
+        <h1 class="relative text-2xl font-[Helvetica] cursor-pointer" id="logo">
           <img loading="lazy"
             src="@/assets/images/icons/logo2Transparent.png"
             alt=""
-            class="kasLogo"
+            class=" w-10 md:w-20 lg:w-28 xl:w-36"
           />
         </h1>
 
         <span
-          class="text-3xl cursor-pointer mx-2 mdd:hidden block bar"
+          class="relative text-3xl md:text-6xl cursor-pointer mx-2 lg:hidden flex justify-end"
           ref="bars"
           @click="Menu(this)"
         >
           <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
-          <img loading="lazy"
-            src="@/assets/images/icons/bars-solid.svg"
-            name="menu"
-            width="50"
-            alt=""
-          />
+          <font-awesome-icon icon="fa-solid fa-bars" name="menu" size="" />
         </span>
       </div>
 
@@ -38,7 +33,7 @@
           <a
             href="#"
             @click="gotoHome()"
-            class="text-xl mdd:hover:text-cyan-500 duration-500"
+            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
             >Domů</a
           >
         </li>
@@ -47,7 +42,7 @@
           <a
             href="#"
             @click="gotoAccomodation()"
-            class="text-xl mdd:hover:text-cyan-500 duration-500"
+            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
             >Ubytování</a
           >
         </li>
@@ -55,7 +50,7 @@
           <a
             href="#"
             @click="gotoAbout()"
-            class="text-xl mdd:hover:text-cyan-500 duration-500"
+            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500 "
             >O Nás</a
           >
         </li>
@@ -63,7 +58,7 @@
           <a
             href="#"
             @click="gotoReview()"
-            class="text-xl mdd:hover:text-cyan-500 duration-500"
+            class=" text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500"
             >Recenze</a
           >
         </li>
@@ -73,7 +68,7 @@
           <a
             href="#"
             @click="gotoContact()"
-            class="text-xl mdd:hover:text-cyan-500 duration-500"
+            class="text-sm 2xl:text-3xl xl:text-md mdd:hover:text-cyan-500 duration-500 "
             >Kontakt</a
           >
         </li>
@@ -82,7 +77,7 @@
           target="_blank"
         >
           <button
-            class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl"
+            class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm 2xl:text-3xl xl:text-md"
             id="reserveBtn"
           >
             Rezervovat
@@ -93,7 +88,7 @@
             <img loading="lazy"
               src="@/assets/images/icons/czech-republic.png"
               alt=""
-              class="w-8"
+              class="w-8 2xl:w-12"
             />
           </button>
           <!--Uncomment when we have english version-->

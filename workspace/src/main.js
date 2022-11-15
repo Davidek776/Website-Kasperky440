@@ -16,10 +16,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faCircleDown } from '@fortawesome/free-solid-svg-icons'
 import {faSquareXmark} from '@fortawesome/free-solid-svg-icons'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faCircleDown)
 library.add(faSquareXmark)
+library.add(faBars)
 
 
 const app = createApp(App);
