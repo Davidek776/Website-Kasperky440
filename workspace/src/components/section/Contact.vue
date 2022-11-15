@@ -42,7 +42,7 @@
         class="uppercase text-white text-lg px-12 py-4 bg-slate-800 rounded-lg mx-auto relative hover:bg-slate-700 transition-all"
       >
         REZERVOVAT
-        <img
+        <img loading="lazy"
           class="absolute -z-10 left-56 bottom-4 opacity-0 sm:opacity-100"
           src="@/assets/images/Contact/Arrow.png"
           alt="Arrow"

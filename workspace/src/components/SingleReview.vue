@@ -1,7 +1,7 @@
 <template>
   <div class="p-5 bg-gray-100 rounded-xl max-w-lg w-full space-y-5">
     <div class="flex items-center space-x-3">
-      <img
+      <img loading="lazy"
         class="w-10 rounded-full"
         :src="getImgUrl(reviewData.image, true)"
         alt="User"
@@ -9,7 +9,7 @@
       <div>
         <h1 class="text-slate-900 font-bold">{{ reviewData.name }}</h1>
         <div class="flex items-center space-x-2">
-          <img
+          <img loading="lazy"
             class="w-4"
             src="@/assets/images/icons/czech-republic.png"
             alt="cz flag"

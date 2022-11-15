@@ -3,7 +3,7 @@
   <div class="wrap">
 
     <div class=" m-auto flex justify-center text-4xl md:text-8xl lg:text-12xl  mb-20 lg:mb-40">
-      <font-awesome-icon icon="fa-solid fa-circle-down" class="animate-bounce cursor-pointer" @click="scrollToFloorPlan"/>
+      <font-awesome-icon icon="fa-solid fa-circle-down" class="cursor-pointer" @click="scrollToFloorPlan" beat/>
     </div>
 
 
@@ -11,7 +11,7 @@
       class="flex justify-center"
       ref="accomodationBegin"
     >
-      <span class="text-2xl lg:text-3xl"
+      <span class="text-2xl sm:text-lg"
       ref="floorPlan"
       ><b>UBYTOVÁNÍ</b></span>
     </div>
@@ -21,8 +21,8 @@
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
-      <img
-        src="@/assets/images/FloorPlans/floor_1.png"
+      <img loading="lazy"
+        src="@/assets/images/FloorPlans/floor_1.webp"
         alt="Floor 1"
         class="w-4/5 h-auto max-w-max"
 
@@ -32,28 +32,28 @@
       <PopUp popupHide="block"/>
 
       <!--Area Images-->
-      <img
-        src="@/assets/images/shared-spaces/kitchen1.png"
+      <img loading="lazy"
+        src="@/assets/images/shared-spaces/kitchen1.webp"
         alt="kitchen"
-        class="placePreviewKitchen shadow-md hover:shadow-lg md:animate-pulse hover:animate-none"
+        class="placePreviewKitchen shadow-lg hover:shadow-lg md:animate-pulse hover:animate-none"
         @click="fullView(0)"
       />
-      <img
-        src="@/assets/images/shared-spaces/dining-area1.png"
+      <img loading="lazy"
+        src="@/assets/images/shared-spaces/dining-area1.webp"
         alt="dining area"
-        class="placePreviewDiningArea shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewDiningArea shadow-md hover:shadow-lg border-4 border-double border-slate-800/100"
         @click="fullView(1)"
       />
-      <img
-        src="@/assets/images/shared-spaces/front-hall.png"
+      <img loading="lazy"
+        src="@/assets/images/shared-spaces/front-hall.webp"
         alt="front hall"
-        class="placePreviewFrontHall shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewFrontHall shadow-md hover:shadow-lg"
         @click="fullView(8)"
       />
-      <img
-        src="@/assets/images/shared-spaces/stairs1.png"
+      <img loading="lazy"
+        src="@/assets/images/shared-spaces/stairs1.webp"
         alt="stairs"
-        class="placePreviewStairs shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewStairs shadow-md hover:shadow-lg"
         @click="fullView(9)"
       />
     </div>
@@ -63,63 +63,63 @@
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
-      <img
-        src="@/assets/images/FloorPlans/Floor_2.png"
+      <img loading="lazy"
+        src="@/assets/images/FloorPlans/Floor_2.webp"
         alt="Floor 2"
         class="w-4/5 h-auto max-w-max"
       />
 
       <!--Area Images-->
-      <img
-        src="@/assets/images/rooms/room1.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/room1.webp"
         alt="room 1"
-        class="placePreviewRoom1 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewRoom1 shadow-md hover:shadow-lg"
         @click="fullView(2)"
       />
-      <img
-        src="@/assets/images/rooms/bathroom1.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/bathroom1.webp"
         alt="bathroom 1"
-        class="placePreviewBathroom1 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewBathroom1 shadow-md hover:shadow-lg"
         @click="fullView(3)"
       />
 
-      <img
-        src="@/assets/images/rooms/room2_1.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/room2_1.webp"
         alt="room 2"
-        class="placePreviewRoom2 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewRoom2 shadow-md hover:shadow-lg"
         @click="fullView(10)"
       />
 
-      <img
-        src="@/assets/images/rooms/bathroom2_2.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/bathroom2_2.webp"
         alt="bathroom 2"
-        class="placePreviewBathroom2 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewBathroom2 shadow-md hover:shadow-lg"
         @click="fullView(11)"
       />
 
-      <img
-        src="@/assets/images/rooms/room3.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/room3.webp"
         alt="room 3"
-        class="placePreviewRoom3 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewRoom3 shadow-md hover:shadow-lg"
         @click="fullView(4)"
       />
 
-      <img
-        src="@/assets/images/rooms/room4.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/room4.webp"
         alt="room 4"
-        class="placePreviewRoom4 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewRoom4 shadow-md hover:shadow-lg"
         @click="fullView(5)"
       />
-      <img
-        src="@/assets/images/rooms/bathroom34.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/bathroom34.webp"
         alt="bathroom 3-4"
-        class="placePreviewBathroom34 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewBathroom34 shadow-md hover:shadow-lg"
         @click="fullView(6)"
       />
-      <img
-        src="@/assets/images/rooms/toilet34.png"
+      <img loading="lazy"
+        src="@/assets/images/rooms/toilet34.webp"
         alt="toilet 3-4"
-        class="placePreviewToilet34 shadow-md hover:shadow-lg md:animate-bounce"
+        class="placePreviewToilet34 shadow-md hover:shadow-lg"
         @click="fullView(7)"
       />
       <div></div>
@@ -135,7 +135,7 @@
       >
         <ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
           <div v-show="currentSlide === index + 1" class="slide-info">
-            <img :src="require('@/assets/images/' + slide + '.png')" alt="" />
+            <img loading="lazy" :src="require('@/assets/images/' + slide + '.webp')" alt="" />
           </div>
         </ImgSlide>
       </ImgCarousel>

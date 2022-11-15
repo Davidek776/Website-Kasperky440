@@ -2,9 +2,10 @@
   <section class="about-us" ref="aboutBegin">
 
 	<picture>
+	
 		<source media="(min-width: 1024px and max-width: 1110px)" srcset="@/assets/aboutUs/img/line-md.png" />
 		<source media="(min-width: 1110px)" srcset="@/assets/aboutUs/img/line.png" />
-		<img id="line" src="@/assets/aboutUs/img/line-md.png" alt="Dotted line" />
+		<img loading="lazy" id="line" src="@/assets/aboutUs/img/line-md.png" alt="Dotted line" />
 	</picture>
 
     <h1 class="title text-slate-900 text-center md:text-4xl text-2xl">
@@ -19,7 +20,7 @@
         2 pokoji. Celková kapacita 10 lůžek s možností přistýlky. Pokoje jsou
         vybaveny samostatnými koupelnami a WC.
       </p>
-      <img
+      <img loading="lazy"
         class="animate animate-l lg:w-1/2 lg:max-w-screen-md"
         src="@/assets/aboutUs/img/20190118_085040.jpg"
         alt="image"
@@ -35,7 +36,7 @@
         jízdních kol.
       </p>
       <!-- <p class="animate animate-l uppercase  md:text-left md:text-lg image-text lg:w-5/12"></p> -->
-      <img
+      <img loading="lazy"
         class="animate animate-r lg:w-4/12 img-lg"
         src="@/assets/aboutUs/img/bike_house.jpeg"
         alt="image"
@@ -49,7 +50,7 @@
         domky. Jižní svah s výhledem na sjezdovku a okolní kopce. Sjezdovka je
         vzdálená 250 m.
       </p>
-      <img
+      <img loading="lazy"
         class="animate animate-r lg:w-1/2 lg:max-w-xs img-lg"
         src="@/assets/aboutUs/img/IMG_3826.jpg"
         alt="image"
@@ -66,7 +67,7 @@
         tratě na Horské Kvildě nebo na Zadově obojí vzdálené 17 km s desítkami
         kilometrů upravených běžeckých tratí.
       </p>
-      <img
+      <img loading="lazy"
         class="animate animate-l lg:max-w-xl lg:w-1/2 lg:h-96"
         src="@/assets/aboutUs/img/20200120_pohled_z_terasy.jpg"
         alt="image"
@@ -81,7 +82,7 @@
         Kašperk. Výhodný bod pro cykloturistiku. Naučné stezky po stopách těžby
         zlata. Možnost koupání v řece Otavě nebo na koupališti v Sušici (13 km).
       </p>
-      <img
+      <img loading="lazy"
         class="animate animate-r lg:w-96"
         src="@/assets/aboutUs/img/IMG_3819.jpg"
         alt="image"
@@ -96,7 +97,7 @@
         hradě Kašperk koná mnoho kulturních akcí, divadelních představení, letní
         kino. Akce Národního parku Šumava včetně ukázky rýžování zlata.
       </p>
-      <img
+      <img loading="lazy"
         class="animate animate-l lg:w-1/2 tall"
         src="@/assets/aboutUs/img/20181116_113501.jpg"
         alt="image"

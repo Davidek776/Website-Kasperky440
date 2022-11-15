@@ -27,15 +27,16 @@ import HeaderAndHero from "@/components/section/HeaderAndHero.vue";
 
 export default {
   name: "App",
-  components: {
-    Contact,
-    Stats,
-    Footer,
-    Reviews,
+  components:{
+    HeaderAndHero,
     FloorPlan,
     AboutUs,
-    HeaderAndHero,
+    Reviews,
+    Stats,
+    Contact,
+    Footer,
   },
+
   data() {
     return {
       triggerHome: 0,
@@ -73,4 +74,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@import "@/assets/main.css"
+</style>
