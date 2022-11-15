@@ -51,7 +51,7 @@
 }
 
 header {
-  background: url("../images/Hero/finish_sky_finish_total.jpg") no-repeat;
+  background: url("../images/Hero/finish_sky_finish_total.webp") no-repeat;
   background-size: 100%;
   height: 46.5vw;
 }
@@ -155,7 +155,6 @@ header {
   position: relative;
   bottom: 130vw;
   z-index: 300;
-  background: url("../images/icons/ScrollButton.svg") no-repeat center 20vw;
   background-color: #fff;
   background-size: 7em;
 }
