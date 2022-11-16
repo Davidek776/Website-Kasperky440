@@ -285,4 +285,151 @@
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+}
+
+@media (min-width: 1600px) {
+  .placePreviewKitchen {
+    position: absolute;
+    width: 5.5vw;
+    height: 5.5vw;
+    border-radius: 50%;
+    top: 40%;
+    left: 23.5%;
+  }
+  .placePreviewKitchen:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewDiningArea {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    top: 64.5%;
+    left: 32%;
+  }
+  .placePreviewDiningArea:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewFrontHall {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    top: 9.5%;
+    left: 41.5%;
+  }
+  .placePreviewFrontHall:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewStairs {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    top: 5.5%;
+    left: 54%;
+  }
+  .placePreviewStairs:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom1 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    top: 64%;
+    left: 70%;
+  }
+  .placePreviewRoom1:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewBathroom1 {
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    top: 31%;
+    left: 71.5%;
+  }
+  .placePreviewBathroom1:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom2 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    top: 69%;
+    left: 48.5%;
+  }
+  .placePreviewRoom2:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewBathroom2 {
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 50%;
+    top: 72%;
+    left: 62%;
+  }
+  .placePreviewBathroom2:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom3 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    top: 35.5%;
+    left: 25.5%;
+  }
+  .placePreviewRoom3:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom4 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    top: 69%;
+    left: 27.5%;
+  }
+  .placePreviewRoom4:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewBathroom34 {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    top: 12%;
+    left: 42%;
+  }
+  .placePreviewBathroom34:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewToilet34 {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    top: 33%;
+    left: 38.7%;
+  }
+  .placePreviewToilet34:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
 }/*# sourceMappingURL=style-the-house-simon.css.map */

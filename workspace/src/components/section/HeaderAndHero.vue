@@ -16,7 +16,7 @@
         </h1>
 
         <span
-          class="relative text-3xl md:text-6xl cursor-pointer mx-2 lg:hidden flex justify-end"
+          class="relative text-3xl md:text-6xl cursor-pointer mx-2 mdd:hidden flex justify-end"
           ref="bars"
           @click="Menu(this)"
         >
@@ -92,15 +92,15 @@
             />
           </button>
           <!--Uncomment when we have english version-->
-          <!--
-          <button class="duration-300">
-            <img
+          
+          <button class="duration-300 hidden">
+            <img loading="lazy"
               src="@/assets/images/icons/united-kingdom.png"
               alt=""
               class="w-8"
             />
           </button>
-          -->
+        
         </ul>
         <h2 class=""></h2>
       </ul>
