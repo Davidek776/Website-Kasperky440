@@ -10,10 +10,10 @@
     </h1>
 
     <div
-      class="flex md:flex-row flex-col w-full mx-auto gap-5 md:gap-10 px-5 justify-center"
+      class="flex md:flex-row flex-col w-full max-w-7xl md:space-y-0 md:space-x-5 space-x-0 space-y-5 mx-auto px-5 justify-between pb-48"
     >
       <div
-        class="flex flex-col gap-5 items-center"
+        class="flex flex-col space-y-5 items-center"
         v-for="(listOfReviews, index) in getData(2)"
         :key="index"
       >

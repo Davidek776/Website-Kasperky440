@@ -32,7 +32,7 @@
     "vue-cli-plugin-tailwind": "~3.0.0",
     "vue-loader": "^17.0.0",
     "vue-template-compiler": "^2.7.10",
-	 "sass": "^1.54.9",
+    "sass": "^1.54.9",
     "sass-loader": "^13.0.2"
   },
   "eslintConfig": {
