@@ -23,6 +23,13 @@ library.add(faCircleDown)
 library.add(faSquareXmark)
 library.add(faBars)
 
+//internalization with I18n
+import { createI18n } from 'vue-i18n'
+
+const i18n = createI18n({
+    // something vue-i18n options here ...
+
+  })
 
 const app = createApp(App);
 app
@@ -32,6 +39,7 @@ app
     },
 })
 .component('font-awesome-icon', FontAwesomeIcon)
+.use(i18n)
 .mount('#app')
 
 
