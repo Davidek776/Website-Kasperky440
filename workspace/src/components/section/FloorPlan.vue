@@ -29,7 +29,7 @@
       />
 
       <!--Pop Up-->
-      <PopUp popupHide="block"/>
+      <PopUp/>
 
       <!--Area Images-->
       <img loading="lazy"
