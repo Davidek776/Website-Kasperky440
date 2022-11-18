@@ -29,31 +29,31 @@
       />
 
       <!--Pop Up-->
-      <PopUp popupHide="block"/>
+      <PopUp/>
 
       <!--Area Images-->
       <img loading="lazy"
-        src="@/assets/images/shared-spaces/kitchen1.webp"
+        src="@/assets/images/previews/kitchen1.webp"
         alt="kitchen"
-        class="placePreviewKitchen shadow-lg hover:shadow-lg md:animate-pulse hover:animate-none"
+        class="placePreviewKitchen shadow-lg hover:shadow-lg md:animate-pulse hover:animate-none border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(0)"
       />
       <img loading="lazy"
-        src="@/assets/images/shared-spaces/dining-area1.webp"
+        src="@/assets/images/previews/dining-area1.webp"
         alt="dining area"
-        class="placePreviewDiningArea shadow-md hover:shadow-lg border-4 border-double border-slate-800/100"
+        class="placePreviewDiningArea shadow-md hover:shadow-lg border-4 border-double xl:border-8 border-slate-800/100"
         @click="fullView(1)"
       />
       <img loading="lazy"
-        src="@/assets/images/shared-spaces/front-hall.webp"
+        src="@/assets/images/previews/front-hall.webp"
         alt="front hall"
-        class="placePreviewFrontHall shadow-md hover:shadow-lg"
+        class="placePreviewFrontHall shadow-md hover:shadow-lg border-4 border-double xl:border-8 border-slate-800/100"
         @click="fullView(8)"
       />
       <img loading="lazy"
-        src="@/assets/images/shared-spaces/stairs1.webp"
+        src="@/assets/images/previews/stairs1.webp"
         alt="stairs"
-        class="placePreviewStairs shadow-md hover:shadow-lg"
+        class="placePreviewStairs shadow-md hover:shadow-lg border-4 border-double xl:border-8 border-slate-800/100"
         @click="fullView(9)"
       />
     </div>
@@ -71,55 +71,55 @@
 
       <!--Area Images-->
       <img loading="lazy"
-        src="@/assets/images/rooms/room1.webp"
+        src="@/assets/images/previews/room1.webp"
         alt="room 1"
-        class="placePreviewRoom1 shadow-md hover:shadow-lg"
+        class="placePreviewRoom1 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(2)"
       />
       <img loading="lazy"
-        src="@/assets/images/rooms/bathroom1.webp"
+        src="@/assets/images/previews/bathroom1.webp"
         alt="bathroom 1"
-        class="placePreviewBathroom1 shadow-md hover:shadow-lg"
+        class="placePreviewBathroom1 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(3)"
       />
 
       <img loading="lazy"
-        src="@/assets/images/rooms/room2_1.webp"
+        src="@/assets/images/previews/room2_1.webp"
         alt="room 2"
-        class="placePreviewRoom2 shadow-md hover:shadow-lg"
+        class="placePreviewRoom2 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(10)"
       />
 
       <img loading="lazy"
-        src="@/assets/images/rooms/bathroom2_2.webp"
+        src="@/assets/images/previews/bathroom2_2.webp"
         alt="bathroom 2"
-        class="placePreviewBathroom2 shadow-md hover:shadow-lg"
+        class="placePreviewBathroom2 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(11)"
       />
 
       <img loading="lazy"
-        src="@/assets/images/rooms/room3.webp"
+        src="@/assets/images/previews/room3.webp"
         alt="room 3"
-        class="placePreviewRoom3 shadow-md hover:shadow-lg"
+        class="placePreviewRoom3 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(4)"
       />
 
       <img loading="lazy"
-        src="@/assets/images/rooms/room4.webp"
+        src="@/assets/images/previews/room4.webp"
         alt="room 4"
-        class="placePreviewRoom4 shadow-md hover:shadow-lg"
+        class="placePreviewRoom4 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(5)"
       />
       <img loading="lazy"
-        src="@/assets/images/rooms/bathroom34.webp"
+        src="@/assets/images/previews/bathroom34.webp"
         alt="bathroom 3-4"
-        class="placePreviewBathroom34 shadow-md hover:shadow-lg"
+        class="placePreviewBathroom34 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(6)"
       />
       <img loading="lazy"
-        src="@/assets/images/rooms/toilet34.webp"
+        src="@/assets/images/previews/toilet34.webp"
         alt="toilet 3-4"
-        class="placePreviewToilet34 shadow-md hover:shadow-lg"
+        class="placePreviewToilet34 shadow-md hover:shadow-lg border-4 xl:border-8 border-double border-slate-800/100"
         @click="fullView(7)"
       />
       <div></div>

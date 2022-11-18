@@ -1,3 +1,8 @@
+.wrap {
+  max-width: 2000px;
+  margin: auto;
+}
+
 .floorHeader {
   margin-top: 15vw;
   margin-bottom: 15vw;
@@ -285,4 +290,127 @@
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+}
+
+@media (min-width: 2000px) {
+  .placePreviewKitchen {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+  }
+  .placePreviewKitchen:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewDiningArea {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+  }
+  .placePreviewDiningArea:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewFrontHall {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  .placePreviewFrontHall:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewStairs {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .placePreviewStairs:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom1 {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+  }
+  .placePreviewRoom1:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewBathroom1 {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .placePreviewBathroom1:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom2 {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  .placePreviewRoom2:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewBathroom2 {
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+  .placePreviewBathroom2:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom3 {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+  .placePreviewRoom3:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewRoom4 {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  .placePreviewRoom4:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewBathroom34 {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  .placePreviewBathroom34:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
+  .placePreviewToilet34 {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .placePreviewToilet34:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+  }
 }/*# sourceMappingURL=style-the-house-simon.css.map */

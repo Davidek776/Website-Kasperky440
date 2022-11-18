@@ -1,34 +1,30 @@
 <template>
   <!-- <PureCss></PureCss> -->
-	<section>
-		<header>
-			<nav
-				class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between"
-				id="logo-parent"
-			>
-				<div class="relative flex justify-between items-center">
-				<h1 class="text-3xl font-[Helvetica] cursor-pointer" id="logo">
-					<img loading="lazy"
-						src="@/assets/images/icons/logo2Transparent.png"
-						alt=""
-						class="kasLogo"
-					/>
-				</h1>
 
-				<span
-					class="w-11 cursor-pointer mx-2 mdd:hidden block bar"
-					ref="bars"
-					@click="Menu(this)"
-				>
-					<!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
-					<img loading="lazy"
-						src="@/assets/images/icons/bars-solid.svg"
-						name="menu"
-						width="50"
-						alt=""
-					/>
-				</span>
-				</div>
+  <section>
+  <header>
+    <nav
+      class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between"
+      id="logo-parent"
+    >
+      <div class="relative flex justify-between">
+        <h1 class="relative text-3xl font-[Helvetica] cursor-pointer" id="logo">
+          <img loading="lazy"
+            src="@/assets/images/icons/logo2Transparent.png"
+            alt=""
+            class=" w-10 md:w-20 lg:w-28 xl:w-36"
+          />
+        </h1>
+
+        <span
+          class="relative text-3xl md:text-6xl cursor-pointer mx-2 mdd:hidden flex justify-end"
+          ref="bars"
+          @click="Menu(this)"
+        >
+          <!-- <ion-icon name="menu" @click="Menu(this)"></ion-icon> -->
+          <font-awesome-icon icon="fa-solid fa-bars" name="menu" size="" />
+        </span>
+      </div>
 
 				<ul
 				class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] ease-in duration-500 z-50 font-[Helvetica]"
@@ -146,7 +142,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+  </section>
 
 </template>
 
@@ -252,7 +248,7 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/HeaderHeroStyles/base.min.css";
+@import "@/assets/HeaderHeroStyles/base.css";
 @import "@/assets/HeaderHeroStyles/dropDownStyle.css";
 .navigation {
   /* z-index: 800; */

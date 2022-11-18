@@ -21,7 +21,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-l lg:w-1/2 lg:max-w-screen-md"
-        src="@/assets/aboutUs/img/20190118_085040.jpg"
+        src="@/assets/aboutUs/img/20190118_085040.webp"
         alt="image"
       />
     </div>
@@ -37,7 +37,7 @@
       <!-- <p class="animate animate-l uppercase  md:text-left md:text-lg image-text lg:w-5/12"></p> -->
       <img loading="lazy"
         class="animate animate-r lg:w-4/12 img-lg"
-        src="@/assets/aboutUs/img/bike_house.jpeg"
+        src="@/assets/aboutUs/img/bike_house.webp"
         alt="image"
       />
     </div>
@@ -51,7 +51,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-r lg:w-1/2 lg:max-w-xs img-lg"
-        src="@/assets/aboutUs/img/IMG_3826.jpg"
+        src="@/assets/aboutUs/img/IMG_3826.webp"
         alt="image"
       />
     </div>
@@ -68,7 +68,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-l lg:max-w-xl lg:w-1/2 lg:h-96"
-        src="@/assets/aboutUs/img/20200120_pohled_z_terasy.jpg"
+        src="@/assets/aboutUs/img/20200120_pohled_z_terasy.webp"
         alt="image"
       />
     </div>
@@ -83,7 +83,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-r lg:w-96"
-        src="@/assets/aboutUs/img/IMG_3819.jpg"
+        src="@/assets/aboutUs/img/IMG_3819.webp"
         alt="image"
       />
     </div>
@@ -98,7 +98,7 @@
       </p>
       <img loading="lazy"
         class="animate animate-l lg:w-1/2 tall"
-        src="@/assets/aboutUs/img/20181116_113501.jpg"
+        src="@/assets/aboutUs/img/20181116_113501.webp"
         alt="image"
       />
     </div>
