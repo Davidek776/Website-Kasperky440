@@ -139,5 +139,5 @@ export default {
 </script>
 
 <style>
-@import "@/assets/aboutUs/style.min.css";
+@import "@/assets/aboutUs/style.css";
 </style>
