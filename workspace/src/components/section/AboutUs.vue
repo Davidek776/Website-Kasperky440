@@ -41,7 +41,7 @@
         alt="image"
       />
     </div>
-    <div class="row lg:mt-10 lg:flex-row">
+    <div class="row lg:mt-10 lg:flex-row 2xl:translate-y-32 3xl:translate-y-60">
       <p
         class="animate animate-l uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16"
       >
@@ -55,7 +55,7 @@
         alt="image"
       />
     </div>
-    <div class="row lg:mt-20 lg:flex-row-reverse">
+    <div class="row lg:mt-20 2xl:mt-60 3xl:mt-80 lg:flex-row-reverse ">
       <p
         class="animate animate-r uppercase md:text-left md:text-lg image-text lg:w-5/12 lg:max-w-screen-sm lg:"
       >

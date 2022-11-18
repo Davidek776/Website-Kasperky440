@@ -6,7 +6,7 @@ module.exports = {
       screens: {
         mdd: { min: "951px" },
         smm: { max: "500px" },
-        '3xl': "1921",
+        '3xl': "1921px",
       },
       colors:{
         'kasp-red': '#a6372d',
