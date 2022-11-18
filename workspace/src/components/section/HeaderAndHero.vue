@@ -89,7 +89,9 @@
 					</button>
 				</a>
 				<ul class="speach flex flex-row mdd:flex-col">
-					<button class="duration-300">
+					<button class="duration-300"
+          @click="changeLang"
+          >
 						<img loading="lazy"
 						src="@/assets/images/icons/czech-republic.png"
 						alt=""
@@ -247,6 +249,11 @@ export default {
     gotoContact() {
       this.$emit("contact");
     },
+    changeLang() {
+      const langValue = localStorage.getItem("lang") === "en" ? "cs" : "en"
+      localStorage.setItem("lang", langValue)
+      location.reload()
+    }
   },
 };
 </script>
