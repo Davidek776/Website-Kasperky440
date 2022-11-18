@@ -17,6 +17,10 @@ $textSize2: 5vw;
         filter: brightness(70%);
     }
 }
+.wrap{
+    max-width: 2000px;
+    margin: auto
+}
 .floorHeader{
     @include margins();
     font-size: $textSize2;
@@ -217,4 +221,56 @@ $textSize2: 5vw;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+}
+
+
+//media
+@media (min-width: 2000px){
+    .placePreviewKitchen{
+        @include placePreviewPreset(7rem);
+    }
+    
+    .placePreviewDiningArea{
+        @include placePreviewPreset(9rem);
+    }
+    
+    .placePreviewFrontHall{
+        @include placePreviewPreset(5rem);
+    }
+    
+    .placePreviewStairs{
+        @include placePreviewPreset(3rem);
+    }
+    
+    .placePreviewRoom1{
+        @include placePreviewPreset(7rem);
+    }
+    
+    .placePreviewBathroom1{
+        @include placePreviewPreset(4rem);
+    }
+    
+    .placePreviewRoom2{
+        @include placePreviewPreset(8rem);
+    }
+    
+    .placePreviewBathroom2{
+        @include placePreviewPreset(4.5rem);
+    }
+    
+    .placePreviewRoom3{
+        @include placePreviewPreset(6rem);
+    }
+    
+    .placePreviewRoom4{
+        @include placePreviewPreset(8rem);
+    }
+    
+    .placePreviewBathroom34{
+        @include placePreviewPreset(5rem);
+    }
+    
+    .placePreviewToilet34{
+        @include placePreviewPreset(3rem);
+    }
 }

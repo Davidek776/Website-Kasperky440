@@ -4,7 +4,7 @@
     ref="reviewBegin"
     :class="showAllComments ? 'h-fit' : 'h-[52rem]'"
   >
-    <h1 class="text-slate-900 text-center md:text-4xl text-2xl">
+    <h1 class="text-slate-900 text-center title">
       <span class="font-bold review">RECENZE </span>
       <span class="font-light">OD VÁS</span>
     </h1>

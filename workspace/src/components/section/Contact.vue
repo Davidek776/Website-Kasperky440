@@ -1,7 +1,7 @@
 <template>
-  <section class="px-2 py-10 xl:py-20 xl:px-20 space-y-64">
+  <section class="px-2 py-10 xl:py-20 xl:pb-10 xl:px-20 space-y-32">
     <div class="space-y-24">
-      <h1 class="text-4xl text-center contact" ref="contactBegin">
+      <h1 class="title text-center contact" ref="contactBegin">
         KONTAKT
       </h1>
 
