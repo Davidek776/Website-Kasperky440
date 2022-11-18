@@ -27,7 +27,7 @@
       </div>
 
 				<ul
-				class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] ease-in duration-500 z-50 font-[Helvetica]"
+				class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 top-[-400px] ease-in duration-500 z-50 font-[Helvetica]"
 				id="dropId"
 				>
 				<li class="mx-4 my-6 mdd:my-0 ">
