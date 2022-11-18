@@ -2,7 +2,9 @@
   <!-- <PureCss></PureCss> -->
 
   <section>
-    <p>{{ $t("message.hello") }}</p>
+     <!-- <p>{{ $t("message.hello") }}</p>
+    <p>{{ $t("message2.hi") }}</p> -->
+    
     <header>
       <nav
           class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between"
