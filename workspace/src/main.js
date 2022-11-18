@@ -6,6 +6,10 @@ import VueGoogleMaps from '@fawmi/vue-google-maps'
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 
+//internalization with I18n
+import { createI18n } from 'vue-i18n'
+import {lang as messages} from '@/data/lang'
+
 //import font-awesome icons
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -23,15 +27,23 @@ library.add(faCircleDown)
 library.add(faSquareXmark)
 library.add(faBars)
 
-//internalization with I18n
-import { createI18n } from 'vue-i18n'
 
+let langValue = localStorage.getItem("lang")
+if(langValue == null) {
+    langValue = "cs"
+}
+
+// 2. Create i18n instance with options
 const i18n = createI18n({
-    // something vue-i18n options here ...
-
-  })
+    locale:  langValue, // set locale
+    fallbackLocale: 'cs', // set fallback locale
+    messages, // set locale messages
+    // If you need to specify other options, you can set other options
+    // ...
+})
 
 const app = createApp(App);
+app.use(i18n)
 app
 .use(VueGoogleMaps, {
     load: {
@@ -39,7 +51,6 @@ app
     },
 })
 .component('font-awesome-icon', FontAwesomeIcon)
-.use(i18n)
 .mount('#app')
 
 
