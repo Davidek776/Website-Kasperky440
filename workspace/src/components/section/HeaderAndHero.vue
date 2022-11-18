@@ -106,49 +106,43 @@
       </ul>
     </nav>
 
-    <div class="hero_content">
-      <div class="motto">
-        <h1 class="quote">
-          „<span> Pohodové Ubytování Pro Vaši Relaxaci </span>“
-        </h1>
-      </div>
-    </div>
-  </header>
+			<div class="hero_content">
+				<div class="motto">
+				<h1 class="quote">
+					„<span> Pohodové Ubytování Pro Vaši Relaxaci </span>“
+				</h1>
+				</div>
+			</div>
+		</header>
+		<div class="pre-content">
+			<div class="description">
+				<div class="left animate animate-l">
+				<p class="ease-in duration-300">
+					Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a
+					bezplatné Wi-Fi.
+				</p>
+				</div>
+				<div class="right animate animate-r">
+				<p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
+				</div>
+			</div>
+			<div class="features">
+				<div class="first">
+				<img loading="lazy" src="@/assets/images/icons/parking2.svg" alt="" />
+				<p>PARKOVÁNÍ ZDARMA</p>
+				</div>
+				<div class="second">
+				<img loading="lazy" src="@/assets/images/icons/Family2.svg" alt="" />
+				<p>RODINNÉ POKOJE</p>
+				</div>
+				<div class="third">
+				<img loading="lazy" src="@/assets/images/icons/Wifi.svg" alt="" />
+				<p>WIFI ZDARMA</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <div class="pre-content">
-    <div class="description">
-      <div class="left ease-in duration-300">
-        <p class="ease-in duration-300">
-          Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a
-          bezplatné Wi-Fi.
-        </p>
-      </div>
-      <div class="right">
-        <p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
-      </div>
-    </div>
-    <div class="features">
-      <div class="first">
-        <img loading="lazy" src="@/assets/images/icons/parking2.svg" alt="" />
-        <p>PARKOVÁNÍ ZDARMA</p>
-      </div>
-      <div class="second">
-        <img loading="lazy" src="@/assets/images/icons/Family2.svg" alt="" />
-        <p>RODINNÉ POKOJE</p>
-      </div>
-      <div class="third">
-        <img loading="lazy" src="@/assets/images/icons/Wifi.svg" alt="" />
-        <p>WIFI ZDARMA</p>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="content">
-
-  </div> -->
-
-  <!-- <div class="next"></div> -->
-
-  <!-- </main> -->
 </template>
 
 <script>
@@ -178,7 +172,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       // let quote = document.querySelector(".quote");
-      list.classList.remove("top-[110px]");
+      list.classList.remove("top-[90px]");
       list.classList.remove("opacity-100");
       // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
       // this.eventFire(document.getElementsByClassName("bars"), "click");
@@ -189,7 +183,7 @@ export default {
 
       e.name === "menu"
         ? ((e.name = "close"),
-          list.classList.add("top-[110px]"),
+          list.classList.add("top-[90px]"),
           list.classList.add("opacity-100"),
           nav.classList.remove("bg-transparent"),
           nav.classList.add("bg-white"),
@@ -253,7 +247,7 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/HeaderHeroStyles/base.css";
+@import "@/assets/HeaderHeroStyles/base.min.css";
 @import "@/assets/HeaderHeroStyles/dropDownStyle.css";
 .navigation {
   /* z-index: 800; */
