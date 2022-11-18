@@ -6,6 +6,7 @@ import VueGoogleMaps from '@fawmi/vue-google-maps'
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 
+//internalization with I18n
 import { createI18n } from 'vue-i18n'
 import {lang as messages} from '@/data/lang'
 
@@ -26,8 +27,6 @@ library.add(faCircleDown)
 library.add(faSquareXmark)
 library.add(faBars)
 
-//internalization with I18n
-import { createI18n } from 'vue-i18n'
 
 let langValue = localStorage.getItem("lang")
 if(langValue == null) {
