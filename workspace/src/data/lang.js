@@ -1,12 +1,12 @@
 export const lang = {
     en: {
         message: {
-            hello: 'hello world'
+            hello: 'eng'
         }
     },
-    ja: {
+    cs: {
         message: {
-            hello: 'こんにちは、世界'
+            hello: 'ceh'
         }
     }
 }

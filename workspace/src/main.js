@@ -24,12 +24,15 @@ import {faSquareXmark} from '@fortawesome/free-solid-svg-icons'
 library.add(faCircleDown)
 library.add(faSquareXmark)
 
-
+let langValue = localStorage.getItem("lang")
+if(langValue == null) {
+    langValue = "cs"
+}
 
 // 2. Create i18n instance with options
 const i18n = createI18n({
-    locale: 'ja', // set locale
-    fallbackLocale: 'en', // set fallback locale
+    locale:  langValue, // set locale
+    fallbackLocale: 'cs', // set fallback locale
     messages, // set locale messages
     // If you need to specify other options, you can set other options
     // ...
