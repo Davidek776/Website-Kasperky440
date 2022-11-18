@@ -1,6 +1,7 @@
 <template>
   <!-- <PureCss></PureCss> -->
 
+  <section>
   <header>
     <nav
       class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
@@ -141,7 +142,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+  </section>
 
 </template>
 
@@ -247,7 +248,7 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/HeaderHeroStyles/base.min.css";
+@import "@/assets/HeaderHeroStyles/base.css";
 @import "@/assets/HeaderHeroStyles/dropDownStyle.css";
 .navigation {
   /* z-index: 800; */
