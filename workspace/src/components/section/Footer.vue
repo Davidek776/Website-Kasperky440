@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div
-      class="w-full text-white img bg-cover flex items-end px-2 md:px-0 pb-10 pt-32 md:pt-48 xl:pt-96"
+      class="w-full text-white img bg-cover flex items-end px-2 md:px-0 pb-10 pt-32 md:pt-48 xl:pt-72"
     >
       <div
         class="flex justify-between items-start max-w-7xl mx-auto flex-col space-y-24 xl:flex-row xl:space-y-0"

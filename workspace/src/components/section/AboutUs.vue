@@ -2,13 +2,12 @@
   <section class="about-us" ref="aboutBegin">
 
 	<picture>
-	
 		<source media="(min-width: 1024px and max-width: 1110px)" srcset="@/assets/aboutUs/img/line-md.png" />
 		<source media="(min-width: 1110px)" srcset="@/assets/aboutUs/img/line.png" />
 		<img loading="lazy" id="line" src="@/assets/aboutUs/img/line-md.png" alt="Dotted line" />
 	</picture>
 
-    <h1 class="title text-slate-900 text-center md:text-4xl text-2xl">
+    <h1 class="title text-slate-900 text-center">
       <span class="font-light">O </span>
       <span class="font-bold">NÁS</span>
     </h1>
@@ -75,7 +74,7 @@
     </div>
     <div class="row lg:mt-12 lg:flex-row xl:translate-y-10">
       <p
-        class="animate animate-l uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mr-16"
+        class="animate animate-l uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mt-16 lg:mr-16"
       >
         V letním období ideální místo na výlety po Šumavských kopcích. Překrásné
         výhledy přímo na okraji Kašperských Hor. Nejvýše položený hrad v Čechách

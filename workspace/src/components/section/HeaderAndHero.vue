@@ -3,11 +3,11 @@
 	<section>
 		<header>
 			<nav
-				class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
+				class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between"
 				id="logo-parent"
 			>
 				<div class="relative flex justify-between items-center">
-				<h1 class="text-2xl font-[Helvetica] cursor-pointer" id="logo">
+				<h1 class="text-3xl font-[Helvetica] cursor-pointer" id="logo">
 					<img loading="lazy"
 						src="@/assets/images/icons/logo2Transparent.png"
 						alt=""
@@ -16,7 +16,7 @@
 				</h1>
 
 				<span
-					class="text-3xl cursor-pointer mx-2 mdd:hidden block bar"
+					class="w-11 cursor-pointer mx-2 mdd:hidden block bar"
 					ref="bars"
 					@click="Menu(this)"
 				>
@@ -34,7 +34,7 @@
 				class="drop-down mdd:flex mdd:items-center mdd:static absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] ease-in duration-500 z-50 font-[Helvetica]"
 				id="dropId"
 				>
-				<li class="mx-4 my-6 mdd:my-0  ease-in duration-300">
+				<li class="mx-4 my-6 mdd:my-0 ">
 					<a
 						href="#"
 						@click="gotoHome()"
@@ -42,8 +42,8 @@
 						>Domů</a
 					>
 				</li>
-				<!-- hover:color-stone-50  ease-in duration-300 -->
-				<li class="mx-4 my-6 mdd:my-0  ease-in duration-300">
+				<!-- hover:color-stone-50  -->
+				<li class="mx-4 my-6 mdd:my-0 ">
 					<a
 						href="#"
 						@click="gotoAccomodation()"
@@ -51,7 +51,7 @@
 						>Ubytování</a
 					>
 				</li>
-				<li class="mx-4 my-6 mdd:my-0  ease-in duration-300">
+				<li class="mx-4 my-6 mdd:my-0 ">
 					<a
 						href="#"
 						@click="gotoAbout()"
@@ -59,7 +59,7 @@
 						>O Nás</a
 					>
 				</li>
-				<li class="mx-4 my-6 mdd:my-0  ease-in duration-300">
+				<li class="mx-4 my-6 mdd:my-0 ">
 					<a
 						href="#"
 						@click="gotoReview()"
@@ -68,7 +68,7 @@
 					>
 				</li>
 				<li
-					class="mx-4 mr-0 my-6 mdd:my-0 mb-8  ease-in duration-300"
+					class="mx-4 mr-0 my-6 mdd:my-0 mb-8 "
 				>
 					<a
 						href="#"

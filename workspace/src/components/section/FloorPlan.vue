@@ -11,13 +11,13 @@
       class="flex justify-center"
       ref="accomodationBegin"
     >
-      <span class="text-2xl sm:text-lg"
+      <span class="title"
       ref="floorPlan"
       ><b>UBYTOVÁNÍ</b></span>
     </div>
 
     <div class="flex justify-center">
-      <span class="text-lg"><b>1. PATRO</b></span>
+      <span class="sub-title mt-10"><b>1. PATRO</b></span>
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
@@ -59,7 +59,7 @@
     </div>
 
     <div class="flex justify-center">
-      <span class="text-lg"><b>2. PATRO</b></span>
+      <span class="sub-title"><b>2. PATRO</b></span>
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
