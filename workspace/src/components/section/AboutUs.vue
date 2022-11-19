@@ -60,7 +60,7 @@
         alt="image"
       />
     </div>
-    <div class="row lg:mt-12 lg:flex-row xl:translate-y-10">
+    <div class="row lg:mt-12 lg:flex-row xl:translate-y-12">
       <p
         class="animate animate-l uppercase md:text-left md:text-lg image-text lg:w-4/12 lg:ml-auto lg:mt-16 lg:mr-16"
       >
@@ -72,7 +72,7 @@
         alt="image"
       />
     </div>
-    <div class="row lg:flex-row-reverse">
+    <div class="row lg:flex-row-reverse xl:translate-y-14">
       <p
         class="animate animate-r uppercase md:text-left md:text-lg image-text lg:w-5/12"
       >

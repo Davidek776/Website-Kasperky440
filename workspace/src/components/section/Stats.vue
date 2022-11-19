@@ -11,7 +11,7 @@
         <table>
           <tr v-for="stat in statsData" :key="stat.id">
             <td class="w-fit pr-4">
-              <p class="text-sm">{{stat.title}}</p>
+              <p class="text-sm">{{ $t(stat.title) }}</p>
             </td>
             <td>
               <div class="h-2 w-44 bg-[#cbd5e1] rounded"> <div class="h-full rounded" :class="stat.is_improving ? 'bg-[#2DA66C]' : 'bg-[#a6372d]'" :style="'width:' + stat.value + '%;'"></div> </div>

@@ -1,43 +1,43 @@
 [
   {
     "id": 0,
-    "title": "Personál",
+    "title":  "stats.stat1",
     "value": 95,
     "is_improving": false
   },
   {
     "id": 1,
-    "title": "Zařízení",
+    "title": "stats.stat2",
     "value": 94,
     "is_improving": false
   },
   {
     "id": 2,
-    "title": "Čistota",
+    "title": "stats.stat3",
     "value": 97,
     "is_improving": false
   },
   {
     "id": 3,
-    "title": "Pohodlí",
+    "title": "stats.stat4",
     "value": 95,
     "is_improving": false
   },
   {
     "id": 4,
-    "title": " Poměr ceny a kvality",
+    "title": "stats.stat5",
     "value": 96,
     "is_improving": true
   },
   {
     "id": 5,
-    "title": " Lokalita",
+    "title": "stats.stat6",
     "value": 95,
     "is_improving": false
   },
   {
     "id": 6,
-    "title": "WiFi zdarma",
+    "title": "stats.stat7",
     "value": 94,
     "is_improving": false
   }

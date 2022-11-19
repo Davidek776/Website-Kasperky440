@@ -5,8 +5,8 @@
     :class="showAllComments ? 'h-fit' : 'h-[52rem]'"
   >
     <h1 class="text-slate-900 text-center title">
-      <span class="font-bold review">{{ $t("reviews.title1") }} </span>
-      <span class="font-light">{{ $t("reviews.title2") }}</span>
+      <span class="font-bold review">{{ $t("reviewsSection.title1") }} </span>
+      <span class="font-light">{{ $t("reviewsSection.title2") }}</span>
     </h1>
 
     <div
@@ -32,7 +32,7 @@
         class="py-4 px-8 bg-slate-800 text-slate-100 rounded-lg hover:shadow hover:shadow-lg hover:shadow-slate-800/50 transition-all focus:opacity-100"
         v-on:click="showAllComments = !showAllComments"
       >
-        {{ showAllComments ? $t('reviews.buttonLess') : $t('reviews.buttonMore') }}
+        {{ showAllComments ? $t('reviewsSection.buttonLess') : $t('reviewsSection.buttonMore') }}
       </button>
     </div>
   </div>

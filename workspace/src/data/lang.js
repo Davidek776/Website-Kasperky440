@@ -1,19 +1,7 @@
 export const lang = {
     en: {
         header: {
-            navigation1: '',
-				navigation2: '',
-				navigation3: '',
-				navigation4: '',
-				navigation5: '',
-				// navigation6: 'Kontakt',
-				button: '',
-				quote: '',
-				postHeader1: '',
-				postHeader2: '',
-				features1: '',
-				features2: '',
-				features3: '',
+
 			}
     },
     cs: {
@@ -47,11 +35,34 @@ export const lang = {
 				p5: 'V LETNÍM OBDOBÍ IDEÁLNÍ MÍSTO NA VÝLETY PO ŠUMAVSKÝCH KOPCÍCH. PŘEKRÁSNÉ VÝHLEDY PŘÍMO NA OKRAJI KAŠPERSKÝCH HOR. NEJVÝŠE POLOŽENÝ HRAD V ČECHÁCH KAŠPERK. VÝHODNÝ BOD PRO CYKLOTURISTIKU. NAUČNÉ STEZKY PO STOPÁCH TĚŽBY ZLATA. MOŽNOST KOUPÁNÍ V ŘECE OTAVĚ NEBO NA KOUPALIŠTI V SUŠICI (13 KM).',
 				p6: 'V PŘÍPADĚ PŘÍZNIVÉHO STAVU VODNÍ HLADINY, SJÍŽDĚNÍ ŘEKY OTAVY NA LODÍCH, MOŽNOST ZAPŮJČENÍ LODÍ V SUŠICI. CELÉ LÉTO SE V KAŠPERSKÝCH HORÁCH A NA HRADĚ KAŠPERK KONÁ MNOHO KULTURNÍCH AKCÍ, DIVADELNÍCH PŘEDSTAVENÍ, LETNÍ KINO. AKCE NÁRODNÍHO PARKU ŠUMAVA VČETNĚ UKÁZKY RÝŽOVÁNÍ ZLATA.',
 			},
-			reviews: {
+			reviewsSection: {
 				title1: 'RECENZE',
 				title2: ' OD VÁS',
 				buttonMore: 'ZOBRAZIT VÍCE',
 				buttonLess: 'ZOBRAZIT MÉNĚ',
+			},
+			reviews: {
+				title1: '',
+				desc1: 'Krásné a čisté ubytování v klidné části v Kašperských hor. Majitel velice příjemný.',
+				desc2: 'Vše bylo na jedničku .Ubytování, prostředí, perfektně vybavená kuchyň,krásnýpokoj,velká spokojenost se vším.Jezdili jsme na kole,krásná příroda,pěkné k opce,nádhera.',
+				desc3: 'Krásné prostředí, výhled do okolí, útulný velký pokoj, krásná koupelna, dobrá komunikace s majitelem.',
+				desc4: 'Poloha ubytování v přírodě a přesto blízko centra Kašperských Hor, parkování u objektu, absolutní čistota a moderní vybavení jak pokoje, ale zejména sdílené kuchyně s jídelnou. Jeli jsme na jistotu, neboť se jednalo o opakovaný pobyt.',
+				desc5: ' Výborně vybavená kuchyně, hezké prostředí',
+				desc6: 'Vybavení, čistota, sprcha a WC na pokojích.',
+				desc7: 'Velice milý majitel, kterého jsme vlastně ani nemuseli díky bezvadnému systému předávání klíčů potkat. Každopádně setkání bylo milé.',
+				desc8: 'místo, ubytování',
+				desc9: 'Krásné, čisté ubytování.',
+				desc10: 'Musím pochválit majitele, všechno bylo perfektní, nic nám nechybělo a dovolenou jsme si užili naprosto skvěle a rádi se vrátíme. Ubytování odpovídá fotografiím a v domě je vše perfektní. Byli jsme moc spokojeni a děkujeme.',
+				desc11: 'Krásné čisté ubytování v klidné lokalitě s nádhernými výhledy na blízkou sjezdovku. Velmi milý pan majitel, který nám se vším ochotně poradil a doporučil nejlepší tipy na výlety. Klíče jsme si vyzvedli i odevzdali prostřednictvím trezoru na heslo, takže jsme nebyli vázáni na konkrétní čas příjezdu a odjezdu.',
+				desc12: 'krásný dům, výborné vybavení - kuchyň byla top \uD83D\uDC4D, pokoj taky, vybavení i pro miminka, lokalita, možnost výletů a aktivit',
+				desc13: 'Šumava a bydlení \uD83D\uDC4D, naprosto v pohodě.čistota a veget, doporučuji všem známým',
+				desc14: 'Úžasné ubytování, kde vubec nic nechybí. V klidné části a zároveň 5 minut chůze od centra. Byli jsme nadšeni.',
+				desc15: 'Výlet na Srní naprosto úžasný vidět vlky takhle zblízka prostě krása',
+				desc16: 'Krásná lokalita s výhledem na protější kopec na okraji Kašperských hor, což zajišťovalo klidné prostředí .Krásné fotky pověšené na zdi :-)',
+				desc17: 'Pobyt na Šumavě jsme si i přes velmi proměnlivé počasí moc užili a velkou měrou k tomu přispělo velmi příjemné a pohodlné ubytování, kde jsem si po náročných cyklo nebo pěších túrách odpočinuli a dobře se vyspali. Vyhovovala nám i kuchyň s jídelnou, kde jsme si připravovali snídaně a večeře.',
+				desc18: 'Lokalita, levné a hezke ubytování.',
+				desc19: 'Krásný penzion, na hezkém klidném místě, kousek od centra, vše čisté, uklizené.',
+				desc20: 'Vynikajíci ubytování, perfektní vybavení, krásný nový objekt. krásné prostředí, klidné, blízko středu města a soukromé parkoviště hned u baráku taky vynikající. perfektně vybavená kuchyň. Ve městě spousta možností na jídlo. Prostě naprostá spokojenost. určitě se chci ještě vrátit a všem doporučuji.',
 			},
 			contact: {
 				title: 'KONTAKT',
@@ -60,7 +71,14 @@ export const lang = {
 				button: 'REZERVOVAT'
 			},
 			stats: {
-				desc: 'Je nám ctí mít tolik spokojených zákazníků'
+				desc: 'Je nám ctí mít tolik spokojených zákazníků',
+				stat1: 'Personál',
+				stat2: 'Zařízení',
+				stat3: 'Čistota',
+				stat4: 'Pohodlí',
+				stat5: 'Poměr ceny a kvality',
+				stat6: 'Lokalita',
+				stat7: 'WiFi zdarma',
 			},
 			footer: {
 				help: 'PODPORA',
