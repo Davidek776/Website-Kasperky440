@@ -13,11 +13,11 @@
     >
       <span class="title"
       ref="floorPlan"
-      ><b>UBYTOVÁNÍ</b></span>
+      ><b>{{ $t("floorPlan.title") }}</b></span>
     </div>
 
     <div class="flex justify-center">
-      <span class="sub-title mt-10"><b>1. PATRO</b></span>
+      <span class="sub-title mt-10"><b>{{ $t("floorPlan.subTitle1") }}</b></span>
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
@@ -59,7 +59,7 @@
     </div>
 
     <div class="flex justify-center">
-      <span class="sub-title"><b>2. PATRO</b></span>
+      <span class="sub-title mt-16"><b>{{ $t("floorPlan.subTitle2") }}</b></span>
     </div>
     <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
