@@ -292,12 +292,14 @@
   cursor: pointer;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1024px) {
   .placePreviewKitchen {
     position: absolute;
-    width: 7rem;
-    height: 7rem;
+    width: 5.5vw;
+    height: 5.5vw;
     border-radius: 50%;
+    top: 40%;
+    left: 16%;
   }
   .placePreviewKitchen:hover {
     cursor: pointer;
@@ -305,9 +307,11 @@
   }
   .placePreviewDiningArea {
     position: absolute;
-    width: 9rem;
-    height: 9rem;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
+    top: 66%;
+    left: 29%;
   }
   .placePreviewDiningArea:hover {
     cursor: pointer;
@@ -315,9 +319,11 @@
   }
   .placePreviewFrontHall {
     position: absolute;
-    width: 5rem;
-    height: 5rem;
+    width: 4.5vw;
+    height: 4.5vw;
     border-radius: 50%;
+    top: 9.5%;
+    left: 39.5%;
   }
   .placePreviewFrontHall:hover {
     cursor: pointer;
@@ -325,9 +331,11 @@
   }
   .placePreviewStairs {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
+    top: 5.5%;
+    left: 55.5%;
   }
   .placePreviewStairs:hover {
     cursor: pointer;
@@ -335,9 +343,11 @@
   }
   .placePreviewRoom1 {
     position: absolute;
-    width: 7rem;
-    height: 7rem;
+    width: 6vw;
+    height: 6vw;
     border-radius: 50%;
+    top: 63%;
+    left: 76.5%;
   }
   .placePreviewRoom1:hover {
     cursor: pointer;
@@ -345,9 +355,11 @@
   }
   .placePreviewBathroom1 {
     position: absolute;
-    width: 4rem;
-    height: 4rem;
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
+    top: 31%;
+    left: 77%;
   }
   .placePreviewBathroom1:hover {
     cursor: pointer;
@@ -355,9 +367,11 @@
   }
   .placePreviewRoom2 {
     position: absolute;
-    width: 8rem;
-    height: 8rem;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
+    top: 68.5%;
+    left: 47.5%;
   }
   .placePreviewRoom2:hover {
     cursor: pointer;
@@ -365,9 +379,11 @@
   }
   .placePreviewBathroom2 {
     position: absolute;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.5vw;
+    height: 4.5vw;
     border-radius: 50%;
+    top: 72%;
+    left: 65%;
   }
   .placePreviewBathroom2:hover {
     cursor: pointer;
@@ -375,9 +391,11 @@
   }
   .placePreviewRoom3 {
     position: absolute;
-    width: 6rem;
-    height: 6rem;
+    width: 6vw;
+    height: 6vw;
     border-radius: 50%;
+    top: 36%;
+    left: 20%;
   }
   .placePreviewRoom3:hover {
     cursor: pointer;
@@ -385,9 +403,11 @@
   }
   .placePreviewRoom4 {
     position: absolute;
-    width: 8rem;
-    height: 8rem;
+    width: 7.5vw;
+    height: 7.5vw;
     border-radius: 50%;
+    top: 69%;
+    left: 21.5%;
   }
   .placePreviewRoom4:hover {
     cursor: pointer;
@@ -395,9 +415,11 @@
   }
   .placePreviewBathroom34 {
     position: absolute;
-    width: 5rem;
-    height: 5rem;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
+    top: 12%;
+    left: 40%;
   }
   .placePreviewBathroom34:hover {
     cursor: pointer;
@@ -405,9 +427,11 @@
   }
   .placePreviewToilet34 {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
+    top: 32.5%;
+    left: 35.5%;
   }
   .placePreviewToilet34:hover {
     cursor: pointer;

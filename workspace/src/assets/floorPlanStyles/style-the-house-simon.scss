@@ -225,52 +225,76 @@ $textSize2: 5vw;
 
 
 //media
-@media (min-width: 2000px){
+@media (min-width:1024px){
     .placePreviewKitchen{
-        @include placePreviewPreset(7rem);
+        @include placePreviewPreset(5.5vw);
+        top: 40%;
+        left: 16%;
     }
     
     .placePreviewDiningArea{
-        @include placePreviewPreset(9rem);
+        @include placePreviewPreset(8vw);
+        top: 66%;
+        left: 29%;
     }
     
     .placePreviewFrontHall{
-        @include placePreviewPreset(5rem);
+        @include placePreviewPreset(4.5vw);
+        top: 9.5%;
+        left: 39.5%
     }
     
     .placePreviewStairs{
-        @include placePreviewPreset(3rem);
+        @include placePreviewPreset(3vw);
+        top: 5.5%;
+        left: 55.5%;
     }
     
     .placePreviewRoom1{
-        @include placePreviewPreset(7rem);
+        @include placePreviewPreset(6vw);
+        top: 63%;
+        left: 76.5%;
     }
     
     .placePreviewBathroom1{
-        @include placePreviewPreset(4rem);
+        @include placePreviewPreset(4vw);
+        top: 31%;
+        left: 77%;
     }
     
     .placePreviewRoom2{
-        @include placePreviewPreset(8rem);
+        @include placePreviewPreset(8vw);
+        top: 68.5%;
+        left: 47.5%;
     }
     
     .placePreviewBathroom2{
-        @include placePreviewPreset(4.5rem);
+        @include placePreviewPreset(4.5vw);
+        top: 72%;
+        left: 65%;
     }
     
     .placePreviewRoom3{
-        @include placePreviewPreset(6rem);
+        @include placePreviewPreset(6vw);
+        top: 36%;
+        left: 20%;
     }
     
     .placePreviewRoom4{
-        @include placePreviewPreset(8rem);
+        @include placePreviewPreset(7.5vw);
+        top: 69%;
+        left: 21.5%;
     }
     
     .placePreviewBathroom34{
-        @include placePreviewPreset(5rem);
+        @include placePreviewPreset(5vw);
+        top: 12%;
+        left: 40%;
     }
     
     .placePreviewToilet34{
-        @include placePreviewPreset(3rem);
+        @include placePreviewPreset(3vw);
+        top: 32.5%;
+        left: 35.5%;
     }
 }
