@@ -1,18 +1,163 @@
 export const lang = {
     en: {
-        message: {
-            hello: 'eng'
-        },
-        message2:{
-            hi: 'yourmom'
-        }
+		header: {
+				navigation1: 'Home',
+				navigation2: 'Accommodation',
+				navigation3: 'About us',
+				navigation4: 'Reviews',
+				navigation5: 'Contact',
+				// navigation6: 'Kontakt',
+				button: 'Reservation',
+				quote: 'Comfortable Accommodation For Your Relaxation',
+				postHeader1: 'The apartments have a terrace, a TV and a private bathroom with a shower.',
+				postHeader2: 'Kašperky 440 is located in Kašperské Hory. It offers a garden and free Wi-Fi.',
+				features1: 'FREE PARKING',
+				features2: 'FAMILY ROOMS',
+				features3: 'FREE WIFI',
+			},
+			floorPlan: {
+				title: 'Accomodation',
+				subTitle1: '1. FLOOR',
+				subTitle2: '2. FLOOR',
+			},
+			aboutUs: {
+				title1: 'ABOUT',
+				title2: 'US',
+				p1: 'WE OFFER ACCOMMODATION IN A 3-BED ROOM, A 2-BED ROOM AND A 2-ROOM APARTMENT. TOTAL CAPACITY 10 BEDS WITH THE OPPORTUNITY OF AN EXTRA BED. THE ROOMS ARE EQUIPPED WITH SEPARATE BATHROOMS AND TOILETS.',
+				p2: 'THE PROPERTY HAS A COMMUNITY ROOM WITH A SPACIOUS, FULLY EQUIPPED KITCHEN THAT GUESTS CAN USE. THE KITCHEN IS COMMON TO THE ROOMS AND THE APARTMENT. DIRECTLY IN THE PROPERTY IS A SKI STORE FOR SKI STORAGE AND AN EXTENSION FOR STORAGE OF BICYCLES.',
+				p3: 'ACCOMMODATION ON THE EDGE OF THE KASPER MOUNTAINS IN A QUIET LOCATION BETWEEN FAMILY HOUSES. SOUTHERN SLOPE WITH A VIEW OF THE SKI-RUN AND THE SURROUNDING HILLS. THE SKI SKI IS 250 M.',
+				p4: 'IN THE WINTER PERIOD USE OF NEARBY SKI Slope INCLUDING SKI SCHOOL. IDEAL FOR FAMILIES WITH SMALLER CHILDREN WHO WANT TO LEARN TO SKI. POSSIBILITY OF NIGHT SKIING. RUNNING TRACKS UNDER FAVORABLE CONDITIONS DIRECTLY IN THE KASPERSKY MOUNTAINS AND ON THE NEARBY TOP OF ŽDÁNOV, OTHERWISE RUNNING TRACKS ON THE MOUNTAIN KVILDA OR IN THE BACK, BOTH ARE 17 KM DISTANT WITH TENS OF KILOMETERS OF groomed RUNNING TRACKS.',
+				p5: 'IN THE SUMMER PERIOD AN IDEAL PLACE FOR EXCURSIONS IN THE ŠUMAVA HILLS. BEAUTIFUL VIEWS RIGHT ON THE EDGE OF THE KASPER MOUNTAINS. KAŠPERK, THE HIGHEST LOCATED CASTLE IN BOHEMIA. ADVANTAGE POINT FOR CYCLING TOURISM. EDUCATION TRAILS FOLLOWING THE FOOTSTEPS OF GOLD MINING. POSSIBILITY OF SWIMMING IN THE OTAVA RIVER OR AT THE SWIMMING POOL IN SUŠICA (13 KM).',
+				p6: 'IN THE CASE OF FAVORABLE WATER LEVEL CONDITIONS, OTTAWA RIVER TOURS ON BOATS, POSSIBILITY OF RENTING BOATS IN SUŠICE. MANY CULTURAL EVENTS, THEATER PERFORMANCES, SUMMER CINEMA ARE HELD ALL SUMMER IN THE KAŠPERSK MOUNTAINS AND KAŠPERK CASTLE. EVENTS OF THE ŠUMAVA NATIONAL PARK INCLUDING A DEMONSTRATION OF GOLD PILLING.',
+			},
+			reviewsSection: {
+				title1: 'REVIEWS',
+				title2: 'FROM YOU',
+				buttonMore: 'SHOW MORE',
+				buttonLess: 'SHOW LESS',
+			},
+			reviews: {
+				desc1: 'Beautiful and clean accommodation in a quiet part of the Kašperské mountains. The owner is very pleasant.',
+				desc2: 'Everything was first class. Accommodation, environment, perfectly equipped kitchen, beautiful room, great satisfaction with everything. We went by bike, beautiful nature, nice option, beauty.',
+				desc3: 'Beautiful environment, view of the surroundings, cozy large room, beautiful bathroom, good communication with the owner.',
+				desc4: 'The location of the accommodation in nature and yet close to the center of the Kašperské Hory, parking near the building, absolute cleanliness and modern equipment, both in the rooms, but especially in the shared kitchen and dining room. We went to be safe, as it was a repeat stay.',
+				desc5: 'Excellently equipped kitchen, nice environment',
+				desc6: 'Equipment, cleanliness, shower and toilet in the rooms.',
+				desc7: 'Very nice owner, whom we actually didn\'t even have to meet thanks to the perfect key handover system. Anyway, the meeting was nice.',
+				desc8: 'place, accommodation',
+				desc9: 'Beautiful, clean accommodation.',
+				desc10: 'I have to praise the owner, everything was perfect, we didn\'t miss anything and we had an absolutely great holiday and we would love to come back. The accommodation corresponds to the photos and everything in the house is perfect. We were very satisfied and thank you.',
+				desc11: 'Beautiful clean accommodation in a quiet location with wonderful views of the nearby ski slope. Very nice Mr. owner, who willingly advised us on everything and recommended the best tips for trips. We picked up and dropped off our keys via a password safe, so we weren\'t tied to specific arrival and departure times.',
+				desc12: 'beautiful house, excellent equipment - the kitchen was top \uD83D\uDC4D, the room too, equipment also for babies, location, possibility of trips and activities',
+				desc13: 'Šumava and living \uD83D\uDC4D, absolutely cool. clean and vegetated, I recommend it to everyone I know',
+				desc14: 'Amazing accommodation, where nothing is missing at all. In a quiet area and at the same time 5 minutes walk from the center. We were thrilled.',
+				desc15: 'The trip to Srní is absolutely amazing to see wolves so close, simply beautiful',
+				desc16: 'A beautiful location with a view of the opposite hill on the edge of the Kašper Mountains, which ensured a peaceful environment. Beautiful photos hanging on the wall :-)',
+				desc17: 'We enjoyed our stay in the Šumava, despite the very changeable weather, and the very pleasant and comfortable accommodation, where I rested and slept well after challenging cycling or hiking trips, contributed to this to a large extent. We also liked the kitchen and dining room, where we prepared breakfast and dinner.',
+				desc18: 'Location, cheap and nice accommodation.',
+				desc19: 'Beautiful pension, in a nice quiet place, a short distance from the center, everything clean, tidy.',
+				desc20: 'Excellent accommodation, perfect equipment, beautiful new building. beautiful environment, quiet, close to the city center and private parking right next to the barrack also excellent. perfectly equipped kitchen. Lots of food options in town. Just complete satisfaction. I definitely want to come back and recommend it to everyone.',
+			},
+			contact: {
+				title: 'CONTACT',
+				phone: 'Phone:',
+				address: 'Address:',
+				button: 'RESERVATION'
+			},
+			stats: {
+				desc: 'We are honored to have so many satisfied customers',
+				stat1: 'Staff',
+				stat2: 'Equipment',
+				stat3: 'Tidiness',
+				stat4: 'Comfort',
+				stat5: 'Price-quality ratio',
+				stat6: 'Lokation',
+				stat7: 'Free WiFi',
+			},
+			footer: {
+				help: 'Support',
+				desc: 'is private, cheap and one of the best-rated accommodations in the Kašperské Hory and Šumava Mountains. It provides accommodation for 1-10 people with the possibility of an extra bed. The location is located in a quiet part of the city and is suitable for couples and families.'
+			}
     },
     cs: {
-        message: {
-            hello: 'ceh'
-        },
-        message2:{
-            hi: 'tvojemama'
-        }
+			header: {
+				navigation1: 'Domů',
+				navigation2: 'Ubytování',
+				navigation3: 'O Nás',
+				navigation4: 'Recenze',
+				navigation5: 'Kontakt',
+				// navigation6: 'Kontakt',
+				button: 'Rezervovat',
+				quote: 'Pohodové Ubytování Pro Vaši Relaxaci',
+				postHeader1: 'Apartmány mají terasu, TV a vlastní koupelnu se sprchou.',
+				postHeader2: 'Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a bezplatné Wi-Fi.',
+				features1: 'PARKOVÁNÍ ZDARMA',
+				features2: 'RODINNÉ POKOJE',
+				features3: 'WIFI ZDARMA',
+			},
+			floorPlan: {
+				title: 'UBYTOVÁNÍ',
+				subTitle1: '1. PATRO',
+				subTitle2: '2. PATRO',
+			},
+			aboutUs: {
+				title1: 'O',
+				title2: ' NÁS',
+				p1: 'NABÍZÍME UBYTOVÁNÍ V 3 LŮŽKOVÉM POKOJI, 2 LŮŽKOVÉM POKOJI A APRATMÁNU SE 2 POKOJI. CELKOVÁ KAPACITA 10 LŮŽEK S MOŽNOSTÍ PŘISTÝLKY. POKOJE JSOU VYBAVENY SAMOSTATNÝMI KOUPELNAMI A WC.',
+				p2: 'V OBJEKTU JE SPOLEČENSKÁ MÍSTNOST S PROSTORNOU, PLNĚ VYBAVENOU KUCHYNÍ, KTEROU MOHOU HOSTÉ VYUŽÍVAT. KUCHYŇ JE SPOLEČNÁ PRO POKOJE I APRTMÁN. PŘÍMO V OBJEKTU JE LYŽÁRNA PRO ULOŽENÍ LYŽÍ A PŘÍSTAVBA PRO USCHOVÁNÍ JÍZDNÍCH KOL.',
+				p3: 'UBYTOVÁNÍ NA KRAJI KAŠPERSKÝCH HOR NA KLIDNÉM MÍSTĚ MEZI RODINNÝMI DOMKY. JIŽNÍ SVAH S VÝHLEDEM NA SJEZDOVKU A OKOLNÍ KOPCE. SJEZDOVKA JE VZDÁLENÁ 250 M.',
+				p4: 'V ZIMNÍM OBDOBÍ VYUŽITÍ BLÍZKOSTI SJEZDOVKY VČETNĚ LYŽAŘSKÉ ŠKOLY. IDEÁLNÍ PRO RODINY S MENŠÍMI DĚTMI, KTERÉ SE CHTĚJÍ NAUČIT LYŽOVAT. MOŽNOST VYUŽITÍ VEČERNÍHO LYŽOVÁNÍ. BĚŽECKÉ TRATĚ ZA PŘÍZNIVÝCH PODMÍNEK PŘÍMO V KAŠPERSKÝCH HORÁCH A NA BLÍZKÉM VRCHU ŽDÁNOV, JINAK BĚŽECKÉ TRATĚ NA HORSKÉ KVILDĚ NEBO NA ZADOVĚ OBOJÍ VZDÁLENÉ 17 KM S DESÍTKAMI KILOMETRŮ UPRAVENÝCH BĚŽECKÝCH TRATÍ.',
+				p5: 'V LETNÍM OBDOBÍ IDEÁLNÍ MÍSTO NA VÝLETY PO ŠUMAVSKÝCH KOPCÍCH. PŘEKRÁSNÉ VÝHLEDY PŘÍMO NA OKRAJI KAŠPERSKÝCH HOR. NEJVÝŠE POLOŽENÝ HRAD V ČECHÁCH KAŠPERK. VÝHODNÝ BOD PRO CYKLOTURISTIKU. NAUČNÉ STEZKY PO STOPÁCH TĚŽBY ZLATA. MOŽNOST KOUPÁNÍ V ŘECE OTAVĚ NEBO NA KOUPALIŠTI V SUŠICI (13 KM).',
+				p6: 'V PŘÍPADĚ PŘÍZNIVÉHO STAVU VODNÍ HLADINY, SJÍŽDĚNÍ ŘEKY OTAVY NA LODÍCH, MOŽNOST ZAPŮJČENÍ LODÍ V SUŠICI. CELÉ LÉTO SE V KAŠPERSKÝCH HORÁCH A NA HRADĚ KAŠPERK KONÁ MNOHO KULTURNÍCH AKCÍ, DIVADELNÍCH PŘEDSTAVENÍ, LETNÍ KINO. AKCE NÁRODNÍHO PARKU ŠUMAVA VČETNĚ UKÁZKY RÝŽOVÁNÍ ZLATA.',
+			},
+			reviewsSection: {
+				title1: 'RECENZE',
+				title2: ' OD VÁS',
+				buttonMore: 'ZOBRAZIT VÍCE',
+				buttonLess: 'ZOBRAZIT MÉNĚ',
+			},
+			reviews: {
+				title1: '',
+				desc1: 'Krásné a čisté ubytování v klidné části v Kašperských hor. Majitel velice příjemný.',
+				desc2: 'Vše bylo na jedničku .Ubytování, prostředí, perfektně vybavená kuchyň,krásnýpokoj,velká spokojenost se vším.Jezdili jsme na kole,krásná příroda,pěkné k opce,nádhera.',
+				desc3: 'Krásné prostředí, výhled do okolí, útulný velký pokoj, krásná koupelna, dobrá komunikace s majitelem.',
+				desc4: 'Poloha ubytování v přírodě a přesto blízko centra Kašperských Hor, parkování u objektu, absolutní čistota a moderní vybavení jak pokoje, ale zejména sdílené kuchyně s jídelnou. Jeli jsme na jistotu, neboť se jednalo o opakovaný pobyt.',
+				desc5: ' Výborně vybavená kuchyně, hezké prostředí',
+				desc6: 'Vybavení, čistota, sprcha a WC na pokojích.',
+				desc7: 'Velice milý majitel, kterého jsme vlastně ani nemuseli díky bezvadnému systému předávání klíčů potkat. Každopádně setkání bylo milé.',
+				desc8: 'místo, ubytování',
+				desc9: 'Krásné, čisté ubytování.',
+				desc10: 'Musím pochválit majitele, všechno bylo perfektní, nic nám nechybělo a dovolenou jsme si užili naprosto skvěle a rádi se vrátíme. Ubytování odpovídá fotografiím a v domě je vše perfektní. Byli jsme moc spokojeni a děkujeme.',
+				desc11: 'Krásné čisté ubytování v klidné lokalitě s nádhernými výhledy na blízkou sjezdovku. Velmi milý pan majitel, který nám se vším ochotně poradil a doporučil nejlepší tipy na výlety. Klíče jsme si vyzvedli i odevzdali prostřednictvím trezoru na heslo, takže jsme nebyli vázáni na konkrétní čas příjezdu a odjezdu.',
+				desc12: 'krásný dům, výborné vybavení - kuchyň byla top \uD83D\uDC4D, pokoj taky, vybavení i pro miminka, lokalita, možnost výletů a aktivit',
+				desc13: 'Šumava a bydlení \uD83D\uDC4D, naprosto v pohodě.čistota a veget, doporučuji všem známým',
+				desc14: 'Úžasné ubytování, kde vubec nic nechybí. V klidné části a zároveň 5 minut chůze od centra. Byli jsme nadšeni.',
+				desc15: 'Výlet na Srní naprosto úžasný vidět vlky takhle zblízka prostě krása',
+				desc16: 'Krásná lokalita s výhledem na protější kopec na okraji Kašperských hor, což zajišťovalo klidné prostředí .Krásné fotky pověšené na zdi :-)',
+				desc17: 'Pobyt na Šumavě jsme si i přes velmi proměnlivé počasí moc užili a velkou měrou k tomu přispělo velmi příjemné a pohodlné ubytování, kde jsem si po náročných cyklo nebo pěších túrách odpočinuli a dobře se vyspali. Vyhovovala nám i kuchyň s jídelnou, kde jsme si připravovali snídaně a večeře.',
+				desc18: 'Lokalita, levné a hezke ubytování.',
+				desc19: 'Krásný penzion, na hezkém klidném místě, kousek od centra, vše čisté, uklizené.',
+				desc20: 'Vynikajíci ubytování, perfektní vybavení, krásný nový objekt. krásné prostředí, klidné, blízko středu města a soukromé parkoviště hned u baráku taky vynikající. perfektně vybavená kuchyň. Ve městě spousta možností na jídlo. Prostě naprostá spokojenost. určitě se chci ještě vrátit a všem doporučuji.',
+			},
+			contact: {
+				title: 'KONTAKT',
+				phone: 'Telefon:',
+				address: 'Adresa:',
+				button: 'REZERVOVAT'
+			},
+			stats: {
+				desc: 'Je nám ctí mít tolik spokojených zákazníků',
+				stat1: 'Personál',
+				stat2: 'Zařízení',
+				stat3: 'Čistota',
+				stat4: 'Pohodlí',
+				stat5: 'Poměr ceny a kvality',
+				stat6: 'Lokalita',
+				stat7: 'WiFi zdarma',
+			},
+			footer: {
+				help: 'PODPORA',
+				desc: 'je soukromé, levné a jedno z nejlépe hodnocenných ubytování v Kašperských Horách a na Šumavě. Poskytuje ubytovaní pro 1-10 osob smožností přistýlky. Lokace se nachází v klidné části města a jevhodná pro páry i rodiny.'
+			}
     }
 }

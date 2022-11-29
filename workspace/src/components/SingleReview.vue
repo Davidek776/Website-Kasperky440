@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <p class="text-slate-700 text-sm">{{ reviewData.description }}</p>
+    <p class="text-slate-700 text-sm">{{ $t(reviewData.description) }}</p>
   </div>
 </template>
 

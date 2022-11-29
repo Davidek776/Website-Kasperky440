@@ -4,7 +4,7 @@
   <section>
      <!-- <p>{{ $t("message.hello") }}</p>
     <p>{{ $t("message2.hi") }}</p> -->
-    
+
     <header>
       <nav
         class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
@@ -38,7 +38,7 @@
               href="#"
               @click="gotoHome()"
               class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500"
-              >Domů</a
+              >{{ $t("header.navigation1") }}</a
             >
           </li>
           <!-- hover:color-stone-50 transition-all ease-in duration-300 -->
@@ -47,7 +47,7 @@
               href="#"
               @click="gotoAccomodation()"
               class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
-              >Ubytování</a
+              >{{ $t("header.navigation2") }}</a
             >
           </li>
           <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
@@ -55,7 +55,7 @@
               href="#"
               @click="gotoAbout()"
               class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
-              >O Nás</a
+              >{{ $t("header.navigation3") }}</a
             >
           </li>
           <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
@@ -63,7 +63,7 @@
               href="#"
               @click="gotoReview()"
               class=" text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500"
-              >Recenze</a
+              >{{ $t("header.navigation4") }}</a
             >
           </li>
           <li
@@ -73,7 +73,7 @@
               href="#"
               @click="gotoContact()"
               class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
-              >Kontakt</a
+              >{{ $t("header.navigation5") }}</a
             >
           </li>
           <a
@@ -84,7 +84,7 @@
               class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl"
               id="reserveBtn"
             >
-              Rezervovat
+              {{ $t("header.button") }}
             </button>
           </a>
           <ul class="speach flex flex-row mdd:flex-col">
@@ -117,7 +117,7 @@
       <div class="hero_content">
         <div class="motto hidden mdd:relative top-0 3xl:-top-10">
           <h1 class="quote text-4xl xl:text-5xl 3xl:text-6xl">
-            „<span class=""> Pohodové Ubytování Pro Vaši Relaxaci </span>“
+            „<span class=""> {{ $t("header.quote") }} </span>“
           </h1>
         </div>
       </div>
@@ -127,26 +127,25 @@
       <div class="description">
         <div class="left animate animate-l">
           <p class="ease-in duration-300">
-            Kašperky 440 se nachází v Kašperských Horách. Nabízí zahradu a
-            bezplatné Wi-Fi.
+            {{ $t("header.postHeader1") }}
           </p>
         </div>
         <div class="right animate animate-r">
-          <p>Apartmány mají terasu, TV a vlastní koupelnu se sprchou.</p>
+          <p>{{ $t("header.postHeader2") }}</p>
         </div>
       </div>
       <div class="features">
         <div class="first">
           <img loading="lazy" src="@/assets/images/icons/parking2.svg" alt=""/>
-          <p>PARKOVÁNÍ ZDARMA</p>
+          <p>{{ $t("header.features1") }}</p>
         </div>
         <div class="second">
           <img loading="lazy" src="@/assets/images/icons/Family2.svg" alt=""/>
-          <p>RODINNÉ POKOJE</p>
+          <p>{{ $t("header.features2") }}</p>
         </div>
         <div class="third">
           <img loading="lazy" src="@/assets/images/icons/Wifi.svg" alt=""/>
-          <p>WIFI ZDARMA</p>
+          <p>{{ $t("header.features3") }}</p>
         </div>
       </div>
     </div>
