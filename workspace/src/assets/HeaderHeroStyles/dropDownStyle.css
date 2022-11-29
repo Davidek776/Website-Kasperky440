@@ -8,7 +8,6 @@
     padding-bottom: .75em;
   }
   #dropId {
-	background: #fff;
     padding-bottom: .5em;
   }
 
@@ -35,18 +34,16 @@
   .drop-down li {
     text-align: center;
     text-transform: uppercase;
-    padding: 1em 0;
-    font-size: 1.5rem;
+    padding: 0.5em 0;
+  }
+  .drop-down li:first-child{
+    padding-top: 1.5em;
   }
 
   .motto {
     display: none;
   }
-  .drop-down li:last-child {
-    /* padding-bottom: 0; */
-  }
-  .drop-down li:first-child {
-  }
+
 
   .drop-down button {
     text-align: center;
@@ -117,7 +114,7 @@
     width: 100%;
   }
   #reserveBtn {
-    margin-top: 1.2em;
+    margin-top: 0.5em;
     margin-bottom: 0.4em;
   }
 
@@ -138,8 +135,10 @@
     right: 0.2em;
     bottom: 0.6em;
   }
+  /*
   #logo-parent {
     padding-top: 4.5em;
     padding-bottom: 4.5em;
   }
+  */
 }

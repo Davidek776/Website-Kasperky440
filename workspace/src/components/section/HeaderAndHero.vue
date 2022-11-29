@@ -30,14 +30,14 @@
         </div>
   
         <ul
-          class="drop-down mdd:flex mdd:items-center mdd:relative mdd:-top-6 absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 pl-7 mdd:opacity-100 opacity-0 smm:opacity-100 top-[-400px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+          class="drop-down lg:flex mdd:items-center lg:relative mdd:-top-6 absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 mdd:opacity-100 opacity-0 top-[-500px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
           id="dropId"
         >
           <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoHome()"
-              class="text-sm 3xl:text-3xl xl:text-xl mdd:hover:text-cyan-500 duration-500"
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500"
               >Domů</a
             >
           </li>
@@ -46,7 +46,7 @@
             <a
               href="#"
               @click="gotoAccomodation()"
-              class="text-sm 3xl:text-3xl xl:text-xl mdd:hover:text-cyan-500 duration-500"
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
               >Ubytování</a
             >
           </li>
@@ -54,7 +54,7 @@
             <a
               href="#"
               @click="gotoAbout()"
-              class="text-sm 3xl:text-3xl xl:text-xl mdd:hover:text-cyan-500 duration-500 "
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
               >O Nás</a
             >
           </li>
@@ -62,7 +62,7 @@
             <a
               href="#"
               @click="gotoReview()"
-              class=" text-sm 3xl:text-3xl xl:text-xl mdd:hover:text-cyan-500 duration-500"
+              class=" text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500"
               >Recenze</a
             >
           </li>
@@ -72,7 +72,7 @@
             <a
               href="#"
               @click="gotoContact()"
-              class="text-sm 3xl:text-3xl xl:text-xl mdd:hover:text-cyan-500 duration-500 "
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
               >Kontakt</a
             >
           </li>
@@ -81,7 +81,7 @@
             target="_blank"
           >
             <button
-              class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm 3xl:text-3xl xl:text-xl"
+              class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl"
               id="reserveBtn"
             >
               Rezervovat
@@ -182,7 +182,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       // let quote = document.querySelector(".quote");
-      list.classList.remove("top-[110px]");
+      list.classList.remove("top-[16vw]");
       list.classList.remove("opacity-100");
       // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
       // this.eventFire(document.getElementsByClassName("bars"), "click");
@@ -192,15 +192,19 @@ export default {
       }
       e.name === "menu"
         ? ((e.name = "close"),
-          list.classList.add("top-[110px]"),
+          list.classList.add("top-[16vw]"),
+          list.classList.add("md:top-[15vw]"),
           list.classList.add("opacity-100"),
+          list.classList.add("bg-opacity-70"),
           nav.classList.remove("bg-transparent"),
           nav.classList.add("bg-white"),
           console.log(list.classList),
           this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
-          list.classList.remove("top-[110px]"),
+          list.classList.remove("top-[16vw]"),
+          list.classList.remove("md:top-[15vw]"),
+          list.classList.remove("bg-opacity-70"),
           list.classList.remove("opacity-100"),
           nav.classList.add("bg-transparent"),
           nav.classList.remove("bg-white"),
@@ -211,7 +215,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       if (e.target.innerWidth > 950) {
-        list.classList.remove("top-[100px]");
+        list.classList.remove("top-[16vw]");
         list.classList.remove("opacity-100");
         nav.classList.add("bg-transparent");
         nav.classList.remove("bg-white");
