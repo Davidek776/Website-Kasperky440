@@ -17,12 +17,12 @@
       ><b>{{ $t("floorPlan.title") }}</b></span>
     </div>
     <div class=" lg:flex lg:flex-row-reverse">
-    <div class="flex justify-center items-center lg:w-1/5">
+    <div class="flex justify-center items-center lg:w-1/5 animate animate-r">
       <span class="sub-title lg:w-full lg:flex lg:justify-start lg:pl-4 lg:border-l-4 lg:border-l-slate-800"><b>{{ $t("floorPlan.subTitle1") }}</b></span>
     </div>
 
     <div class="lg:w-4/5">
-    <div class="floorImage flex justify-center">
+    <div class="floorImage flex justify-center animate animate-l">
       <!--Floor Plan Image-->
       <img loading="lazy"
         src="@/assets/images/FloorPlans/floor_1.webp"
@@ -64,11 +64,11 @@
 </div>
 
 <div class="lg:flex lg:flex-row w-full lg:-mt-36">
-    <div class="flex justify-center items-center lg:w-1/5">
+    <div class="flex justify-center items-center lg:w-1/5 animate animate-l">
       <span class="sub-title lg:w-full lg:flex lg:justify-end lg:pr-4 lg:border-r-4 lg:border-r-slate-800"><b>{{ $t("floorPlan.subTitle2") }}</b></span>
     </div>
     <div class="lg:w-4/5">
-      <div class="floorImage flex justify-center">
+      <div class="floorImage flex justify-center animate animate-r">
       <!--Floor Plan Image-->
       <img loading="lazy"
         src="@/assets/images/FloorPlans/Floor_2.webp"
