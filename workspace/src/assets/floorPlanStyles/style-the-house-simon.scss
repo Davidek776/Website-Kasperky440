@@ -229,37 +229,37 @@ $textSize2: 5vw;
     .placePreviewKitchen{
         @include placePreviewPreset(5.5vw);
         top: 40%;
-        left: 9%;
+        left: 16.5%;
     }
     
     .placePreviewDiningArea{
         @include placePreviewPreset(8vw);
         top: 67%;
-        left: 24%;
+        left: 28%;
     }
     
     .placePreviewFrontHall{
         @include placePreviewPreset(4.5vw);
         top: 10.5%;
-        left: 38%
+        left: 39.5%
     }
     
     .placePreviewStairs{
         @include placePreviewPreset(3vw);
-        top: 6.5%;
-        left: 57%;
+        top: 6%;
+        left: 55.5%;
     }
     
     .placePreviewRoom1{
         @include placePreviewPreset(6vw);
         top: 64%;
-        left: 83.5%;
+        left: 76.5%;
     }
     
     .placePreviewBathroom1{
         @include placePreviewPreset(4vw);
         top: 31%;
-        left: 84.5%;
+        left: 77.5%;
     }
     
     .placePreviewRoom2{
@@ -271,24 +271,24 @@ $textSize2: 5vw;
     .placePreviewBathroom2{
         @include placePreviewPreset(4.5vw);
         top: 72.5%;
-        left: 69.5%;
+        left: 65.25%;
     }
     
     .placePreviewRoom3{
         @include placePreviewPreset(7vw);
-        top: 36%;
-        left: 12%;
+        top: 35.5%;
+        left: 19.5%;
     }
     
     .placePreviewRoom4{
         @include placePreviewPreset(7.5vw);
         top: 69%;
-        left: 15.5%;
+        left: 22%;
     }
     
     .placePreviewBathroom34{
         @include placePreviewPreset(5vw);
-        top: 12%;
+        top: 11%;
         left: 40%;
     }
     

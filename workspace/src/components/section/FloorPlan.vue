@@ -18,11 +18,11 @@
     </div>
     <div class=" lg:flex lg:flex-row-reverse">
     <div class="flex justify-center items-center lg:w-1/5">
-      <span class="sub-title lg:w-full lg:flex lg:justify-center"><b>{{ $t("floorPlan.subTitle1") }}</b></span>
+      <span class="sub-title lg:w-full lg:flex lg:justify-start pl-4 border-l-4 border-l-slate-800"><b>{{ $t("floorPlan.subTitle1") }}</b></span>
     </div>
 
-  
-    <div class="floorImage flex justify-center lg:w-4/5 lg:justify-start lg:ml-10">
+    <div class="lg:w-4/5">
+    <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
       <img loading="lazy"
         src="@/assets/images/FloorPlans/floor_1.webp"
@@ -61,12 +61,14 @@
       />
     </div>
 </div>
+</div>
 
 <div class="lg:flex lg:flex-row w-full lg:-mt-36">
     <div class="flex justify-center items-center lg:w-1/5">
-      <span class="sub-title lg:w-full lg:flex lg:justify-center"><b>{{ $t("floorPlan.subTitle2") }}</b></span>
+      <span class="sub-title lg:w-full lg:flex lg:justify-end pr-4 border-r-4 border-r-slate-800"><b>{{ $t("floorPlan.subTitle2") }}</b></span>
     </div>
-    <div class="floorImage flex justify-center lg:w-4/5 lg:justify-end lg:mr-10">
+    <div class="lg:w-4/5">
+      <div class="floorImage flex justify-center">
       <!--Floor Plan Image-->
       <img loading="lazy"
         src="@/assets/images/FloorPlans/Floor_2.webp"
@@ -129,6 +131,7 @@
       />
       <div></div>
     </div>
+  </div>
   </div>
 
     <div name="fullImageViewGallery" class="fullImageView hidden">

@@ -101,7 +101,4 @@
     width: 113%;
     height: 97%;
   }
-  img:not(#line, .tall) {
-    max-height: 29rem;
-  }
 }/*# sourceMappingURL=style.css.map */
