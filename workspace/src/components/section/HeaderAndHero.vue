@@ -18,7 +18,7 @@
               class=" w-10 md:w-20 lg:w-28 xl:w-36"
             />
           </h1>
-  
+
           <span
             class="relative text-3xl md:text-6xl cursor-pointer mx-2 mdd:hidden flex justify-end"
             ref="bars"
@@ -28,7 +28,7 @@
             <font-awesome-icon icon="fa-solid fa-bars" name="menu" size="" />
           </span>
         </div>
-  
+
         <ul
           class="drop-down lg:flex mdd:items-center lg:relative mdd:-top-6 absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 mdd:opacity-100 opacity-0 top-[-500px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
           id="dropId"
@@ -94,7 +94,8 @@
 
             >
               <img loading="lazy"
-                   src="@/assets/images/icons/czech-republic.png"
+
+                   src="@/assets/images/icons/united-kingdom.png"
                    alt=""
                    class="w-8 xl:w-10 3xl:w-14"
               />
@@ -104,7 +105,7 @@
                     @click="changeLang"
             >
               <img
-                  src="@/assets/images/icons/united-kingdom.png"
+                  src="@/assets/images/icons/czech-republic.png"
                   alt=""
                   class="w-8 xl:w-10 3xl:w-14"
               />
