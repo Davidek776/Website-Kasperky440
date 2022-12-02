@@ -18,7 +18,7 @@
     </div>
     <div class=" lg:flex lg:flex-row-reverse">
     <div class="flex justify-center items-center lg:w-1/5">
-      <span class="sub-title lg:w-full lg:flex lg:justify-start pl-4 border-l-4 border-l-slate-800"><b>{{ $t("floorPlan.subTitle1") }}</b></span>
+      <span class="sub-title lg:w-full lg:flex lg:justify-start lg:pl-4 lg:border-l-4 lg:border-l-slate-800"><b>{{ $t("floorPlan.subTitle1") }}</b></span>
     </div>
 
     <div class="lg:w-4/5">
@@ -27,7 +27,7 @@
       <img loading="lazy"
         src="@/assets/images/FloorPlans/floor_1.webp"
         alt="Floor 1"
-        class="w-4/5 h-auto max-w-max lg:w-full"
+        class="w-4/5 h-auto max-w-max"
 
       />
   
@@ -65,7 +65,7 @@
 
 <div class="lg:flex lg:flex-row w-full lg:-mt-36">
     <div class="flex justify-center items-center lg:w-1/5">
-      <span class="sub-title lg:w-full lg:flex lg:justify-end pr-4 border-r-4 border-r-slate-800"><b>{{ $t("floorPlan.subTitle2") }}</b></span>
+      <span class="sub-title lg:w-full lg:flex lg:justify-end lg:pr-4 lg:border-r-4 lg:border-r-slate-800"><b>{{ $t("floorPlan.subTitle2") }}</b></span>
     </div>
     <div class="lg:w-4/5">
       <div class="floorImage flex justify-center">
@@ -73,7 +73,7 @@
       <img loading="lazy"
         src="@/assets/images/FloorPlans/Floor_2.webp"
         alt="Floor 2"
-        class="w-4/5 h-auto max-w-max lg:w-full"
+        class="w-4/5 h-auto max-w-max"
       />
 
       <!--Area Images-->
