@@ -15,12 +15,12 @@
             <img loading="lazy"
               src="@/assets/images/icons/logo2Transparent.png"
               alt=""
-              class=" w-10 md:w-20 lg:w-28 xl:w-36"
+              class=" w-14 sm:w-16 md:w-20 lg:w-28 xl:w-36"
             />
           </h1>
   
           <span
-            class="relative text-3xl md:text-6xl cursor-pointer mx-2 lg:hidden flex justify-end items-center"
+            class="relative text-5xl sm:text-5xl md:text-6xl cursor-pointer mx-2 lg:hidden flex justify-end items-center"
             ref="bars"
             @click="Menu(this)"
           >
@@ -37,7 +37,7 @@
             <a
               href="#"
               @click="gotoHome()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
+              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
               >{{ $t("header.navigation1") }}</a
             >
           </li>
@@ -46,7 +46,7 @@
             <a
               href="#"
               @click="gotoAccomodation()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
+              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation2") }}</a
             >
           </li>
@@ -54,7 +54,7 @@
             <a
               href="#"
               @click="gotoAbout()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
+              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation3") }}</a
             >
           </li>
@@ -62,7 +62,7 @@
             <a
               href="#"
               @click="gotoReview()"
-              class=" text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
+              class=" text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
               >{{ $t("header.navigation4") }}</a
             >
           </li>
@@ -72,7 +72,7 @@
             <a
               href="#"
               @click="gotoContact()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
+              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation5") }}</a
             >
           </li>
@@ -181,7 +181,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       // let quote = document.querySelector(".quote");
-      list.classList.remove("top-[50px]");
+      list.classList.remove("top-[70px]");
       list.classList.remove("opacity-100");
       // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
       // this.eventFire(document.getElementsByClassName("bars"), "click");
@@ -191,8 +191,8 @@ export default {
       }
       e.name === "menu"
         ? ((e.name = "close"),
-          list.classList.add("top-[50px]"),
-          list.classList.add("md:top-[100px]"),
+          list.classList.add("top-[70px]"),
+          list.classList.add("md:top-[110px]"),
           list.classList.add("opacity-100"),
           list.classList.add("bg-opacity-70"),
           nav.classList.remove("bg-transparent"),
@@ -201,8 +201,8 @@ export default {
           this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
-          list.classList.remove("top-[50px]"),
-          list.classList.remove("md:top-[100px]"),
+          list.classList.remove("top-[70px]"),
+          list.classList.remove("md:top-[110px]"),
           list.classList.remove("bg-opacity-70"),
           list.classList.remove("opacity-100"),
           nav.classList.add("bg-transparent"),
@@ -214,7 +214,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       if (e.target.innerWidth > 950) {
-        list.classList.remove("top-[50px]");
+        list.classList.remove("top-[70px]");
         list.classList.remove("opacity-100");
         nav.classList.add("bg-transparent");
         nav.classList.remove("bg-white");
