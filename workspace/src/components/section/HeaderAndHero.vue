@@ -7,7 +7,7 @@
 
     <header>
       <nav
-        class="navigation p-6 2xl:pr-16 bg-transparent mdd:flex mdd:items-center mdd:justify-between ease-in duration-300"
+        class="navigation p-6 2xl:pr-16 bg-transparent lg:flex lg:items-center lg:justify-between ease-in duration-300"
         id="logo-parent"
       >
         <div class="relative flex justify-between">
@@ -20,7 +20,7 @@
           </h1>
   
           <span
-            class="relative text-3xl md:text-6xl cursor-pointer mx-2 mdd:hidden flex justify-end"
+            class="relative text-3xl md:text-6xl cursor-pointer mx-2 lg:hidden flex justify-end items-center"
             ref="bars"
             @click="Menu(this)"
           >
@@ -30,49 +30,49 @@
         </div>
   
         <ul
-          class="drop-down lg:flex mdd:items-center lg:relative mdd:-top-6 absolute bg-white bg-opacity-70 mdd:bg-transparent w-full smm:w-full left-0 mdd:w-auto mdd:py-0 py-4 mdd:pl-0 mdd:opacity-100 opacity-0 top-[-500px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
+          class="drop-down lg:flex lg:items-center lg:relative lg:-top-6 absolute bg-white bg-opacity-70 lg:bg-transparent w-full smm:w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 lg:opacity-100 opacity-0 top-[-500px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
           id="dropId"
         >
-          <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoHome()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500"
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
               >{{ $t("header.navigation1") }}</a
             >
           </li>
           <!-- hover:color-stone-50 transition-all ease-in duration-300 -->
-          <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoAccomodation()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation2") }}</a
             >
           </li>
-          <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoAbout()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation3") }}</a
             >
           </li>
-          <li class="mx-4 my-6 mdd:my-0 transition-all ease-in duration-300">
+          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoReview()"
-              class=" text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500"
+              class=" text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
               >{{ $t("header.navigation4") }}</a
             >
           </li>
           <li
-            class="mx-4 mr-0 my-6 mdd:my-0 mb-8 transition-all ease-in duration-300"
+            class="mx-4 mr-0 my-6 lg:my-0 mb-8 transition-all ease-in duration-300"
           >
             <a
               href="#"
               @click="gotoContact()"
-              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl mdd:hover:text-cyan-500 duration-500 "
+              class="text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation5") }}</a
             >
           </li>
@@ -87,7 +87,7 @@
               {{ $t("header.button") }}
             </button>
           </a>
-          <ul class="speach flex flex-row mdd:flex-col">
+          <ul class="speach flex flex-row lg:flex-col">
             <button class="duration-300"
                     v-if='langValue === "cs"'
                     @click="changeLang"
@@ -115,7 +115,7 @@
       </nav>
 
       <div class="hero_content">
-        <div class="motto hidden mdd:relative top-0 3xl:-top-10">
+        <div class="motto hidden lg:relative top-0 3xl:-top-10">
           <h1 class="quote text-4xl xl:text-5xl 3xl:text-6xl">
             „<span class=""> {{ $t("header.quote") }} </span>“
           </h1>
@@ -181,7 +181,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       // let quote = document.querySelector(".quote");
-      list.classList.remove("top-[16vw]");
+      list.classList.remove("top-[50px]");
       list.classList.remove("opacity-100");
       // document.getElementsByClassName("bars").dispatchEvent(new Event("click"));
       // this.eventFire(document.getElementsByClassName("bars"), "click");
@@ -191,8 +191,8 @@ export default {
       }
       e.name === "menu"
         ? ((e.name = "close"),
-          list.classList.add("top-[16vw]"),
-          list.classList.add("md:top-[15vw]"),
+          list.classList.add("top-[50px]"),
+          list.classList.add("md:top-[100px]"),
           list.classList.add("opacity-100"),
           list.classList.add("bg-opacity-70"),
           nav.classList.remove("bg-transparent"),
@@ -201,8 +201,8 @@ export default {
           this.controlTxt())
         : // nav.classList.add("bg-opacity-80")
           ((e.name = "menu"),
-          list.classList.remove("top-[16vw]"),
-          list.classList.remove("md:top-[15vw]"),
+          list.classList.remove("top-[50px]"),
+          list.classList.remove("md:top-[100px]"),
           list.classList.remove("bg-opacity-70"),
           list.classList.remove("opacity-100"),
           nav.classList.add("bg-transparent"),
@@ -214,7 +214,7 @@ export default {
       let list = document.querySelector("ul");
       let nav = document.querySelector("nav");
       if (e.target.innerWidth > 950) {
-        list.classList.remove("top-[16vw]");
+        list.classList.remove("top-[50px]");
         list.classList.remove("opacity-100");
         nav.classList.add("bg-transparent");
         nav.classList.remove("bg-white");

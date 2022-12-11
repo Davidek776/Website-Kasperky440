@@ -144,7 +144,7 @@
       >
         <ImgSlide v-for="(slide, index) in loadImagesToCarousel()" :key="index">
           <div v-show="currentSlide === index + 1" class="slide-info">
-            <img loading="lazy" :src="require('@/assets/images/' + slide + '.webp')" alt="" />
+            <img loading="lazy" :src="require('@/assets/images/' + slide + '.webp')" alt="carrousel image" />
           </div>
         </ImgSlide>
       </ImgCarousel>

@@ -96,8 +96,6 @@ data() {
             }
             this.currentSlide += 1;
 
-            console.log("Jsem na slidu: " + this.currentSlide);
-
             return this.currentSlide;
         },
 
@@ -107,8 +105,6 @@ data() {
                 return;
             }
             this.currentSlide -= 1;
-
-            console.log("Jsem na slidu: " + this.currentSlide);
 
             return this.currentSlide;
         },
