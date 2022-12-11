@@ -2,7 +2,7 @@
     <!--v-base3-->
     <div v-if="popupShown" :style="{'display': popupHide}">
     <div class="hidden md:flex bg-white absolute w-1/4 h-1/5 rounded-lg drop-shadow-lg z-10 left-0 top-0 ml-7 justify-center items-center border-4 border-x-kasp-red	">
-        <span class=" text-lg">Click To See More!</span>
+        <span class=" text-lg">{{ $t("popUp.title") }}</span>
         <span v-on:click="popupShown = false"  class="absolute opacity:0 sm:opacity-100 -right-3 -top-3 bg-white w-6 h-6 flex justify-center items-center rounded-lg cursor-pointer">
             <!--<i @click="() => hidePopUp" class="fa-solid fa-xmark text-xl text-white hover:text-2xl" beat></i>-->
             <font-awesome-icon icon="fa-solid fa-square-xmark" class="" size="3x" shake/>

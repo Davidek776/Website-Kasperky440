@@ -20,6 +20,9 @@ export const lang = {
 				subTitle1: '1. FLOOR',
 				subTitle2: '2. FLOOR',
 			},
+			popUp: {
+				title: 'Click to see more!',
+			},
 			aboutUs: {
 				title1: 'ABOUT',
 				title2: 'US',
@@ -99,6 +102,9 @@ export const lang = {
 				title: 'UBYTOVÁNÍ',
 				subTitle1: '1. PATRO',
 				subTitle2: '2. PATRO',
+			},
+			popUp: {
+				title: 'Kliknutím zobrazte více!',
 			},
 			aboutUs: {
 				title1: 'O',

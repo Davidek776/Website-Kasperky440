@@ -36,9 +36,6 @@
     text-transform: uppercase;
     padding: 0.5em 0;
   }
-  .drop-down li:first-child{
-    padding-top: 1.5em;
-  }
 
   .motto {
     display: none;
