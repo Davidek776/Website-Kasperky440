@@ -20,7 +20,32 @@
     <noscript>
       <strong>We're sorry but Kasperky 440  doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app" style="overflow: hidden;"></div>
+    <div id="app" v-cloak style="overflow: hidden;"></div>
     <!-- built files will be auto injected -->
+    <div class="loading">
+      <i class="fa-regular fa-snowflake fa-spin fa-6x fa-fw"></i>
+    </div>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+      .fa-snowflake {
+        color: aliceblue;
+      }
+      .loading {
+        display: grid;
+        place-content: center;
+        background: #b1ddf5;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      #app:not([v-cloak]) ~ .loading {
+        display: none;
+      }
+    </style>
   </body>
 </html>

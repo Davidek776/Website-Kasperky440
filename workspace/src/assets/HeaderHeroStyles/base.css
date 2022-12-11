@@ -272,14 +272,14 @@ header {
 }
 @media (max-width: 1300px) {
   .drop-down li {
-    margin: 0 1.5em;
+    /* margin: 0 1.5em; */
     white-space: nowrap;
   }
   .drop-down li:last-child {
     margin-right: 0;
   }
   .drop-down button {
-    margin: 0 1em;
+    /* margin: 0 1em; */
   }
   .motto {
     left: 67%;
@@ -316,13 +316,13 @@ header {
 }
 @media (max-width: 1100px) {
   .drop-down li {
-    margin: 0 1em;
+    /* margin: 0 0.8em; */
   }
   .drop-down li:last-child {
     margin-right: 0;
   }
   .drop-down button {
-    margin: 0 1em;
+    /* margin: 0 1em; */
   }
   .motto {
     bottom: 5em;
@@ -330,7 +330,7 @@ header {
 }
 @media (max-width: 1000px) {
   .drop-down li {
-    margin: 0 0.7em;
+    /* margin: 0 0.7em; */
   }
   .drop-down li:last-child {
     margin-right: 0;

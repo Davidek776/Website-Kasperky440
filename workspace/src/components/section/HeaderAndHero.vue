@@ -33,46 +33,46 @@
           class="drop-down lg:flex lg:items-center lg:relative lg:-top-6 absolute bg-white bg-opacity-70 lg:bg-transparent w-full smm:w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 lg:opacity-100 opacity-0 top-[-500px] transition-all ease-in duration-500 z-50 font-[Helvetica]"
           id="dropId"
         >
-          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
+          <li class="mx-3 xl:mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoHome()"
-              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
+              class="text-2xl smm:text-2xl md:text-3xl lg:text-sm xl:text-xl 3xl:text-3xl  lg:hover:text-cyan-500 duration-500"
               >{{ $t("header.navigation1") }}</a
             >
           </li>
           <!-- hover:color-stone-50 transition-all ease-in duration-300 -->
-          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
+          <li class="mx-3 xl:mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoAccomodation()"
-              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
+              class="text-2xl smm:text-2xl md:text-3xl lg:text-sm xl:text-xl 3xl:text-3xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation2") }}</a
             >
           </li>
-          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
+          <li class="mx-3 xl:mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoAbout()"
-              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
+              class="text-2xl smm:text-2xl md:text-3xl lg:text-sm xl:text-xl 3xl:text-3xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation3") }}</a
             >
           </li>
-          <li class="mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
+          <li class="mx-3 xl:mx-4 my-6 lg:my-0 transition-all ease-in duration-300">
             <a
               href="#"
               @click="gotoReview()"
-              class=" text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500"
+              class=" text-2xl smm:text-2xl md:text-3xl lg:text-sm xl:text-xl 3xl:text-3xl lg:hover:text-cyan-500 duration-500"
               >{{ $t("header.navigation4") }}</a
             >
           </li>
           <li
-            class="mx-4 mr-0 my-6 lg:my-0 mb-8 transition-all ease-in duration-300"
+            class="mx-3 xl:mx-4 mr-0 my-6 lg:my-0 mb-8 transition-all ease-in duration-300"
           >
             <a
               href="#"
               @click="gotoContact()"
-              class="text-2xl smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl lg:hover:text-cyan-500 duration-500 "
+              class="text-2xl smm:text-2xl md:text-3xl lg:text-sm xl:text-xl 3xl:text-3xl lg:hover:text-cyan-500 duration-500 "
               >{{ $t("header.navigation5") }}</a
             >
           </li>
@@ -81,7 +81,7 @@
             target="_blank"
           >
             <button
-              class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-8 hover:bg-slate-500 rounded-3xl text-sm smm:text-2xl md:text-3xl 3xl:text-3xl lg:text-xl"
+              class="bg-slate-800 text-white font-[Helvetica] duration-500 px-6 py-2 mx-6 lg:ml-6 lg:mr-4 xl:mr-8 hover:bg-slate-500 rounded-3xl text-2xl smm:text-2xl md:text-3xl lg:text-sm xl:text-xl 3xl:text-3xl"
               id="reserveBtn"
             >
               {{ $t("header.button") }}
@@ -115,7 +115,7 @@
       </nav>
 
       <div class="hero_content">
-        <div class="motto hidden lg:relative top-0 3xl:-top-10">
+        <div class="motto hidden lg:flex lg:relative -top-5 3xl:-top-10">
           <h1 class="quote text-4xl xl:text-5xl 3xl:text-6xl">
             „<span class=""> {{ $t("header.quote") }} </span>“
           </h1>
