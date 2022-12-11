@@ -1,6 +1,6 @@
 <template>
   <section class="bg-[#d9d9d9] bg-opacity-[35%]">
-    <div class="py-10 md:py-20 md:px-4 px-2 lg:py-20 lg:px-20 flex justify-between items-center max-w-7xl mx-auto flex-col space-y-16 md:space-y-0 md:flex-row">
+    <div class="py-10 md:py-20 md:px-24 px-2 lg:py-20 lg:px-20 flex justify-between items-center max-w-7xl mx-auto flex-col space-y-16 md:space-y-0 md:flex-row">
       <h1 class="uppercase text-lg lg:text-3xl animate animate-l w-2/5">
         {{ $t("stats.desc") }}
       </h1>

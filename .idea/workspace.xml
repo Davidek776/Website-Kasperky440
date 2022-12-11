@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce956904-7ac5-4620-8c3a-64647797efc6" name="Changes" comment="Resolved merge conflicts">
+      <change beforePath="$PROJECT_DIR$/workspace/src/components/section/Stats.vue" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/src/components/section/Stats.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Translation_I18n" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EGYcRzN3JdBwZHzLdNn50wni6K" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Darko/Desktop/Web_Development/Front_End/Projects/House_Webpage_vue_v2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Darko\Desktop\Web_Development\Front_End\Projects\House_Webpage_vue_v2\workspace\src\data" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce956904-7ac5-4620-8c3a-64647797efc6" name="Changes" comment="" />
+      <created>1662223469472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662223469472</updated>
+      <workItem from="1662223472074" duration="7198000" />
+      <workItem from="1662295676621" duration="12483000" />
+      <workItem from="1662397409684" duration="677000" />
+      <workItem from="1662837287672" duration="10000" />
+      <workItem from="1663032983701" duration="205000" />
+      <workItem from="1663191097871" duration="441000" />
+      <workItem from="1663360476668" duration="760000" />
+      <workItem from="1663664978526" duration="299000" />
+      <workItem from="1663760004233" duration="16000" />
+      <workItem from="1663879286742" duration="8006000" />
+      <workItem from="1663939618877" duration="2914000" />
+      <workItem from="1664782404261" duration="3254000" />
+      <workItem from="1664786168409" duration="1675000" />
+      <workItem from="1665562803947" duration="767000" />
+      <workItem from="1666363768881" duration="596000" />
+      <workItem from="1666435362333" duration="79000" />
+      <workItem from="1668636302779" duration="2325000" />
+      <workItem from="1668782200751" duration="7433000" />
+      <workItem from="1670169563737" duration="516000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Reviews">
+      <created>1662309161126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662309161126</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Made Stats and Contact components">
+      <created>1663887847158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663887847158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added footer">
+      <created>1663942521394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663942521394</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed the arrow">
+      <created>1665563539258</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665563539258</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Review cards add top,bottom margin instead of gap (DONE)">
+      <created>1668637998816</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668637998816</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Almost done with language">
+      <created>1668786281164</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668786281164</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Done language">
+      <created>1668788789319</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668788789319</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Resolved merge conflicts">
+      <created>1668789451859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668789451859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Reviews" />
+    <MESSAGE value="Made Stats and Contact components" />
+    <MESSAGE value="Added footer" />
+    <MESSAGE value="Fixed the arrow" />
+    <MESSAGE value="Review cards add top,bottom margin instead of gap (DONE)" />
+    <MESSAGE value="Almost done with language" />
+    <MESSAGE value="Done language" />
+    <MESSAGE value="Resolved merge conflicts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved merge conflicts" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/workspace/src/main.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
