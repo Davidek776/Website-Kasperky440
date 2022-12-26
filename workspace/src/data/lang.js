@@ -163,7 +163,7 @@ export const lang = {
 			},
 			footer: {
 				help: 'PODPORA',
-				desc: 'je soukromé, levné a jedno z nejlépe hodnocenných ubytování v Kašperských Horách a na Šumavě. Poskytuje ubytovaní pro 1-10 osob smožností přistýlky. Lokace se nachází v klidné části města a jevhodná pro páry i rodiny.'
+				desc: 'je soukromé, levné a jedno z nejlépe hodnocených ubytování v Kašperských Horách a na Šumavě. Poskytuje ubytovaní pro 1-10 osob s možností přistýlky. Lokace se nachází v klidné části města a je vhodná pro páry i rodiny.'
 			}
     }
 }
