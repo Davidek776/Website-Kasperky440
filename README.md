@@ -9,5 +9,5 @@ The result is website that from design part looks modern, minimalistic and moder
 <h3>Website is published <a href="https://kasperky440.cz">here</a></h3>
 
 <img 
-     src="img/SocialFoodies2.png"
+     src="workspace/src/assets/images/icons/KasperkyScreen1.png"
      alt="Grapefruit slice atop a pile of other slices">
