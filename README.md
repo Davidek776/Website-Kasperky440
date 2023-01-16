@@ -1,11 +1,11 @@
 # Intent
-My goal was to practise my gathered knowledge from HTML, CSS and recently learned SASS. I wanted to test my knowledge from Web-Design at the edge of my capabilities. That's why I've decided to build website based on Awwwards winning website <a href="https://www.awwwards.com/sites/social-foodies">SOCIAL FOODIES</a> created by Danish digital agency Checkmate Digitalt Bureau.
+This website was developed in student programming assosiation called BeCreative. Website was created for our client from Czech Republic, who wanted to create website for his apartment in Kaspeky mountains to help him with marketing and attracting more tenants.
 
 # Process
-Creating this project I was strugling with few things, mostly while working on the responsivity of the website and organizing multiple Sass files.
+We were developing the project in team of 4 people. Our challanges were to manage group work and also to sometimes split the work. Project came through design part, developing part and deploying part. In design part we have learned how to use Figma more in depth. In development part, we wanted to challanges ourselves and use VUE.js. It was for us new technology and we were learning as we were going. VUE.js and it's technology Vue i18n was very helpful, when we implementing changing languages of the content. Vue also helped us with managing lifecycles and creating loading on the page. Vue was helpful, but at the same time most challanges and difficulties with which have encountered, where connected with this technology.
 
 # End Result
-The result is landing website which from my point of view looks very simmilar, maybe even identical to original. When it comes to my personal progress, I believe that this project was huge step forward for me towards understanding and practising HTML, CSS and SASS. Website is also fully responsive. In the future I could possibly add there some extra functionality with JavaScript and also make it a dynamic website with backend and database.
+The result is webs
 <h3>My clone website is published <a href="https://kasperky440.cz">here</a></h3>
 
 <img 
